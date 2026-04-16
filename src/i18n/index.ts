@@ -1,0 +1,83 @@
+import i18n from 'i18next'
+import { initReactI18next } from 'react-i18next'
+
+const pl = {
+  translation: {
+    app_title: 'Ładowarki EV',
+    search_placeholder: 'Szukaj po mieście, ulicy, kodzie pocztowym...',
+    filters: 'Filtry',
+    filters_clear: 'Wyczyść',
+    filters_apply: 'Zastosuj',
+    charging_mode: 'Tryb ładowania',
+    connector: 'Złącze',
+    min_power: 'Min. moc (kW)',
+    station_type: 'Rodzaj stacji',
+    no_results: 'Brak wyników',
+    loading: 'Ładowanie danych...',
+    loading_error: 'Błąd ładowania danych',
+    locate_me: 'Moja lokalizacja',
+    location_denied: 'Brak dostępu do lokalizacji',
+    station_details: 'Szczegóły stacji',
+    points: 'Punkty ładowania',
+    operator: 'Operator',
+    address: 'Adres',
+    auth_methods: 'Metody dostępu',
+    payment_methods: 'Płatności',
+    power: 'Moc',
+    status_available: 'Dostępna',
+    status_occupied: 'Zajęta',
+    status_unknown: 'Nieznany',
+    close: 'Zamknij',
+    show_more: 'Więcej',
+    lang_pl: 'PL',
+    lang_en: 'EN',
+    stations_count: 'Stacje: {{count}}',
+    dark_mode: 'Tryb ciemny',
+    light_mode: 'Tryb jasny',
+  },
+}
+
+const en = {
+  translation: {
+    app_title: 'EV Chargers',
+    search_placeholder: 'Search by city, street, postal code...',
+    filters: 'Filters',
+    filters_clear: 'Clear',
+    filters_apply: 'Apply',
+    charging_mode: 'Charging mode',
+    connector: 'Connector',
+    min_power: 'Min. power (kW)',
+    station_type: 'Station type',
+    no_results: 'No results',
+    loading: 'Loading data...',
+    loading_error: 'Error loading data',
+    locate_me: 'My location',
+    location_denied: 'Location access denied',
+    station_details: 'Station details',
+    points: 'Charging points',
+    operator: 'Operator',
+    address: 'Address',
+    auth_methods: 'Access methods',
+    payment_methods: 'Payments',
+    power: 'Power',
+    status_available: 'Available',
+    status_occupied: 'Occupied',
+    status_unknown: 'Unknown',
+    close: 'Close',
+    show_more: 'More',
+    lang_pl: 'PL',
+    lang_en: 'EN',
+    stations_count: 'Stations: {{count}}',
+    dark_mode: 'Dark mode',
+    light_mode: 'Light mode',
+  },
+}
+
+i18n.use(initReactI18next).init({
+  resources: { pl, en },
+  lng: localStorage.getItem('lang') || 'pl',
+  fallbackLng: 'pl',
+  interpolation: { escapeValue: false },
+})
+
+export default i18n

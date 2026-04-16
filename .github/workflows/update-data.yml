@@ -1,0 +1,109 @@
+name: Update EIPA Data
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # every day at 3:00 UTC
+  workflow_dispatch:        # allow manual trigger
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch operator data
+        run: |
+          curl -fsSL \
+            "https://eipa.udt.gov.pl/reader/export-data/operator/${{ secrets.EIPA_TOKEN }}" \
+            -o data/operator.json
+
+      - name: Fetch pool data
+        run: |
+          curl -fsSL \
+            "https://eipa.udt.gov.pl/reader/export-data/pool/${{ secrets.EIPA_TOKEN }}" \
+            -o data/pool.json
+
+      - name: Fetch station data
+        run: |
+          curl -fsSL \
+            "https://eipa.udt.gov.pl/reader/export-data/station/${{ secrets.EIPA_TOKEN }}" \
+            -o data/station.json
+
+      - name: Fetch point data
+        run: |
+          curl -fsSL \
+            "https://eipa.udt.gov.pl/reader/export-data/point/${{ secrets.EIPA_TOKEN }}" \
+            -o data/point.json
+
+      - name: Fetch dictionary
+        run: |
+          curl -fsSL \
+            "https://eipa.udt.gov.pl/reader/export-data/dictionary/${{ secrets.EIPA_TOKEN }}" \
+            -o data/dictionary.json
+
+      - name: Fetch dynamic updates and apply to point data
+        run: |
+          curl -fsSL \
+            "https://eipa.udt.gov.pl/reader/export-data/dynamic/${{ secrets.EIPA_TOKEN }}" \
+            -o data/dynamic.json
+
+          node - <<'EOF'
+          const fs = require('fs')
+
+          const pointPath = 'data/point.json'
+          const dynamicPath = 'data/dynamic.json'
+
+          if (!fs.existsSync(dynamicPath)) {
+            console.log('No dynamic file, skipping')
+            process.exit(0)
+          }
+
+          const pointData = JSON.parse(fs.readFileSync(pointPath, 'utf8'))
+          const dynamic = JSON.parse(fs.readFileSync(dynamicPath, 'utf8'))
+
+          // dynamic may contain updated point records - merge by id
+          const updates = dynamic.data || dynamic
+          if (!Array.isArray(updates)) {
+            console.log('Dynamic data not array, skipping merge')
+            process.exit(0)
+          }
+
+          const updateMap = new Map(updates.map(u => [u.id, u]))
+          pointData.data = pointData.data.map(p =>
+            updateMap.has(p.id) ? { ...p, ...updateMap.get(p.id) } : p
+          )
+
+          fs.writeFileSync(pointPath, JSON.stringify(pointData))
+          console.log(`Applied ${updateMap.size} dynamic updates`)
+          EOF
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Process data into chargers.db.json
+        run: node scripts/process-data.mjs
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ public/chargers.db.json
+          git diff --cached --quiet && echo "No changes" || git commit -m "chore: update EIPA data $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Trigger deploy
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'deploy.yml',
+              ref: 'master',
+            })
