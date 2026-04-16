@@ -5,6 +5,10 @@ on:
     - cron: '0 3 * * *'   # every day at 3:00 UTC
   workflow_dispatch:        # allow manual trigger
 
+permissions:
+  contents: write
+  actions: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -93,17 +97,18 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ public/chargers.db.json
-          git diff --cached --quiet && echo "No changes" || git commit -m "chore: update EIPA data $(date -u +%Y-%m-%d)"
-          git push
+          git add data/ public/chargers.db.json 
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: update EIPA data $(date -u +%Y-%m-%d)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Trigger deploy
-        uses: actions/github-script@v7
-        with:
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'deploy.yml',
-              ref: 'master',
-            })
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml
+        env:
+          GH_TOKEN: ${{ github.token }}
