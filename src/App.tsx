@@ -1,7 +1,9 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { loadData, getDictionary, db } from './db/dexie'
+import { loadData, loadBNetzAData, getDictionary, db } from './db/dexie'
+import type { CountryFilter } from './db/dexie'
 import { useStations } from './hooks/useStations'
+import { useCluster } from './hooks/useCluster'
 import { useGeolocation } from './hooks/useGeolocation'
 import { useTheme } from './hooks/useTheme'
 import MapView from './components/Map/MapView'
@@ -28,51 +30,72 @@ function setStationInUrl(id: number | null) {
   window.history.pushState({}, '', url.toString())
 }
 
+// Combined progress from two parallel sources
+interface SourceProgress { loaded: number; total: number }
+
 export default function App() {
   const { t, i18n } = useTranslation()
   const { theme, toggle: toggleTheme } = useTheme()
   const { lat: userLat, lng: userLng, loading: geoLoading, error: geoError, locate } = useGeolocation()
-  const [dataLoaded, setDataLoaded] = useState(false)
+
+  const [plReady, setPlReady] = useState(false)
+  const [deReady, setDeReady] = useState(false)
   const [dataError, setDataError] = useState<string | null>(null)
-  const [importProgress, setImportProgress] = useState<{ loaded: number; total: number } | null>(null)
   const [dictionary, setDictionary] = useState<EIPADictionary | null>(null)
   const [selectedStation, setSelectedStation] = useState<ChargerStation | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const { stations, filters, updateFilters, clearFilters } = useStations(dataLoaded)
+  const [country, setCountry] = useState<CountryFilter>('all')
 
+  // Combined progress: { pl: ..., de: ... }
+  const [plProgress, setPlProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
+  const [deProgress, setDeProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
+
+  const allLoaded = plReady && deReady
+  const { stations, filters, updateFilters, clearFilters } = useStations(allLoaded, country)
+  const { clusters, ready: clusterReady, getClusters, getClusterExpansionZoom } = useCluster(stations, allLoaded)
+
+  // Load PL (EIPA) and DE (BNetzA) in parallel
   useEffect(() => {
-    loadData((loaded, total) => setImportProgress({ loaded, total }))
+    loadData((loaded, total) => setPlProgress({ loaded, total }))
       .then(({ dictionary: dict }) => {
         setDictionary(dict)
-        setImportProgress(null)
-        setDataLoaded(true)
+        setPlReady(true)
       })
       .catch((e) => {
-        console.error(e)
+        console.error('EIPA load error:', e)
         setDataError(e.message)
+      })
+
+    loadBNetzAData((loaded, total) => setDeProgress({ loaded, total }))
+      .then(() => setDeReady(true))
+      .catch((e) => {
+        // BNetzA failure is non-fatal — log and mark as done
+        console.error('BNetzA load error:', e)
+        setDeReady(true)
       })
   }, [])
 
   useEffect(() => {
-    if (dataLoaded && !dictionary) {
+    if (allLoaded && !dictionary) {
       setDictionary(getDictionary())
     }
-  }, [dataLoaded, dictionary])
+  }, [allLoaded, dictionary])
 
   const [flyTo, setFlyTo] = useState<{ lat: number; lng: number; zoom: number } | null>(null)
 
   // On data loaded, open station from URL if present and fly to it
   useEffect(() => {
-    if (!dataLoaded) return
+    if (!allLoaded) return
     const id = getStationIdFromUrl()
     if (id == null) return
+    // Check both tables
     db.stations.get(id).then((s) => {
-      if (s) {
-        setSelectedStation(s)
-        setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 })
-      }
+      if (s) { setSelectedStation(s); setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 }) }
+      else db.bnetza_stations.get(id).then((s2) => {
+        if (s2) { setSelectedStation(s2); setFlyTo({ lat: s2.lat, lng: s2.lng, zoom: 17 }) }
+      })
     })
-  }, [dataLoaded])
+  }, [allLoaded])
 
   const handleStationClick = useCallback((station: ChargerStation) => {
     setSelectedStation(station)
@@ -89,8 +112,8 @@ export default function App() {
   useEffect(() => {
     if (!geoError) return
     setGeoToastVisible(true)
-    const t = setTimeout(() => setGeoToastVisible(false), 8000)
-    return () => clearTimeout(t)
+    const timer = setTimeout(() => setGeoToastVisible(false), 8000)
+    return () => clearTimeout(timer)
   }, [geoError])
 
   const geoErrorTitle = geoError === 'denied' ? t('location_denied')
@@ -104,28 +127,41 @@ export default function App() {
     : null
 
   const switchLang = () => {
-    const next = i18n.language === 'pl' ? 'en' : 'pl'
+    const langs = ['pl', 'en', 'de']
+    const next = langs[(langs.indexOf(i18n.language) + 1) % langs.length]
     i18n.changeLanguage(next)
     localStorage.setItem('lang', next)
   }
 
-  if (!dataLoaded && !dataError) {
-    const pct = importProgress ? Math.round((importProgress.loaded / importProgress.total) * 100) : null
+  // Loading screen — shown until both sources are ready
+  if (!allLoaded && !dataError) {
+    const totalLoaded = plProgress.loaded + deProgress.loaded
+    const totalItems = (plProgress.total || 0) + (deProgress.total || 0)
+    const pct = totalItems > 0 ? Math.round((totalLoaded / totalItems) * 100) : null
+
     return (
       <div className="h-full flex items-center justify-center bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300">
-        <div className="text-center w-64">
+        <div className="text-center w-72">
           <div className="animate-spin text-4xl mb-4">⚡</div>
           {pct !== null ? (
             <>
-              <div className="text-sm mb-2">{t('loading_import')} {pct}%</div>
-              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+              <div className="text-sm font-medium mb-3">{t('loading_import')} {pct}%</div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5 mb-3">
                 <div
-                  className="bg-green-500 h-2 rounded-full transition-all duration-200"
+                  className="bg-green-500 h-2.5 rounded-full transition-all duration-200"
                   style={{ width: `${pct}%` }}
                 />
               </div>
-              <div className="text-xs text-gray-400 mt-1">
-                {importProgress!.loaded} / {importProgress!.total}
+              {/* Per-source progress */}
+              <div className="flex flex-col gap-1 text-xs text-gray-400">
+                <div className="flex justify-between">
+                  <span>{t('loading_import_pl')} {plReady ? '✓' : ''}</span>
+                  <span>{plProgress.total > 0 ? `${plProgress.loaded.toLocaleString()} / ${plProgress.total.toLocaleString()}` : '…'}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>{t('loading_import_de')} {deReady ? '✓' : ''}</span>
+                  <span>{deProgress.total > 0 ? `${deProgress.loaded.toLocaleString()} / ${deProgress.total.toLocaleString()}` : '…'}</span>
+                </div>
               </div>
             </>
           ) : (
@@ -163,6 +199,24 @@ export default function App() {
           ⚡ {t('app_title')}
         </span>
         <div className="flex-1" />
+
+        {/* Country filter */}
+        <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 overflow-hidden text-xs">
+          {(['all', 'pl', 'de'] as CountryFilter[]).map((c) => (
+            <button
+              key={c}
+              onClick={() => setCountry(c)}
+              className={`px-2 py-1 transition-colors ${
+                country === c
+                  ? 'bg-green-600 text-white'
+                  : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
+              }`}
+            >
+              {t(`source_${c}`)}
+            </button>
+          ))}
+        </div>
+
         <button
           onClick={() => { locate() }}
           disabled={geoLoading}
@@ -181,7 +235,7 @@ export default function App() {
           onClick={switchLang}
           className="text-xs px-2 py-1 rounded border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
         >
-          {i18n.language === 'pl' ? t('lang_en') : t('lang_pl')}
+          {i18n.language === 'pl' ? t('lang_en') : i18n.language === 'en' ? t('lang_de') : t('lang_pl')}
         </button>
         <button
           onClick={toggleTheme}
@@ -224,10 +278,16 @@ export default function App() {
         {/* Map */}
         <main className="flex-1 relative">
           <MapView
-            stations={stations}
+            clusters={clusters}
+            clusterReady={clusterReady}
             userLat={flyTo?.lat ?? userLat}
             userLng={flyTo?.lng ?? userLng}
             flyZoom={flyTo?.zoom}
+            onViewChange={getClusters}
+            onClusterClick={(clusterId, lat, lng) => {
+              const expansionZoom = getClusterExpansionZoom(clusterId)
+              setFlyTo({ lat, lng, zoom: expansionZoom })
+            }}
             onStationClick={handleStationClick}
           />
         </main>

@@ -1,11 +1,11 @@
-import { useEffect, useRef } from 'react'
-import { MapContainer, TileLayer, useMap } from 'react-leaflet'
-import MarkerClusterGroup from 'react-leaflet-cluster'
+import { useEffect, useRef, useCallback } from 'react'
+import { MapContainer, TileLayer, useMap, useMapEvents, Marker } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import type { DexieStation } from '../../db/dexie'
+import { db } from '../../db/dexie'
 import type { ChargerStation } from '../../types'
-import StationMarker from './StationMarker'
+import type { ClusterItem } from '../../hooks/useCluster'
 
 // Fix default marker icons for Vite
 delete (L.Icon.Default.prototype as unknown as Record<string, unknown>)._getIconUrl
@@ -15,17 +15,12 @@ L.Icon.Default.mergeOptions({
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
 })
 
-// Custom cluster icon: green circle with total point count
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function createClusterIcon(cluster: any) {
-  const count = cluster.getChildCount()
-  // colour scale: green → amber → red
+function makeClusterIcon(count: number) {
   const color = count < 10 ? '#16a34a' : count < 50 ? '#d97706' : '#dc2626'
   const size = count < 10 ? 38 : count < 100 ? 46 : 54
   return L.divIcon({
     className: '',
-    html: `
-      <div style="
+    html: `<div style="
         width:${size}px;height:${size}px;border-radius:50%;
         background:${color};border:3px solid #fff;
         box-shadow:0 2px 10px rgba(0,0,0,0.35);
@@ -40,12 +35,32 @@ function createClusterIcon(cluster: any) {
   })
 }
 
-interface FlyToProps {
-  lat: number
-  lng: number
-  zoom?: number
-}
+const STATION_ICON = L.divIcon({
+  className: '',
+  html: `<div style="position:relative;width:36px;height:44px;">
+      <div style="
+        position:absolute;top:0;left:0;
+        width:36px;height:36px;border-radius:50%;
+        background:#16a34a;border:2.5px solid #fff;
+        box-shadow:0 2px 8px rgba(0,0,0,0.35);
+        display:flex;align-items:center;justify-content:center;
+      ">
+        <span style="color:#fff;font-size:11px;font-weight:700;font-family:sans-serif;">⚡</span>
+      </div>
+      <div style="
+        position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+        width:0;height:0;
+        border-left:6px solid transparent;
+        border-right:6px solid transparent;
+        border-top:10px solid #16a34a;
+      "></div>
+    </div>`,
+  iconSize: [36, 44],
+  iconAnchor: [18, 44],
+})
 
+// ── FlyTo ──────────────────────────────────────────────────────────────
+interface FlyToProps { lat: number; lng: number; zoom?: number }
 function FlyTo({ lat, lng, zoom = 13 }: FlyToProps) {
   const map = useMap()
   const prevRef = useRef<{ lat: number; lng: number } | null>(null)
@@ -57,22 +72,88 @@ function FlyTo({ lat, lng, zoom = 13 }: FlyToProps) {
   return null
 }
 
+// ── ViewportListener ───────────────────────────────────────────────────
+interface ViewportListenerProps {
+  onViewChange: (bbox: [number, number, number, number], zoom: number) => void
+}
+function ViewportListener({ onViewChange }: ViewportListenerProps) {
+  const map = useMapEvents({
+    moveend: () => {
+      const b = map.getBounds()
+      onViewChange([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], Math.round(map.getZoom()))
+    },
+    zoomend: () => {
+      const b = map.getBounds()
+      onViewChange([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], Math.round(map.getZoom()))
+    },
+  })
+  const firedRef = useRef(false)
+  useEffect(() => {
+    if (firedRef.current) return
+    firedRef.current = true
+    const b = map.getBounds()
+    onViewChange([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], Math.round(map.getZoom()))
+  })
+  return null
+}
+
+// ── SingleStationMarker ────────────────────────────────────────────────
+interface SingleStationMarkerProps {
+  id: number
+  lat: number
+  lng: number
+  onStationClick: (station: ChargerStation) => void
+}
+function SingleStationMarker({ id, lat, lng, onStationClick }: SingleStationMarkerProps) {
+  const stationRef = useRef<DexieStation | null>(null)
+  return (
+    <Marker
+      position={[lat, lng]}
+      icon={STATION_ICON}
+      eventHandlers={{
+        click: async () => {
+          if (!stationRef.current) {
+            let s = await db.stations.get(id)
+            if (!s) s = await db.bnetza_stations.get(id)
+            stationRef.current = s ?? null
+          }
+          if (stationRef.current) onStationClick(stationRef.current)
+        },
+      }}
+    />
+  )
+}
+
+// ── MapView ────────────────────────────────────────────────────────────
 interface MapViewProps {
-  stations: DexieStation[]
+  clusters: ClusterItem[]
+  clusterReady: boolean
   userLat: number | null
   userLng: number | null
   flyZoom?: number
+  onViewChange: (bbox: [number, number, number, number], zoom: number) => void
+  onClusterClick: (clusterId: number, lat: number, lng: number) => void
   onStationClick: (station: ChargerStation) => void
 }
 
-export default function MapView({ stations, userLat, userLng, flyZoom, onStationClick }: MapViewProps) {
-  const initialCenter: [number, number] = [52.069167, 19.480556] // center of Poland
-  const initialZoom = 6
+export default function MapView({
+  clusters,
+  clusterReady,
+  userLat,
+  userLng,
+  flyZoom,
+  onViewChange,
+  onClusterClick,
+  onStationClick,
+}: MapViewProps) {
+  const handleStationClick = useCallback((station: ChargerStation) => {
+    onStationClick(station)
+  }, [onStationClick])
 
   return (
     <MapContainer
-      center={initialCenter}
-      zoom={initialZoom}
+      center={[52.069167, 19.480556]}
+      zoom={6}
       className="h-full w-full z-0"
       preferCanvas
     >
@@ -80,11 +161,38 @@ export default function MapView({ stations, userLat, userLng, flyZoom, onStation
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <MarkerClusterGroup chunkedLoading maxClusterRadius={60} iconCreateFunction={createClusterIcon}>
-        {stations.map((station) => (
-          <StationMarker key={station.id} station={station} onClick={onStationClick} />
-        ))}
-      </MarkerClusterGroup>
+
+      <ViewportListener onViewChange={onViewChange} />
+
+      {clusterReady && clusters.map((item) => {
+        const [lng, lat] = item.geometry.coordinates
+        const isCluster = 'cluster' in item.properties && item.properties.cluster === true
+
+        if (isCluster) {
+          const count = (item.properties as { point_count: number }).point_count
+          const clusterId = (item as unknown as { id: number }).id
+          return (
+            <Marker
+              key={`c-${clusterId}`}
+              position={[lat, lng]}
+              icon={makeClusterIcon(count)}
+              eventHandlers={{ click: () => onClusterClick(clusterId, lat, lng) }}
+            />
+          )
+        }
+
+        const { id } = item.properties as { id: number }
+        return (
+          <SingleStationMarker
+            key={`s-${id}`}
+            id={id}
+            lat={lat}
+            lng={lng}
+            onStationClick={handleStationClick}
+          />
+        )
+      })}
+
       {userLat !== null && userLng !== null && (
         <FlyTo lat={userLat} lng={userLng} zoom={flyZoom} />
       )}

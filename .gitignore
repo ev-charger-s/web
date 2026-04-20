@@ -26,3 +26,6 @@ dist-ssr
 # Don't ignore data directory
 !data/*.json
 !public/chargers.db.json
+
+# BNetzA raw CSV files (large, fetched by CI)
+data/bnetza/*.csv

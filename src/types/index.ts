@@ -66,13 +66,18 @@ export interface EIPADictionary {
   company_type: Array<{ id: number; name: string }>
   country: Array<{ id: string; name: string }>
   weekday: Array<{ id: number; name: string }>
+  // Extra connector types added for BNetzA (negative IDs)
+  connector_interface_extra?: Array<{ id: number; name: string; description: string }>
 }
 
 // Processed / app types
 
+export type CountrySource = 'pl' | 'de'
+
 export interface ChargerStation {
   id: number
   pool_id: number
+  source: CountrySource
   lat: number
   lng: number
   city: string
