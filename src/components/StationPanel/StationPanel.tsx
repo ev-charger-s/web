@@ -123,9 +123,9 @@ export default function StationPanel({ station, dictionary, onClose }: Props) {
                 ))}
 
                 {/* Charging modes */}
-                {point.charging_modes.length > 0 && (
+                {(point.charging_modes?.length ?? 0) > 0 && (
                   <div className="flex flex-wrap gap-1 mt-1">
-                    {point.charging_modes.map((m) => (
+                    {point.charging_modes!.map((m) => (
                       <span key={m} className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded px-1.5 py-0.5">
                         {getChargingMode(m)}
                       </span>
