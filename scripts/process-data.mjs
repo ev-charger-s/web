@@ -103,6 +103,7 @@ const processedStations = stations.map(station => {
   return {
     id: station.id,
     pool_id: station.pool_id,
+    source: 'pl',
     lat: station.latitude,
     lng: station.longitude,
     city: pool.city || station.location?.city || '',
