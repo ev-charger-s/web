@@ -13,7 +13,7 @@ class ChargerDB extends Dexie {
 
   constructor() {
     super('ChargerDB')
-    this.version(1).stores({
+    this.version(2).stores({
       stations: [
         'id',
         'pool_id',
