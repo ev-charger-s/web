@@ -36,7 +36,9 @@ export const db = new ChargerDB()
 
 let _dictionary: EIPADictionary | null = null
 
-export async function loadData(): Promise<{ count: number; dictionary: EIPADictionary }> {
+export async function loadData(
+  onProgress?: (loaded: number, total: number) => void
+): Promise<{ count: number; dictionary: EIPADictionary }> {
   const count = await db.stations.count()
   if (count > 0 && _dictionary) {
     return { count, dictionary: _dictionary }
@@ -54,13 +56,18 @@ export async function loadData(): Promise<{ count: number; dictionary: EIPADicti
   const storedGeneratedAt = localStorage.getItem(GENERATED_AT_KEY)
   if (storedGeneratedAt !== data.generated_at) {
     await db.stations.clear()
+    const total = data.stations.length
+    const CHUNK = 500
     const dexieStations: DexieStation[] = data.stations.map((s) => ({
       ...s,
       _search_city: s.city.toLowerCase(),
       _search_street: s.street.toLowerCase(),
       _search_postal: s.postal_code.toLowerCase(),
     }))
-    await db.stations.bulkPut(dexieStations)
+    for (let i = 0; i < total; i += CHUNK) {
+      await db.stations.bulkPut(dexieStations.slice(i, i + CHUNK))
+      onProgress?.(Math.min(i + CHUNK, total), total)
+    }
     localStorage.setItem(GENERATED_AT_KEY, data.generated_at)
   }
 

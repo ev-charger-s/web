@@ -34,15 +34,17 @@ export default function App() {
   const { lat: userLat, lng: userLng, loading: geoLoading, error: geoError, locate } = useGeolocation()
   const [dataLoaded, setDataLoaded] = useState(false)
   const [dataError, setDataError] = useState<string | null>(null)
+  const [importProgress, setImportProgress] = useState<{ loaded: number; total: number } | null>(null)
   const [dictionary, setDictionary] = useState<EIPADictionary | null>(null)
   const [selectedStation, setSelectedStation] = useState<ChargerStation | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
-  const { stations, filters, updateFilters, clearFilters } = useStations()
+  const { stations, filters, updateFilters, clearFilters } = useStations(dataLoaded)
 
   useEffect(() => {
-    loadData()
+    loadData((loaded, total) => setImportProgress({ loaded, total }))
       .then(({ dictionary: dict }) => {
         setDictionary(dict)
+        setImportProgress(null)
         setDataLoaded(true)
       })
       .catch((e) => {
@@ -108,11 +110,27 @@ export default function App() {
   }
 
   if (!dataLoaded && !dataError) {
+    const pct = importProgress ? Math.round((importProgress.loaded / importProgress.total) * 100) : null
     return (
       <div className="h-full flex items-center justify-center bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300">
-        <div className="text-center">
+        <div className="text-center w-64">
           <div className="animate-spin text-4xl mb-4">⚡</div>
-          <div>{t('loading')}</div>
+          {pct !== null ? (
+            <>
+              <div className="text-sm mb-2">{t('loading_import')} {pct}%</div>
+              <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div
+                  className="bg-green-500 h-2 rounded-full transition-all duration-200"
+                  style={{ width: `${pct}%` }}
+                />
+              </div>
+              <div className="text-xs text-gray-400 mt-1">
+                {importProgress!.loaded} / {importProgress!.total}
+              </div>
+            </>
+          ) : (
+            <div>{t('loading')}</div>
+          )}
         </div>
       </div>
     )

@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { getAllStations, queryStations, type DexieStation, type FilterParams } from '../db/dexie'
 
-export function useStations() {
+export function useStations(dataLoaded: boolean) {
   const [stations, setStations] = useState<DexieStation[]>([])
   const [loading, setLoading] = useState(true)
   const [filters, setFilters] = useState<FilterParams>({})
@@ -24,13 +24,14 @@ export function useStations() {
   }, [])
 
   useEffect(() => {
+    if (!dataLoaded) return
     setLoading(true)
     if (debounceRef.current) clearTimeout(debounceRef.current)
     debounceRef.current = setTimeout(async () => {
       await applyFilters(filters)
       setLoading(false)
     }, 300)
-  }, [filters, applyFilters])
+  }, [filters, applyFilters, dataLoaded])
 
   const updateFilters = useCallback((partial: Partial<FilterParams>) => {
     setFilters((prev) => ({ ...prev, ...partial }))
