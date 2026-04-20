@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { loadData, loadBNetzAData, getDictionary, db } from './db/dexie'
 import type { CountryFilter } from './db/dexie'
 import { useStations } from './hooks/useStations'
+import { useCluster } from './hooks/useCluster'
 import { useGeolocation } from './hooks/useGeolocation'
 import { useTheme } from './hooks/useTheme'
 import MapView from './components/Map/MapView'
@@ -51,6 +52,7 @@ export default function App() {
 
   const allLoaded = plReady && deReady
   const { stations, filters, updateFilters, clearFilters } = useStations(allLoaded, country)
+  const { clusters, ready: clusterReady, getClusters, getClusterExpansionZoom } = useCluster(stations, allLoaded)
 
   // Load PL (EIPA) and DE (BNetzA) in parallel
   useEffect(() => {
@@ -276,10 +278,16 @@ export default function App() {
         {/* Map */}
         <main className="flex-1 relative">
           <MapView
-            stations={stations}
+            clusters={clusters}
+            clusterReady={clusterReady}
             userLat={flyTo?.lat ?? userLat}
             userLng={flyTo?.lng ?? userLng}
             flyZoom={flyTo?.zoom}
+            onViewChange={getClusters}
+            onClusterClick={(clusterId, lat, lng) => {
+              const expansionZoom = getClusterExpansionZoom(clusterId)
+              setFlyTo({ lat, lng, zoom: expansionZoom })
+            }}
             onStationClick={handleStationClick}
           />
         </main>
