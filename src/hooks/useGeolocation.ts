@@ -1,9 +1,11 @@
 import { useState, useCallback } from 'react'
 
+type GeoError = 'not_supported' | 'denied' | 'unavailable' | 'timeout' | null
+
 interface GeolocationState {
   lat: number | null
   lng: number | null
-  error: string | null
+  error: GeoError
   loading: boolean
 }
 
@@ -30,10 +32,14 @@ export function useGeolocation() {
           loading: false,
         })
       },
-      () => {
-        setState((s) => ({ ...s, loading: false, error: 'denied' }))
+      (err) => {
+        let error: GeoError = 'unavailable'
+        if (err.code === err.PERMISSION_DENIED) error = 'denied'
+        else if (err.code === err.TIMEOUT) error = 'timeout'
+        else if (err.code === err.POSITION_UNAVAILABLE) error = 'unavailable'
+        setState((s) => ({ ...s, loading: false, error }))
       },
-      { timeout: 10000 },
+      { timeout: 10000, enableHighAccuracy: true },
     )
   }, [])
 

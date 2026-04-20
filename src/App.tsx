@@ -82,6 +82,25 @@ export default function App() {
     setStationInUrl(null)
   }, [])
 
+  // Geo error toast — auto-dismiss after 8 s
+  const [geoToastVisible, setGeoToastVisible] = useState(false)
+  useEffect(() => {
+    if (!geoError) return
+    setGeoToastVisible(true)
+    const t = setTimeout(() => setGeoToastVisible(false), 8000)
+    return () => clearTimeout(t)
+  }, [geoError])
+
+  const geoErrorTitle = geoError === 'denied' ? t('location_denied')
+    : geoError === 'timeout' ? t('location_timeout')
+    : geoError === 'not_supported' ? t('location_not_supported')
+    : t('location_unavailable')
+
+  const geoErrorHint = geoError === 'denied' ? t('location_denied_hint')
+    : geoError === 'timeout' ? t('location_timeout_hint')
+    : geoError === 'unavailable' ? t('location_unavailable_hint')
+    : null
+
   const switchLang = () => {
     const next = i18n.language === 'pl' ? 'en' : 'pl'
     i18n.changeLanguage(next)
@@ -202,6 +221,21 @@ export default function App() {
             dictionary={dictionary}
             onClose={handleClosePanel}
           />
+        )}
+
+        {/* Geo error toast */}
+        {geoToastVisible && geoError && (
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-50 w-[min(90vw,360px)] bg-gray-900 dark:bg-gray-800 text-white rounded-xl shadow-2xl px-4 py-3 flex gap-3 items-start">
+            <span className="text-xl mt-0.5">📍</span>
+            <div className="flex-1 min-w-0">
+              <div className="font-semibold text-sm">{geoErrorTitle}</div>
+              {geoErrorHint && <div className="text-xs text-gray-300 mt-0.5 leading-snug">{geoErrorHint}</div>}
+            </div>
+            <button
+              onClick={() => setGeoToastVisible(false)}
+              className="text-gray-400 hover:text-white text-lg leading-none shrink-0 mt-0.5"
+            >✕</button>
+          </div>
         )}
       </div>
     </div>
