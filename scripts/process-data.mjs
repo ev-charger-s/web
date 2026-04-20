@@ -52,18 +52,28 @@ const processedStations = stations.map(station => {
 
   // Process points
   const processedPoints = stationPoints.map(point => {
-    const connectors = (point.connectors || []).map(conn => ({
-      id: conn.id,
-      interface_id: conn.interface_id,
-      power_kw: conn.power_kw || null,
-      max_power_kw: conn.max_power_kw || conn.power_kw || null,
-    }))
+    // Each connector has `interfaces` (array) and `power` in the raw data
+    const connectors = (point.connectors || []).flatMap(conn => {
+      const interfaces = conn.interfaces || (conn.interface_id != null ? [conn.interface_id] : [])
+      const power = conn.max_power_kw || conn.power_kw || conn.power || null
+      return interfaces.map(iface => ({
+        id: conn.id,
+        interface_id: iface,
+        power_kw: power,
+        max_power_kw: power,
+      }))
+    })
+
+    // charging_modes may come as direct array or via charging_solutions[].mode
+    const chargingModes = point.charging_modes?.length
+      ? point.charging_modes
+      : (point.charging_solutions || []).map(s => s.mode).filter(Boolean)
 
     return {
       id: point.id,
       name: point.name || null,
       status: point.status || null,
-      charging_modes: point.charging_modes || [],
+      charging_modes: chargingModes,
       connectors,
       price: point.price || null,
       price_details: point.price_details || null,
@@ -103,8 +113,33 @@ const processedStations = stations.map(station => {
   }
 })
 
+// Group stations at exactly the same coordinates into a single entry
+// (different pools can share the same physical location)
+const groupMap = new Map()
+for (const station of processedStations) {
+  // Key: exact lat/lng string — same coordinates = same physical location
+  const key = `${station.lat}|${station.lng}`
+  if (!groupMap.has(key)) {
+    groupMap.set(key, { ...station, points: [...station.points] })
+  } else {
+    const existing = groupMap.get(key)
+    // Merge points from all stations at this location
+    existing.points = [...existing.points, ...station.points]
+    // Merge connector ids, charging modes, auth/payment methods
+    existing.connector_interface_ids = [...new Set([...existing.connector_interface_ids, ...station.connector_interface_ids])]
+    existing.charging_modes = [...new Set([...existing.charging_modes, ...station.charging_modes])]
+    existing.authentication_methods = [...new Set([...existing.authentication_methods, ...station.authentication_methods])]
+    existing.payment_methods = [...new Set([...existing.payment_methods, ...station.payment_methods])]
+    existing.max_power_kw = Math.max(existing.max_power_kw, station.max_power_kw)
+    // Keep the lowest station id as canonical
+    if (station.id < existing.id) existing.id = station.id
+  }
+}
+const groupedStations = Array.from(groupMap.values())
+console.log(`Grouped ${processedStations.length} stations → ${groupedStations.length} unique locations`)
+
 const output = {
-  stations: processedStations,
+  stations: groupedStations,
   dictionary: dictionaryData,
   generated_at: new Date().toISOString(),
 }
@@ -115,4 +150,4 @@ fs.writeFileSync(outputFile, JSON.stringify(output))
 
 const sizeMB = (fs.statSync(outputFile).size / 1024 / 1024).toFixed(2)
 console.log(`Done! Output: ${outputFile} (${sizeMB} MB)`)
-console.log(`Stations: ${processedStations.length}, Points: ${points.length}`)
+console.log(`Stations: ${groupedStations.length} (from ${processedStations.length}), Points: ${points.length}`)
