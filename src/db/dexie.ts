@@ -8,12 +8,15 @@ export interface DexieStation extends ChargerStation {
   _search_postal: string
 }
 
+const DB_VERSION = 2
+const GENERATED_AT_KEY = 'chargers_generated_at'
+
 class ChargerDB extends Dexie {
   stations!: Table<DexieStation>
 
   constructor() {
     super('ChargerDB')
-    this.version(2).stores({
+    this.version(DB_VERSION).stores({
       stations: [
         'id',
         'pool_id',
@@ -47,9 +50,9 @@ export async function loadData(): Promise<{ count: number; dictionary: EIPADicti
 
   _dictionary = data.dictionary
 
-  // Check if we need to repopulate (compare count)
-  const existingCount = await db.stations.count()
-  if (existingCount !== data.stations.length) {
+  // Repopulate if data file is newer than what we have stored
+  const storedGeneratedAt = localStorage.getItem(GENERATED_AT_KEY)
+  if (storedGeneratedAt !== data.generated_at) {
     await db.stations.clear()
     const dexieStations: DexieStation[] = data.stations.map((s) => ({
       ...s,
@@ -58,6 +61,7 @@ export async function loadData(): Promise<{ count: number; dictionary: EIPADicti
       _search_postal: s.postal_code.toLowerCase(),
     }))
     await db.stations.bulkPut(dexieStations)
+    localStorage.setItem(GENERATED_AT_KEY, data.generated_at)
   }
 
   return { count: data.stations.length, dictionary: _dictionary! }
