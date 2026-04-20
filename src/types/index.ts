@@ -88,6 +88,7 @@ export interface ChargerStation {
   // denormalised for quick filtering
   charging_modes: number[]
   connector_interface_ids: number[]
+  connector_names: string[]
   max_power_kw: number
 }
 

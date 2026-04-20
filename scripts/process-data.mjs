@@ -31,6 +31,11 @@ const pools = poolData.data || []
 const stations = stationData.data || []
 const points = pointData.data || []
 
+// Build connector interface name lookup from dictionary
+const connectorIfaceMap = new Map(
+  (dictionaryData.connector_interface || []).map(c => [c.id, c.description || c.name])
+)
+
 // Build lookup maps
 const operatorMap = new Map(operators.map(o => [o.id, o]))
 const poolMap = new Map(pools.map(p => [p.id, p]))
@@ -84,6 +89,9 @@ const processedStations = stations.map(station => {
   const allConnectorIds = [...new Set(
     processedPoints.flatMap(p => p.connectors.map(c => c.interface_id)).filter(Boolean)
   )]
+  const allConnectorNames = allConnectorIds
+    .map(id => connectorIfaceMap.get(id))
+    .filter(Boolean)
   const allChargingModes = [...new Set(
     processedPoints.flatMap(p => p.charging_modes).filter(Boolean)
   )]
@@ -109,6 +117,7 @@ const processedStations = stations.map(station => {
     points: processedPoints,
     charging_modes: allChargingModes,
     connector_interface_ids: allConnectorIds,
+    connector_names: allConnectorNames,
     max_power_kw: maxPower,
   }
 })
@@ -127,6 +136,7 @@ for (const station of processedStations) {
     existing.points = [...existing.points, ...station.points]
     // Merge connector ids, charging modes, auth/payment methods
     existing.connector_interface_ids = [...new Set([...existing.connector_interface_ids, ...station.connector_interface_ids])]
+    existing.connector_names = [...new Set([...existing.connector_names, ...station.connector_names])]
     existing.charging_modes = [...new Set([...existing.charging_modes, ...station.charging_modes])]
     existing.authentication_methods = [...new Set([...existing.authentication_methods, ...station.authentication_methods])]
     existing.payment_methods = [...new Set([...existing.payment_methods, ...station.payment_methods])]

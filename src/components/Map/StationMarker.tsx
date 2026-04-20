@@ -68,6 +68,15 @@ export default function StationMarker({ station, onClick }: Props) {
               {station.points.length} pkt
             </span>
           </div>
+          {station.connector_names.length > 0 && (
+            <div className="flex flex-wrap gap-1 mb-2">
+              {station.connector_names.map((name) => (
+                <span key={name} className="inline-block bg-gray-100 text-gray-700 rounded px-1.5 py-0.5 text-xs">
+                  ⚡ {name}
+                </span>
+              ))}
+            </div>
+          )}
           <button
             onClick={() => onClick(station)}
             className="text-xs text-blue-600 hover:underline cursor-pointer"
