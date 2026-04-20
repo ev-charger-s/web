@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { loadData, getDictionary } from './db/dexie'
+import { loadData, getDictionary, db } from './db/dexie'
 import { useStations } from './hooks/useStations'
 import { useGeolocation } from './hooks/useGeolocation'
 import { useTheme } from './hooks/useTheme'
@@ -9,6 +9,24 @@ import FiltersPanel from './components/Filters/FiltersPanel'
 import StationPanel from './components/StationPanel/StationPanel'
 import type { ChargerStation, EIPADictionary } from './types'
 import './i18n'
+
+function getStationIdFromUrl(): number | null {
+  const params = new URLSearchParams(window.location.search)
+  const val = params.get('station')
+  if (!val) return null
+  const id = parseInt(val, 10)
+  return isNaN(id) ? null : id
+}
+
+function setStationInUrl(id: number | null) {
+  const url = new URL(window.location.href)
+  if (id != null) {
+    url.searchParams.set('station', String(id))
+  } else {
+    url.searchParams.delete('station')
+  }
+  window.history.pushState({}, '', url.toString())
+}
 
 export default function App() {
   const { t, i18n } = useTranslation()
@@ -39,13 +57,30 @@ export default function App() {
     }
   }, [dataLoaded, dictionary])
 
-  const handleStationClick = (station: ChargerStation) => {
-    setSelectedStation(station)
-  }
+  const [flyTo, setFlyTo] = useState<{ lat: number; lng: number; zoom: number } | null>(null)
 
-  const handleClosePanel = () => {
+  // On data loaded, open station from URL if present and fly to it
+  useEffect(() => {
+    if (!dataLoaded) return
+    const id = getStationIdFromUrl()
+    if (id == null) return
+    db.stations.get(id).then((s) => {
+      if (s) {
+        setSelectedStation(s)
+        setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 })
+      }
+    })
+  }, [dataLoaded])
+
+  const handleStationClick = useCallback((station: ChargerStation) => {
+    setSelectedStation(station)
+    setStationInUrl(station.id)
+  }, [])
+
+  const handleClosePanel = useCallback(() => {
     setSelectedStation(null)
-  }
+    setStationInUrl(null)
+  }, [])
 
   const switchLang = () => {
     const next = i18n.language === 'pl' ? 'en' : 'pl'
@@ -153,8 +188,9 @@ export default function App() {
         <main className="flex-1 relative">
           <MapView
             stations={stations}
-            userLat={userLat}
-            userLng={userLng}
+            userLat={flyTo?.lat ?? userLat}
+            userLng={flyTo?.lng ?? userLng}
+            flyZoom={flyTo?.zoom}
             onStationClick={handleStationClick}
           />
         </main>
