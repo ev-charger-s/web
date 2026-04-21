@@ -72,7 +72,7 @@ export interface EIPADictionary {
 
 // Processed / app types
 
-export type CountrySource = 'pl' | 'de'
+export type CountrySource = 'pl' | 'de' | 'fr'
 
 export interface ChargerStation {
   id: number
