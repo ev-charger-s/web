@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# EV Charger Map
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mapa ładowarek EV dla samochodów elektrycznych — PWA/SPA (React + Vite + Tailwind + Leaflet + Dexie/IndexedDB).
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** + **TypeScript** + **Vite**
+- **Tailwind CSS** v4
+- **Leaflet** + **react-leaflet** — mapa
+- **supercluster** + **Web Worker** — klastrowanie po stronie klienta
+- **Dexie** (IndexedDB) — lokalna baza danych stacji
+- **i18next** — internacjonalizacja (PL / EN / DE)
 
-## React Compiler
+## Uruchamianie lokalnie
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Generowanie danych lokalnie
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# EIPA (Polska) — wymaga tokenu w zmiennej środowiskowej
+EIPA_TOKEN=<token> node scripts/fetch-eipa.mjs
+node scripts/process-data.mjs
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# BNetzA (Niemcy)
+node scripts/fetch-bnetza.mjs
+node scripts/process-bnetza.mjs
 ```
+
+---
+
+## Źródła danych
+
+### Zintegrowane
+
+| Kraj | Rejestr | Plik | Aktualizacja | Uwagi |
+|---|---|---|---|---|
+| 🇵🇱 Polska | [EIPA — Ewidencja Infrastruktury Paliw Alternatywnych](https://eipa.udt.gov.pl) | `public/chargers.db.json` | Co godzinę (GH Action) | API OCPI; token wymagany; ~5 700 stacji |
+| 🇩🇪 Niemcy | [BNetzA Ladesäulenregister](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/) | `public/bnetza.db.json` | 1× dziennie (GH Action) | CSV bulk; darmowy, bez rejestracji; ~71 000 lokalizacji |
+
+### Kandydaci do integracji
+
+#### Rejestry rządowe (darmowe, bulk download)
+
+| Kraj | Nazwa | URL | Format | Dostęp | Szacowana liczba stacji |
+|---|---|---|---|---|---|
+| 🇫🇷 Francja | Base nationale des IRVE | [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/) | CSV (~144 MB) / GeoJSON | Darmowy, CC BY, bez klucza | ~130 000 |
+| 🇬🇧 Wielka Brytania | National Chargepoint Registry (NCR/DfT) | [chargepoints.dft.gov.uk](https://chargepoints.dft.gov.uk) | REST JSON/CSV | Darmowy, bez klucza API | ~70 000 |
+| 🇳🇱 Holandia | NDW (Nationaal Dataportaal Wegverkeer) | [ndw.nu](https://ndw.nu) | OCPI/REST | Darmowy (rejestracja) | ~150 000 |
+| 🇧🇪 Belgia | transport.be / BEEV | [transport.belgium.be](https://transport.belgium.be) | OCPI | Do zbadania | ~30 000 |
+| 🇳🇴 Norwegia | Entur | [entur.no](https://entur.no) | OCPI REST | Darmowy | ~25 000 |
+| 🇦🇹 Austria | emob.at | [emob.at](https://www.emob.at) | OCPI REST | Do zbadania | ~20 000 |
+
+#### Agregatory europejskie / globalne
+
+| Nazwa | Zasięg | URL | Dostęp | Uwagi |
+|---|---|---|---|---|
+| [OpenChargeMap](https://openchargemap.org) | Cały świat | [api.openchargemap.io/v3](https://api.openchargemap.io/v3/) | Darmowy (klucz API) | CC BY 4.0; społecznościowa + importy z rejestrów; bbox query |
+| [EAFO](https://alternative-fuels-observatory.ec.europa.eu) | EU27+ | — | Darmowy | Dane zagregowane (statystyki, nie EVSE); DG MOVE |
+| [Eco-Movement](https://www.eco-movement.com) | 80+ krajów | [developers.eco-movement.com](https://developers.eco-movement.com) | **Płatny** | Najwyższa jakość; używany przez Apple Maps, OEM-y |
+| [GIREVE ConnectPlace](https://connect-place.gireve.com) | Europa (695k+ punktów) | — | **Komercyjny** (CPO/MSP) | Największy hub OCPI w Europie |
+| [e-clearing.net](https://e-clearing.net) | Europa (DACH+) | — | **Komercyjny** | Hub OCPI/OCHP; popularny w Niemczech |
+| [PlugShare](https://www.plugshare.com) | Cały świat | [developer.plugshare.com](https://developer.plugshare.com) | **Komercyjny API** | Popularny wśród kierowców EV |
+
+#### Kontekst regulacyjny
+
+**AFIR (EU 2023/1804)**, obowiązuje od kwietnia 2024 — wymaga od wszystkich operatorów w UE publikowania danych przez **OCPI 2.2.1+** do krajowych NAP (National Access Point). Docelowo każde państwo UE powinno mieć rejestr analogiczny do EIPA.
+
+---
+
+## Architektura danych
+
+```
+public/
+  chargers.db.json     # EIPA — generowany przez scripts/process-data.mjs
+  bnetza.db.json       # BNetzA — generowany przez scripts/process-bnetza.mjs
+data/
+  station.json / pool.json / point.json / operator.json / dictionary.json  # EIPA raw
+  bnetza/              # BNetzA CSV (gitignored) + latest.txt
+scripts/
+  fetch-bnetza.mjs     # Pobieranie CSV BNetzA
+  process-bnetza.mjs   # Parsowanie CSV → bnetza.db.json
+  process-data.mjs     # Łączenie EIPA raw → chargers.db.json
+.github/workflows/
+  update-data.yml      # EIPA — co godzinę
+  update-bnetza.yml    # BNetzA — 1× dziennie (03:30 UTC)
+```
+
+## GitHub Actions
+
+| Workflow | Cron | Źródło | Commit |
+|---|---|---|---|
+| `update-data.yml` | Co godzinę | EIPA API | `public/chargers.db.json` |
+| `update-bnetza.yml` | 03:30 UTC | BNetzA CSV | `public/bnetza.db.json` |
