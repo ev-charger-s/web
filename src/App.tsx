@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { loadData, loadBNetzAData, getDictionary, db } from './db/dexie'
+import { loadData, loadBNetzAData, loadIRVEData, getDictionary, db } from './db/dexie'
 import type { CountryFilter } from './db/dexie'
 import { useStations } from './hooks/useStations'
 import { useCluster } from './hooks/useCluster'
@@ -40,17 +40,19 @@ export default function App() {
 
   const [plReady, setPlReady] = useState(false)
   const [deReady, setDeReady] = useState(false)
+  const [frReady, setFrReady] = useState(false)
   const [dataError, setDataError] = useState<string | null>(null)
   const [dictionary, setDictionary] = useState<EIPADictionary | null>(null)
   const [selectedStation, setSelectedStation] = useState<ChargerStation | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [country, setCountry] = useState<CountryFilter>('all')
 
-  // Combined progress: { pl: ..., de: ... }
+  // Combined progress: { pl: ..., de: ..., fr: ... }
   const [plProgress, setPlProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
   const [deProgress, setDeProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
+  const [frProgress, setFrProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
 
-  const allLoaded = plReady && deReady
+  const allLoaded = plReady && deReady && frReady
   const { stations, filters, updateFilters, clearFilters } = useStations(allLoaded, country)
   const { clusters, ready: clusterReady, getClusters, getClusterExpansionZoom } = useCluster(stations, allLoaded)
 
@@ -73,6 +75,14 @@ export default function App() {
         console.error('BNetzA load error:', e)
         setDeReady(true)
       })
+
+    loadIRVEData((loaded, total) => setFrProgress({ loaded, total }))
+      .then(() => setFrReady(true))
+      .catch((e) => {
+        // IRVE failure is non-fatal — log and mark as done
+        console.error('IRVE load error:', e)
+        setFrReady(true)
+      })
   }, [])
 
   useEffect(() => {
@@ -88,11 +98,14 @@ export default function App() {
     if (!allLoaded) return
     const id = getStationIdFromUrl()
     if (id == null) return
-    // Check both tables
+    // Check all tables
     db.stations.get(id).then((s) => {
-      if (s) { setSelectedStation(s); setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 }) }
-      else db.bnetza_stations.get(id).then((s2) => {
-        if (s2) { setSelectedStation(s2); setFlyTo({ lat: s2.lat, lng: s2.lng, zoom: 17 }) }
+      if (s) { setSelectedStation(s); setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 }); return }
+      db.bnetza_stations.get(id).then((s2) => {
+        if (s2) { setSelectedStation(s2); setFlyTo({ lat: s2.lat, lng: s2.lng, zoom: 17 }); return }
+        db.irve_stations.get(id).then((s3) => {
+          if (s3) { setSelectedStation(s3); setFlyTo({ lat: s3.lat, lng: s3.lng, zoom: 17 }) }
+        })
       })
     })
   }, [allLoaded])
@@ -127,7 +140,7 @@ export default function App() {
     : null
 
   const switchLang = () => {
-    const langs = ['pl', 'en', 'de']
+    const langs = ['pl', 'en', 'de', 'fr']
     const next = langs[(langs.indexOf(i18n.language) + 1) % langs.length]
     i18n.changeLanguage(next)
     localStorage.setItem('lang', next)
@@ -135,8 +148,8 @@ export default function App() {
 
   // Loading screen — shown until both sources are ready
   if (!allLoaded && !dataError) {
-    const totalLoaded = plProgress.loaded + deProgress.loaded
-    const totalItems = (plProgress.total || 0) + (deProgress.total || 0)
+    const totalLoaded = plProgress.loaded + deProgress.loaded + frProgress.loaded
+    const totalItems = (plProgress.total || 0) + (deProgress.total || 0) + (frProgress.total || 0)
     const pct = totalItems > 0 ? Math.round((totalLoaded / totalItems) * 100) : null
 
     return (
@@ -159,9 +172,13 @@ export default function App() {
                   <span>{plProgress.total > 0 ? `${plProgress.loaded.toLocaleString()} / ${plProgress.total.toLocaleString()}` : '…'}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>{t('loading_import_de')} {deReady ? '✓' : ''}</span>
-                  <span>{deProgress.total > 0 ? `${deProgress.loaded.toLocaleString()} / ${deProgress.total.toLocaleString()}` : '…'}</span>
-                </div>
+                    <span>{t('loading_import_de')} {deReady ? '✓' : ''}</span>
+                    <span>{deProgress.total > 0 ? `${deProgress.loaded.toLocaleString()} / ${deProgress.total.toLocaleString()}` : '…'}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>{t('loading_import_fr')} {frReady ? '✓' : ''}</span>
+                    <span>{frProgress.total > 0 ? `${frProgress.loaded.toLocaleString()} / ${frProgress.total.toLocaleString()}` : '…'}</span>
+                  </div>
               </div>
             </>
           ) : (
@@ -202,7 +219,7 @@ export default function App() {
 
         {/* Country filter */}
         <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 overflow-hidden text-xs">
-          {(['all', 'pl', 'de'] as CountryFilter[]).map((c) => (
+          {(['all', 'pl', 'de', 'fr'] as CountryFilter[]).map((c) => (
             <button
               key={c}
               onClick={() => setCountry(c)}
@@ -235,7 +252,7 @@ export default function App() {
           onClick={switchLang}
           className="text-xs px-2 py-1 rounded border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
         >
-          {i18n.language === 'pl' ? t('lang_en') : i18n.language === 'en' ? t('lang_de') : t('lang_pl')}
+          {i18n.language === 'pl' ? t('lang_en') : i18n.language === 'en' ? t('lang_de') : i18n.language === 'de' ? t('lang_fr') : t('lang_pl')}
         </button>
         <button
           onClick={toggleTheme}

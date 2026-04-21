@@ -1,4 +1,4 @@
-import { useEffect, useRef, useCallback } from 'react'
+import { useEffect, useRef } from 'react'
 import { MapContainer, TileLayer, useMap, useMapEvents, Marker } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
@@ -115,6 +115,7 @@ function SingleStationMarker({ id, lat, lng, onStationClick }: SingleStationMark
           if (!stationRef.current) {
             let s = await db.stations.get(id)
             if (!s) s = await db.bnetza_stations.get(id)
+            if (!s) s = await db.irve_stations.get(id)
             stationRef.current = s ?? null
           }
           if (stationRef.current) onStationClick(stationRef.current)
@@ -146,10 +147,6 @@ export default function MapView({
   onClusterClick,
   onStationClick,
 }: MapViewProps) {
-  const handleStationClick = useCallback((station: ChargerStation) => {
-    onStationClick(station)
-  }, [onStationClick])
-
   return (
     <MapContainer
       center={[52.069167, 19.480556]}
@@ -188,7 +185,7 @@ export default function MapView({
             id={id}
             lat={lat}
             lng={lng}
-            onStationClick={handleStationClick}
+            onStationClick={onStationClick}
           />
         )
       })}

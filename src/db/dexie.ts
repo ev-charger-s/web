@@ -8,9 +8,10 @@ export interface DexieStation extends ChargerStation {
   _search_postal: string
 }
 
-const DB_VERSION = 3
+const DB_VERSION = 4
 const EIPA_GENERATED_AT_KEY = 'chargers_generated_at'
 const BNETZA_GENERATED_AT_KEY = 'bnetza_generated_at'
+const IRVE_GENERATED_AT_KEY = 'irve_generated_at'
 
 const STORE_SCHEMA = [
   'id',
@@ -28,12 +29,14 @@ const STORE_SCHEMA = [
 class ChargerDB extends Dexie {
   stations!: Table<DexieStation>
   bnetza_stations!: Table<DexieStation>
+  irve_stations!: Table<DexieStation>
 
   constructor() {
     super('ChargerDB')
     this.version(DB_VERSION).stores({
       stations: STORE_SCHEMA,
       bnetza_stations: STORE_SCHEMA,
+      irve_stations: STORE_SCHEMA,
     })
   }
 }
@@ -143,6 +146,36 @@ export async function loadBNetzAData(
   return { count }
 }
 
+export async function loadIRVEData(
+  onProgress?: (loaded: number, total: number) => void
+): Promise<{ count: number }> {
+  const existingCount = await db.irve_stations.count()
+  const storedAt = localStorage.getItem(IRVE_GENERATED_AT_KEY)
+  if (existingCount > 0 && storedAt) {
+    onProgress?.(existingCount, existingCount)
+    return { count: existingCount }
+  }
+
+  const { count, data } = await loadSource({
+    url: `${import.meta.env.BASE_URL}irve.db.json`,
+    table: db.irve_stations,
+    generatedAtKey: IRVE_GENERATED_AT_KEY,
+    onProgress,
+  })
+
+  // Merge extra connector types into dictionary
+  if (_dictionary && data.dictionary?.connector_interface_extra) {
+    const existingExtra = _dictionary.connector_interface_extra ?? []
+    const merged = [...existingExtra]
+    for (const entry of data.dictionary.connector_interface_extra) {
+      if (!merged.find(e => e.id === entry.id)) merged.push(entry)
+    }
+    _dictionary = { ..._dictionary, connector_interface_extra: merged }
+  }
+
+  return { count }
+}
+
 export function getDictionary(): EIPADictionary | null {
   return _dictionary
 }
@@ -155,7 +188,7 @@ export interface FilterParams {
   max_power_kw?: number
 }
 
-export type CountryFilter = 'pl' | 'de' | 'all'
+export type CountryFilter = 'pl' | 'de' | 'fr' | 'all'
 
 async function queryTable(table: Table<DexieStation>, filters: FilterParams): Promise<DexieStation[]> {
   let collection = table.toCollection()
@@ -188,17 +221,19 @@ async function queryTable(table: Table<DexieStation>, filters: FilterParams): Pr
 }
 
 export async function queryStations(filters: FilterParams, country: CountryFilter = 'all'): Promise<DexieStation[]> {
-  const [pl, de] = await Promise.all([
-    country !== 'de' ? queryTable(db.stations, filters) : Promise.resolve([]),
-    country !== 'pl' ? queryTable(db.bnetza_stations, filters) : Promise.resolve([]),
+  const [pl, de, fr] = await Promise.all([
+    country !== 'de' && country !== 'fr' ? queryTable(db.stations, filters) : Promise.resolve([]),
+    country !== 'pl' && country !== 'fr' ? queryTable(db.bnetza_stations, filters) : Promise.resolve([]),
+    country !== 'pl' && country !== 'de' ? queryTable(db.irve_stations, filters) : Promise.resolve([]),
   ])
-  return [...pl, ...de]
+  return [...pl, ...de, ...fr]
 }
 
 export async function getAllStations(country: CountryFilter = 'all'): Promise<DexieStation[]> {
-  const [pl, de] = await Promise.all([
-    country !== 'de' ? db.stations.toArray() : Promise.resolve([]),
-    country !== 'pl' ? db.bnetza_stations.toArray() : Promise.resolve([]),
+  const [pl, de, fr] = await Promise.all([
+    country !== 'de' && country !== 'fr' ? db.stations.toArray() : Promise.resolve([]),
+    country !== 'pl' && country !== 'fr' ? db.bnetza_stations.toArray() : Promise.resolve([]),
+    country !== 'pl' && country !== 'de' ? db.irve_stations.toArray() : Promise.resolve([]),
   ])
-  return [...pl, ...de]
+  return [...pl, ...de, ...fr]
 }

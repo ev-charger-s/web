@@ -29,3 +29,6 @@ dist-ssr
 
 # BNetzA raw CSV files (large, fetched by CI)
 data/bnetza/*.csv
+
+# IRVE raw CSV files (large, fetched by CI)
+data/irve/*.csv
