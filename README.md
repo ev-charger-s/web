@@ -9,7 +9,7 @@ Mapa ładowarek EV dla samochodów elektrycznych — PWA/SPA (React + Vite + Tai
 - **Leaflet** + **react-leaflet** — mapa
 - **supercluster** + **Web Worker** — klastrowanie po stronie klienta
 - **Dexie** (IndexedDB) — lokalna baza danych stacji
-- **i18next** — internacjonalizacja (PL / EN / DE)
+- **i18next** — internacjonalizacja (PL / EN / DE / FR)
 
 ## Uruchamianie lokalnie
 
@@ -28,6 +28,10 @@ node scripts/process-data.mjs
 # BNetzA (Niemcy)
 node scripts/fetch-bnetza.mjs
 node scripts/process-bnetza.mjs
+
+# IRVE (Francja)
+node scripts/fetch-irve.mjs
+node scripts/process-irve.mjs
 ```
 
 ---
@@ -40,6 +44,7 @@ node scripts/process-bnetza.mjs
 |---|---|---|---|---|
 | 🇵🇱 Polska | [EIPA — Ewidencja Infrastruktury Paliw Alternatywnych](https://eipa.udt.gov.pl) | `public/chargers.db.json` | Co godzinę (GH Action) | API OCPI; token wymagany; ~5 700 stacji |
 | 🇩🇪 Niemcy | [BNetzA Ladesäulenregister](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/) | `public/bnetza.db.json` | 1× dziennie (GH Action) | CSV bulk; darmowy, bez rejestracji; ~71 000 lokalizacji |
+| 🇫🇷 Francja | [Base nationale des IRVE](https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/) | `public/irve.db.json` | 1× dziennie (GH Action) | CSV bulk; darmowy, CC BY, bez klucza; ~62 700 lokalizacji (216k PDC) |
 
 ### Kandydaci do integracji
 
@@ -47,7 +52,6 @@ node scripts/process-bnetza.mjs
 
 | Kraj | Nazwa | URL | Format | Dostęp | Szacowana liczba stacji |
 |---|---|---|---|---|---|
-| 🇫🇷 Francja | Base nationale des IRVE | [data.gouv.fr](https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/) | CSV (~144 MB) / GeoJSON | Darmowy, CC BY, bez klucza | ~130 000 |
 | 🇬🇧 Wielka Brytania | National Chargepoint Registry (NCR/DfT) | [chargepoints.dft.gov.uk](https://chargepoints.dft.gov.uk) | REST JSON/CSV | Darmowy, bez klucza API | ~70 000 |
 | 🇳🇱 Holandia | NDW (Nationaal Dataportaal Wegverkeer) | [ndw.nu](https://ndw.nu) | OCPI/REST | Darmowy (rejestracja) | ~150 000 |
 | 🇧🇪 Belgia | transport.be / BEEV | [transport.belgium.be](https://transport.belgium.be) | OCPI | Do zbadania | ~30 000 |
@@ -77,16 +81,21 @@ node scripts/process-bnetza.mjs
 public/
   chargers.db.json     # EIPA — generowany przez scripts/process-data.mjs
   bnetza.db.json       # BNetzA — generowany przez scripts/process-bnetza.mjs
+  irve.db.json         # IRVE — generowany przez scripts/process-irve.mjs
 data/
   station.json / pool.json / point.json / operator.json / dictionary.json  # EIPA raw
   bnetza/              # BNetzA CSV (gitignored) + latest.txt
+  irve/                # IRVE CSV (gitignored) + latest.txt
 scripts/
   fetch-bnetza.mjs     # Pobieranie CSV BNetzA
   process-bnetza.mjs   # Parsowanie CSV → bnetza.db.json
+  fetch-irve.mjs       # Pobieranie CSV IRVE z data.gouv.fr API
+  process-irve.mjs     # Parsowanie CSV → irve.db.json
   process-data.mjs     # Łączenie EIPA raw → chargers.db.json
 .github/workflows/
   update-data.yml      # EIPA — co godzinę
   update-bnetza.yml    # BNetzA — 1× dziennie (03:30 UTC)
+  update-irve.yml      # IRVE — 1× dziennie (03:45 UTC)
 ```
 
 ## GitHub Actions
@@ -95,3 +104,4 @@ scripts/
 |---|---|---|---|
 | `update-data.yml` | Co godzinę | EIPA API | `public/chargers.db.json` |
 | `update-bnetza.yml` | 03:30 UTC | BNetzA CSV | `public/bnetza.db.json` |
+| `update-irve.yml` | 03:45 UTC | IRVE CSV (data.gouv.fr) | `public/irve.db.json` |
