@@ -52,11 +52,13 @@ node scripts/process-irve.mjs
 
 | Kraj | Nazwa | URL | Format | Dostęp | Szacowana liczba stacji |
 |---|---|---|---|---|---|
-| 🇬🇧 Wielka Brytania | National Chargepoint Registry (NCR/DfT) | [chargepoints.dft.gov.uk](https://chargepoints.dft.gov.uk) | REST JSON/CSV | Darmowy, bez klucza API | ~70 000 |
+| 🇬🇧 Wielka Brytania | ~~National Chargepoint Registry (NCR/DfT)~~ **ZLIKWIDOWANY** | ~~chargepoints.dft.gov.uk~~ | — | ❌ Offline od 28.11.2024 | ~119 000 (brak zamiennika) |
 | 🇳🇱 Holandia | NDW (Nationaal Dataportaal Wegverkeer) | [ndw.nu](https://ndw.nu) | OCPI/REST | Darmowy (rejestracja) | ~150 000 |
 | 🇧🇪 Belgia | transport.be / BEEV | [transport.belgium.be](https://transport.belgium.be) | OCPI | Do zbadania | ~30 000 |
 | 🇳🇴 Norwegia | Entur | [entur.no](https://entur.no) | OCPI REST | Darmowy | ~25 000 |
 | 🇦🇹 Austria | emob.at | [emob.at](https://www.emob.at) | OCPI REST | Do zbadania | ~20 000 |
+
+> **UK — stan na 2026:** NCR zlikwidowany 28.11.2024. Zastąpiony zdecentralizowanym modelem OCPI 2.2.1 (Public Charge Point Regulations 2023) — każdy operator udostępnia własne API, brak centralnego bulk download. Główni operatorzy (Shell Recharge ~20k, Pod Point ~18k, Connected Kerb ~10k, BP Pulse ~10k) mają API wyłącznie dla partnerów komercyjnych. Jedyna darmowa alternatywa: **OpenChargeMap** (~60k UK stacji, darmowy klucz API).
 
 #### Agregatory europejskie / globalne
 
