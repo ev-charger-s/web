@@ -32,3 +32,6 @@ data/bnetza/*.csv
 
 # IRVE raw CSV files (large, fetched by CI)
 data/irve/*.csv
+
+# NDW raw JSON files (large, fetched by CI)
+data/ndw/*.json

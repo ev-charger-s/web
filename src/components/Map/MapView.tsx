@@ -116,6 +116,7 @@ function SingleStationMarker({ id, lat, lng, onStationClick }: SingleStationMark
             let s = await db.stations.get(id)
             if (!s) s = await db.bnetza_stations.get(id)
             if (!s) s = await db.irve_stations.get(id)
+            if (!s) s = await db.ndw_stations.get(id)
             stationRef.current = s ?? null
           }
           if (stationRef.current) onStationClick(stationRef.current)

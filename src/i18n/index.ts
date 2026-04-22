@@ -49,7 +49,9 @@ const pl = {
     source_pl: '🇵🇱 Polska',
     source_de: '🇩🇪 Niemcy',
     source_fr: '🇫🇷 Francja',
+    source_nl: '🇳🇱 Holandia',
     loading_import_fr: 'Francja (IRVE)',
+    loading_import_nl: 'Holandia (NDW)',
   },
 }
 
@@ -101,7 +103,9 @@ const en = {
     source_pl: '🇵🇱 Poland',
     source_de: '🇩🇪 Germany',
     source_fr: '🇫🇷 France',
+    source_nl: '🇳🇱 Netherlands',
     loading_import_fr: 'France (IRVE)',
+    loading_import_nl: 'Netherlands (NDW)',
   },
 }
 
@@ -153,7 +157,9 @@ const de = {
     source_pl: '🇵🇱 Polen',
     source_de: '🇩🇪 Deutschland',
     source_fr: '🇫🇷 Frankreich',
+    source_nl: '🇳🇱 Niederlande',
     loading_import_fr: 'Frankreich (IRVE)',
+    loading_import_nl: 'Niederlande (NDW)',
   },
 }
 
@@ -206,6 +212,8 @@ const fr = {
     source_pl: '🇵🇱 Pologne',
     source_de: '🇩🇪 Allemagne',
     source_fr: '🇫🇷 France',
+    source_nl: '🇳🇱 Pays-Bas',
+    loading_import_nl: 'Pays-Bas (NDW)',
   },
 }
 

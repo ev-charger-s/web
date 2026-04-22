@@ -8,10 +8,11 @@ export interface DexieStation extends ChargerStation {
   _search_postal: string
 }
 
-const DB_VERSION = 4
+const DB_VERSION = 5
 const EIPA_GENERATED_AT_KEY = 'chargers_generated_at'
 const BNETZA_GENERATED_AT_KEY = 'bnetza_generated_at'
 const IRVE_GENERATED_AT_KEY = 'irve_generated_at'
+const NDW_GENERATED_AT_KEY = 'ndw_generated_at'
 
 const STORE_SCHEMA = [
   'id',
@@ -30,6 +31,7 @@ class ChargerDB extends Dexie {
   stations!: Table<DexieStation>
   bnetza_stations!: Table<DexieStation>
   irve_stations!: Table<DexieStation>
+  ndw_stations!: Table<DexieStation>
 
   constructor() {
     super('ChargerDB')
@@ -37,6 +39,7 @@ class ChargerDB extends Dexie {
       stations: STORE_SCHEMA,
       bnetza_stations: STORE_SCHEMA,
       irve_stations: STORE_SCHEMA,
+      ndw_stations: STORE_SCHEMA,
     })
   }
 }
@@ -176,6 +179,37 @@ export async function loadIRVEData(
   return { count }
 }
 
+export async function loadNDWData(
+  onProgress?: (loaded: number, total: number) => void
+): Promise<{ count: number }> {
+  const existingCount = await db.ndw_stations.count()
+  const storedAt = localStorage.getItem(NDW_GENERATED_AT_KEY)
+  if (existingCount > 0 && storedAt) {
+    onProgress?.(existingCount, existingCount)
+    return { count: existingCount }
+  }
+
+  const { count, data } = await loadSource({
+    url: `${import.meta.env.BASE_URL}ndw.db.json`,
+    table: db.ndw_stations,
+    generatedAtKey: NDW_GENERATED_AT_KEY,
+    onProgress,
+  })
+
+  // Merge extra connector types into dictionary
+  if (_dictionary && data.dictionary?.connector_interface_extra) {
+    const existingExtra = _dictionary.connector_interface_extra ?? []
+    const merged = [...existingExtra]
+    for (const entry of data.dictionary.connector_interface_extra) {
+      if (!merged.find(e => e.id === entry.id)) merged.push(entry)
+    }
+    _dictionary = { ..._dictionary, connector_interface_extra: merged }
+  }
+
+  return { count }
+}
+
+
 export function getDictionary(): EIPADictionary | null {
   return _dictionary
 }
@@ -188,7 +222,7 @@ export interface FilterParams {
   max_power_kw?: number
 }
 
-export type CountryFilter = 'pl' | 'de' | 'fr' | 'all'
+export type CountryFilter = 'pl' | 'de' | 'fr' | 'nl' | 'all'
 
 async function queryTable(table: Table<DexieStation>, filters: FilterParams): Promise<DexieStation[]> {
   let collection = table.toCollection()
@@ -221,19 +255,21 @@ async function queryTable(table: Table<DexieStation>, filters: FilterParams): Pr
 }
 
 export async function queryStations(filters: FilterParams, country: CountryFilter = 'all'): Promise<DexieStation[]> {
-  const [pl, de, fr] = await Promise.all([
-    country !== 'de' && country !== 'fr' ? queryTable(db.stations, filters) : Promise.resolve([]),
-    country !== 'pl' && country !== 'fr' ? queryTable(db.bnetza_stations, filters) : Promise.resolve([]),
-    country !== 'pl' && country !== 'de' ? queryTable(db.irve_stations, filters) : Promise.resolve([]),
+  const [pl, de, fr, nl] = await Promise.all([
+    country === 'pl' || country === 'all' ? queryTable(db.stations, filters) : Promise.resolve([]),
+    country === 'de' || country === 'all' ? queryTable(db.bnetza_stations, filters) : Promise.resolve([]),
+    country === 'fr' || country === 'all' ? queryTable(db.irve_stations, filters) : Promise.resolve([]),
+    country === 'nl' || country === 'all' ? queryTable(db.ndw_stations, filters) : Promise.resolve([]),
   ])
-  return [...pl, ...de, ...fr]
+  return [...pl, ...de, ...fr, ...nl]
 }
 
 export async function getAllStations(country: CountryFilter = 'all'): Promise<DexieStation[]> {
-  const [pl, de, fr] = await Promise.all([
-    country !== 'de' && country !== 'fr' ? db.stations.toArray() : Promise.resolve([]),
-    country !== 'pl' && country !== 'fr' ? db.bnetza_stations.toArray() : Promise.resolve([]),
-    country !== 'pl' && country !== 'de' ? db.irve_stations.toArray() : Promise.resolve([]),
+  const [pl, de, fr, nl] = await Promise.all([
+    country === 'pl' || country === 'all' ? db.stations.toArray() : Promise.resolve([]),
+    country === 'de' || country === 'all' ? db.bnetza_stations.toArray() : Promise.resolve([]),
+    country === 'fr' || country === 'all' ? db.irve_stations.toArray() : Promise.resolve([]),
+    country === 'nl' || country === 'all' ? db.ndw_stations.toArray() : Promise.resolve([]),
   ])
-  return [...pl, ...de, ...fr]
+  return [...pl, ...de, ...fr, ...nl]
 }
