@@ -31,6 +31,9 @@ export function useStations(dataLoaded: boolean, country: CountryFilter = 'all')
       await applyFilters(filters, country)
       setLoading(false)
     }, 300)
+    return () => {
+      if (debounceRef.current) clearTimeout(debounceRef.current)
+    }
   }, [filters, applyFilters, dataLoaded, country])
 
   const updateFilters = useCallback((partial: Partial<FilterParams>) => {
