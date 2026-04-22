@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { loadData, loadBNetzAData, loadIRVEData, loadNDWData, getDictionary, db } from './db/dexie'
+import { loadData, loadBNetzAData, loadIRVEData, loadNDWData, loadBEEVData, getDictionary, db } from './db/dexie'
 import type { CountryFilter } from './db/dexie'
 import { useStations } from './hooks/useStations'
 import { useCluster } from './hooks/useCluster'
@@ -43,19 +43,21 @@ export default function App() {
   const [deReady, setDeReady] = useState(false)
   const [frReady, setFrReady] = useState(false)
   const [nlReady, setNlReady] = useState(false)
+  const [beReady, setBeReady] = useState(false)
   const [dataError, setDataError] = useState<string | null>(null)
   const [dictionary, setDictionary] = useState<EIPADictionary | null>(null)
   const [selectedStation, setSelectedStation] = useState<ChargerStation | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [country, setCountry] = useState<CountryFilter>('all')
 
-  // Combined progress: { pl: ..., de: ..., fr: ..., nl: ... }
+  // Combined progress: { pl: ..., de: ..., fr: ..., nl: ..., be: ... }
   const [plProgress, setPlProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
   const [deProgress, setDeProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
   const [frProgress, setFrProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
   const [nlProgress, setNlProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
+  const [beProgress, setBeProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
 
-  const allLoaded = plReady && deReady && frReady && nlReady
+  const allLoaded = plReady && deReady && frReady && nlReady && beReady
   const { stations, filters, updateFilters, clearFilters } = useStations(allLoaded, country)
   const { clusters, ready: clusterReady, getClusters, getClusterExpansionZoom } = useCluster(stations, allLoaded)
 
@@ -94,6 +96,14 @@ export default function App() {
         console.error('NDW load error:', e)
         setNlReady(true)
       })
+
+    loadBEEVData((loaded, total) => setBeProgress({ loaded, total }))
+      .then(() => setBeReady(true))
+      .catch((e) => {
+        // BEEV failure is non-fatal — log and mark as done
+        console.error('BEEV load error:', e)
+        setBeReady(true)
+      })
   }, [])
 
   useEffect(() => {
@@ -117,7 +127,10 @@ export default function App() {
         db.irve_stations.get(id).then((s3) => {
           if (s3) { setSelectedStation(s3); setFlyTo({ lat: s3.lat, lng: s3.lng, zoom: 17 }); return }
           db.ndw_stations.get(id).then((s4) => {
-            if (s4) { setSelectedStation(s4); setFlyTo({ lat: s4.lat, lng: s4.lng, zoom: 17 }) }
+            if (s4) { setSelectedStation(s4); setFlyTo({ lat: s4.lat, lng: s4.lng, zoom: 17 }); return }
+            db.beev_stations.get(id).then((s5) => {
+              if (s5) { setSelectedStation(s5); setFlyTo({ lat: s5.lat, lng: s5.lng, zoom: 17 }) }
+            })
           })
         })
       })
@@ -162,8 +175,8 @@ export default function App() {
 
   // Loading screen — shown until both sources are ready
   if (!allLoaded && !dataError) {
-    const totalLoaded = plProgress.loaded + deProgress.loaded + frProgress.loaded + nlProgress.loaded
-    const totalItems = (plProgress.total || 0) + (deProgress.total || 0) + (frProgress.total || 0) + (nlProgress.total || 0)
+    const totalLoaded = plProgress.loaded + deProgress.loaded + frProgress.loaded + nlProgress.loaded + beProgress.loaded
+    const totalItems = (plProgress.total || 0) + (deProgress.total || 0) + (frProgress.total || 0) + (nlProgress.total || 0) + (beProgress.total || 0)
     const pct = totalItems > 0 ? Math.round((totalLoaded / totalItems) * 100) : null
 
     return (
@@ -196,6 +209,10 @@ export default function App() {
                   <div className="flex justify-between">
                     <span>{t('loading_import_nl')} {nlReady ? '✓' : ''}</span>
                     <span>{nlProgress.total > 0 ? `${nlProgress.loaded.toLocaleString()} / ${nlProgress.total.toLocaleString()}` : '…'}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>{t('loading_import_be')} {beReady ? '✓' : ''}</span>
+                    <span>{beProgress.total > 0 ? `${beProgress.loaded.toLocaleString()} / ${beProgress.total.toLocaleString()}` : '…'}</span>
                   </div>
               </div>
             </>
@@ -237,7 +254,7 @@ export default function App() {
 
         {/* Country filter */}
         <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 overflow-hidden text-xs">
-          {(['all', 'pl', 'de', 'fr', 'nl'] as CountryFilter[]).map((c) => (
+          {(['all', 'pl', 'de', 'fr', 'nl', 'be'] as CountryFilter[]).map((c) => (
             <button
               key={c}
               onClick={() => setCountry(c)}
