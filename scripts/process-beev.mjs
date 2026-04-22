@@ -32,14 +32,14 @@ const EXTRA_CONNECTORS = [
   { id: -7, name: 'CCS1',    description: 'CCS/Combo 1 (Type 1 + DC)' },
 ]
 
-// FNV-1a 32-bit hash → positive int with prefix 9 (avoid collisions with other sources)
+// FNV-1a 32-bit hash → positive int with prefix 7 (avoid collisions: PL=1-6, DE=no prefix, FR=9, NL=8, BE=7)
 function hashId(str) {
   let h = 0x811c9dc5
   for (let i = 0; i < str.length; i++) {
     h ^= str.charCodeAt(i)
     h = Math.imul(h, 0x01000193) >>> 0
   }
-  return parseInt('9' + (h % 100000000).toString().padStart(8, '0'))
+  return parseInt('7' + (h % 100000000).toString().padStart(8, '0'))
 }
 
 function mapConnector(standard, format) {
