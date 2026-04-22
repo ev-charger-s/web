@@ -36,6 +36,10 @@ node scripts/process-irve.mjs
 # NDW (Holandia)
 node scripts/fetch-ndw.mjs
 node scripts/process-ndw.mjs
+
+# BEEV (Belgia)
+node scripts/fetch-beev.mjs
+node scripts/process-beev.mjs
 ```
 
 ---
@@ -50,6 +54,7 @@ node scripts/process-ndw.mjs
 | 🇩🇪 Niemcy | [BNetzA Ladesäulenregister](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/) | `public/bnetza.db.json` | 1× dziennie (GH Action) | CSV bulk; darmowy, bez rejestracji; ~71 000 lokalizacji |
 | 🇫🇷 Francja | [Base nationale des IRVE](https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/) | `public/irve.db.json` | 1× dziennie (GH Action) | CSV bulk; darmowy, CC BY, bez klucza; ~62 700 lokalizacji (216k PDC) |
 | 🇳🇱 Holandia | [NDW — Nationaal Dataportaal Wegverkeer](https://opendata.ndw.nu) | `public/ndw.db.json` | 1× dziennie (GH Action) | OCPI 2.x JSON GZ; darmowy, bez rejestracji; ~89 400 lokalizacji (225k złącz) |
+| 🇧🇪 Belgia | [road.io via transportdata.be NAP ITS](https://www.transportdata.be/en/dataset/road-public-charging-network) | `public/beev.db.json` | 1× dziennie (GH Action) | OCPI 2.2.1 JSON; darmowy, bez rejestracji; ~2 829 stacji |
 
 ### Kandydaci do integracji
 
@@ -58,7 +63,6 @@ node scripts/process-ndw.mjs
 | Kraj | Nazwa | URL | Format | Dostęp | Szacowana liczba stacji |
 |---|---|---|---|---|---|
 | 🇬🇧 Wielka Brytania | ~~National Chargepoint Registry (NCR/DfT)~~ **ZLIKWIDOWANY** | ~~chargepoints.dft.gov.uk~~ | — | ❌ Offline od 28.11.2024 | ~119 000 (brak zamiennika) |
-| 🇧🇪 Belgia | transport.be / BEEV | [transport.belgium.be](https://transport.belgium.be) | OCPI | Do zbadania | ~30 000 |
 | 🇳🇴 Norwegia | Entur | [entur.no](https://entur.no) | OCPI REST | Darmowy | ~25 000 |
 | 🇦🇹 Austria | emob.at | [emob.at](https://www.emob.at) | OCPI REST | Do zbadania | ~20 000 |
 
@@ -89,11 +93,13 @@ public/
   bnetza.db.json       # BNetzA — generowany przez scripts/process-bnetza.mjs
   irve.db.json         # IRVE — generowany przez scripts/process-irve.mjs
   ndw.db.json          # NDW — generowany przez scripts/process-ndw.mjs
+  beev.db.json         # BEEV — generowany przez scripts/process-beev.mjs
 data/
   station.json / pool.json / point.json / operator.json / dictionary.json  # EIPA raw
   bnetza/              # BNetzA CSV (gitignored) + latest.txt
   irve/                # IRVE CSV (gitignored) + latest.txt
   ndw/                 # NDW JSON GZ (gitignored)
+  beev/                # BEEV OCPI JSON (gitignored)
 scripts/
   fetch-bnetza.mjs     # Pobieranie CSV BNetzA
   process-bnetza.mjs   # Parsowanie CSV → bnetza.db.json
@@ -101,12 +107,15 @@ scripts/
   process-irve.mjs     # Parsowanie CSV → irve.db.json
   fetch-ndw.mjs        # Pobieranie OCPI JSON GZ z opendata.ndw.nu
   process-ndw.mjs      # Parsowanie OCPI → ndw.db.json
+  fetch-beev.mjs       # Pobieranie OCPI JSON z road.io (transportdata.be)
+  process-beev.mjs     # Parsowanie OCPI 2.2.1 → beev.db.json
   process-data.mjs     # Łączenie EIPA raw → chargers.db.json
 .github/workflows/
   update-data.yml      # EIPA — co godzinę
   update-bnetza.yml    # BNetzA — 1× dziennie (03:30 UTC)
   update-irve.yml      # IRVE — 1× dziennie (03:45 UTC)
   update-ndw.yml       # NDW — 1× dziennie (04:00 UTC)
+  update-beev.yml      # BEEV — 1× dziennie (04:15 UTC)
 ```
 
 ## GitHub Actions
@@ -117,3 +126,4 @@ scripts/
 | `update-bnetza.yml` | 03:30 UTC | BNetzA CSV | `public/bnetza.db.json` |
 | `update-irve.yml` | 03:45 UTC | IRVE CSV (data.gouv.fr) | `public/irve.db.json` |
 | `update-ndw.yml` | 04:00 UTC | NDW OCPI JSON GZ (opendata.ndw.nu) | `public/ndw.db.json` |
+| `update-beev.yml` | 04:15 UTC | BEEV OCPI JSON (road.io via transportdata.be) | `public/beev.db.json` |

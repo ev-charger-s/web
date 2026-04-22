@@ -35,3 +35,6 @@ data/irve/*.csv
 
 # NDW raw JSON files (large, fetched by CI)
 data/ndw/*.json
+
+# BEEV raw JSON files (large, fetched by CI)
+data/beev/*.json
