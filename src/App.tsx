@@ -9,6 +9,7 @@ import { useTheme } from './hooks/useTheme'
 import MapView from './components/Map/MapView'
 import FiltersPanel from './components/Filters/FiltersPanel'
 import StationPanel from './components/StationPanel/StationPanel'
+import { SupportButton } from './components/Support/SupportModal'
 import type { ChargerStation, EIPADictionary } from './types'
 import './i18n'
 
@@ -271,6 +272,7 @@ export default function App() {
         >
           {i18n.language === 'pl' ? t('lang_en') : i18n.language === 'en' ? t('lang_de') : i18n.language === 'de' ? t('lang_fr') : t('lang_pl')}
         </button>
+        <SupportButton />
         <button
           onClick={toggleTheme}
           className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 text-lg"
