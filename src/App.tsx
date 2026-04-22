@@ -1,7 +1,8 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useReducer, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
-import { loadData, loadBNetzAData, loadIRVEData, loadNDWData, loadBEEVData, getDictionary, db } from './db/dexie'
+import { loadData, loadBNetzAData, loadIRVEData, loadNDWData, loadBEEVData, getDictionary } from './db/dexie'
 import type { CountryFilter } from './db/dexie'
+import { COUNTRY_SOURCES } from './db/sources'
 import { useStations } from './hooks/useStations'
 import { useCluster } from './hooks/useCluster'
 import { useGeolocation } from './hooks/useGeolocation'
@@ -10,8 +11,11 @@ import MapView from './components/Map/MapView'
 import FiltersPanel from './components/Filters/FiltersPanel'
 import StationPanel from './components/StationPanel/StationPanel'
 import { SupportButton } from './components/Support/SupportModal'
+import { findStation } from './db/findStation'
 import type { ChargerStation, EIPADictionary } from './types'
 import './i18n'
+
+// ── URL helpers ───────────────────────────────────────────────────────────────
 
 function getStationIdFromUrl(): number | null {
   const params = new URLSearchParams(window.location.search)
@@ -31,109 +35,113 @@ function setStationInUrl(id: number | null) {
   window.history.pushState({}, '', url.toString())
 }
 
-// Combined progress from two parallel sources
-interface SourceProgress { loaded: number; total: number }
+// ── Loading state reducer ─────────────────────────────────────────────────────
+
+type CountryKey = (typeof COUNTRY_SOURCES)[number]['key']
+
+interface SourceState {
+  ready: boolean
+  loaded: number
+  total: number
+}
+
+type LoadingState = Record<CountryKey, SourceState>
+
+type LoadingAction =
+  | { type: 'progress'; key: CountryKey; loaded: number; total: number }
+  | { type: 'ready'; key: CountryKey }
+
+const initialLoadingState: LoadingState = Object.fromEntries(
+  COUNTRY_SOURCES.map(({ key }) => [key, { ready: false, loaded: 0, total: 0 }])
+) as LoadingState
+
+function loadingReducer(state: LoadingState, action: LoadingAction): LoadingState {
+  switch (action.type) {
+    case 'progress':
+      return {
+        ...state,
+        [action.key]: { ...state[action.key], loaded: action.loaded, total: action.total },
+      }
+    case 'ready':
+      return {
+        ...state,
+        [action.key]: { ...state[action.key], ready: true },
+      }
+  }
+}
+
+// ── Loader map: country key → load function ───────────────────────────────────
+
+const LOADERS: Record<CountryKey, (cb: (l: number, t: number) => void) => Promise<unknown>> = {
+  pl: loadData,
+  de: loadBNetzAData,
+  fr: loadIRVEData,
+  nl: loadNDWData,
+  be: loadBEEVData,
+}
+
+// ── App ───────────────────────────────────────────────────────────────────────
 
 export default function App() {
   const { t, i18n } = useTranslation()
   const { theme, toggle: toggleTheme } = useTheme()
   const { lat: userLat, lng: userLng, loading: geoLoading, error: geoError, locate } = useGeolocation()
 
-  const [plReady, setPlReady] = useState(false)
-  const [deReady, setDeReady] = useState(false)
-  const [frReady, setFrReady] = useState(false)
-  const [nlReady, setNlReady] = useState(false)
-  const [beReady, setBeReady] = useState(false)
+  const [loading, dispatch] = useReducer(loadingReducer, initialLoadingState)
   const [dataError, setDataError] = useState<string | null>(null)
   const [dictionary, setDictionary] = useState<EIPADictionary | null>(null)
   const [selectedStation, setSelectedStation] = useState<ChargerStation | null>(null)
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [country, setCountry] = useState<CountryFilter>('all')
+  const [flyTo, setFlyTo] = useState<{ lat: number; lng: number; zoom: number } | null>(null)
 
-  // Combined progress: { pl: ..., de: ..., fr: ..., nl: ..., be: ... }
-  const [plProgress, setPlProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
-  const [deProgress, setDeProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
-  const [frProgress, setFrProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
-  const [nlProgress, setNlProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
-  const [beProgress, setBeProgress] = useState<SourceProgress>({ loaded: 0, total: 0 })
-
-  const allLoaded = plReady && deReady && frReady && nlReady && beReady
+  const allLoaded = COUNTRY_SOURCES.every(({ key }) => loading[key].ready)
   const { stations, filters, updateFilters, clearFilters } = useStations(allLoaded, country)
   const { clusters, ready: clusterReady, getClusters, getClusterExpansionZoom } = useCluster(stations, allLoaded)
 
-  // Load PL (EIPA) and DE (BNetzA) in parallel
+  // Start all country loaders in parallel
   useEffect(() => {
-    loadData((loaded, total) => setPlProgress({ loaded, total }))
-      .then(({ dictionary: dict }) => {
-        setDictionary(dict)
-        setPlReady(true)
-      })
-      .catch((e) => {
-        console.error('EIPA load error:', e)
-        setDataError(e.message)
-      })
-
-    loadBNetzAData((loaded, total) => setDeProgress({ loaded, total }))
-      .then(() => setDeReady(true))
-      .catch((e) => {
-        // BNetzA failure is non-fatal — log and mark as done
-        console.error('BNetzA load error:', e)
-        setDeReady(true)
-      })
-
-    loadIRVEData((loaded, total) => setFrProgress({ loaded, total }))
-      .then(() => setFrReady(true))
-      .catch((e) => {
-        // IRVE failure is non-fatal — log and mark as done
-        console.error('IRVE load error:', e)
-        setFrReady(true)
-      })
-
-    loadNDWData((loaded, total) => setNlProgress({ loaded, total }))
-      .then(() => setNlReady(true))
-      .catch((e) => {
-        // NDW failure is non-fatal — log and mark as done
-        console.error('NDW load error:', e)
-        setNlReady(true)
-      })
-
-    loadBEEVData((loaded, total) => setBeProgress({ loaded, total }))
-      .then(() => setBeReady(true))
-      .catch((e) => {
-        // BEEV failure is non-fatal — log and mark as done
-        console.error('BEEV load error:', e)
-        setBeReady(true)
-      })
+    for (const { key } of COUNTRY_SOURCES) {
+      const load = LOADERS[key]
+      load((loaded, total) => dispatch({ type: 'progress', key, loaded, total }))
+        .then((result) => {
+          // PL loader returns dictionary — capture it
+          if (key === 'pl' && result && typeof result === 'object' && 'dictionary' in result) {
+            setDictionary((result as { dictionary: EIPADictionary }).dictionary)
+          }
+          dispatch({ type: 'ready', key })
+        })
+        .catch((e) => {
+          // PL failure is fatal; other countries are non-fatal
+          if (key === 'pl') {
+            console.error('EIPA load error:', e)
+            setDataError((e as Error).message)
+          } else {
+            console.error(`${key.toUpperCase()} load error:`, e)
+            dispatch({ type: 'ready', key })
+          }
+        })
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // Fallback: if PL dictionary was already cached, getDictionary() will have it
   useEffect(() => {
     if (allLoaded && !dictionary) {
       setDictionary(getDictionary())
     }
   }, [allLoaded, dictionary])
 
-  const [flyTo, setFlyTo] = useState<{ lat: number; lng: number; zoom: number } | null>(null)
-
   // On data loaded, open station from URL if present and fly to it
   useEffect(() => {
     if (!allLoaded) return
     const id = getStationIdFromUrl()
     if (id == null) return
-    // Check all tables
-    db.stations.get(id).then((s) => {
-      if (s) { setSelectedStation(s); setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 }); return }
-      db.bnetza_stations.get(id).then((s2) => {
-        if (s2) { setSelectedStation(s2); setFlyTo({ lat: s2.lat, lng: s2.lng, zoom: 17 }); return }
-        db.irve_stations.get(id).then((s3) => {
-          if (s3) { setSelectedStation(s3); setFlyTo({ lat: s3.lat, lng: s3.lng, zoom: 17 }); return }
-          db.ndw_stations.get(id).then((s4) => {
-            if (s4) { setSelectedStation(s4); setFlyTo({ lat: s4.lat, lng: s4.lng, zoom: 17 }); return }
-            db.beev_stations.get(id).then((s5) => {
-              if (s5) { setSelectedStation(s5); setFlyTo({ lat: s5.lat, lng: s5.lng, zoom: 17 }) }
-            })
-          })
-        })
-      })
+    findStation(id).then((s) => {
+      if (s) {
+        setSelectedStation(s)
+        setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 })
+      }
     })
   }, [allLoaded])
 
@@ -173,10 +181,10 @@ export default function App() {
     localStorage.setItem('lang', next)
   }
 
-  // Loading screen — shown until both sources are ready
+  // ── Loading screen ──────────────────────────────────────────────────────────
   if (!allLoaded && !dataError) {
-    const totalLoaded = plProgress.loaded + deProgress.loaded + frProgress.loaded + nlProgress.loaded + beProgress.loaded
-    const totalItems = (plProgress.total || 0) + (deProgress.total || 0) + (frProgress.total || 0) + (nlProgress.total || 0) + (beProgress.total || 0)
+    const totalLoaded = COUNTRY_SOURCES.reduce((sum, { key }) => sum + loading[key].loaded, 0)
+    const totalItems  = COUNTRY_SOURCES.reduce((sum, { key }) => sum + loading[key].total,  0)
     const pct = totalItems > 0 ? Math.round((totalLoaded / totalItems) * 100) : null
 
     return (
@@ -192,28 +200,16 @@ export default function App() {
                   style={{ width: `${pct}%` }}
                 />
               </div>
-              {/* Per-source progress */}
               <div className="flex flex-col gap-1 text-xs text-gray-400">
-                <div className="flex justify-between">
-                  <span>{t('loading_import_pl')} {plReady ? '✓' : ''}</span>
-                  <span>{plProgress.total > 0 ? `${plProgress.loaded.toLocaleString()} / ${plProgress.total.toLocaleString()}` : '…'}</span>
-                </div>
-                <div className="flex justify-between">
-                    <span>{t('loading_import_de')} {deReady ? '✓' : ''}</span>
-                    <span>{deProgress.total > 0 ? `${deProgress.loaded.toLocaleString()} / ${deProgress.total.toLocaleString()}` : '…'}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>{t('loading_import_fr')} {frReady ? '✓' : ''}</span>
-                    <span>{frProgress.total > 0 ? `${frProgress.loaded.toLocaleString()} / ${frProgress.total.toLocaleString()}` : '…'}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>{t('loading_import_nl')} {nlReady ? '✓' : ''}</span>
-                    <span>{nlProgress.total > 0 ? `${nlProgress.loaded.toLocaleString()} / ${nlProgress.total.toLocaleString()}` : '…'}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>{t('loading_import_be')} {beReady ? '✓' : ''}</span>
-                    <span>{beProgress.total > 0 ? `${beProgress.loaded.toLocaleString()} / ${beProgress.total.toLocaleString()}` : '…'}</span>
-                  </div>
+                {COUNTRY_SOURCES.map(({ key, i18nLoadingKey }) => {
+                  const { ready, loaded, total } = loading[key]
+                  return (
+                    <div key={key} className="flex justify-between">
+                      <span>{t(i18nLoadingKey)} {ready ? '✓' : ''}</span>
+                      <span>{total > 0 ? `${loaded.toLocaleString()} / ${total.toLocaleString()}` : '…'}</span>
+                    </div>
+                  )
+                })}
               </div>
             </>
           ) : (
@@ -236,6 +232,7 @@ export default function App() {
     )
   }
 
+  // ── Main UI ─────────────────────────────────────────────────────────────────
   return (
     <div className="h-full flex flex-col bg-white dark:bg-gray-900">
       {/* Top bar */}
@@ -252,9 +249,9 @@ export default function App() {
         </span>
         <div className="flex-1" />
 
-        {/* Country filter */}
+        {/* Country filter — driven by COUNTRY_SOURCES registry */}
         <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 overflow-hidden text-xs">
-          {(['all', 'pl', 'de', 'fr', 'nl', 'be'] as CountryFilter[]).map((c) => (
+          {(['all', ...COUNTRY_SOURCES.map((s) => s.key)] as CountryFilter[]).map((c) => (
             <button
               key={c}
               onClick={() => setCountry(c)}

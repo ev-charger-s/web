@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, useMap, useMapEvents, Marker } from 'react-lea
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import type { DexieStation } from '../../db/dexie'
-import { db } from '../../db/dexie'
+import { findStation } from '../../db/findStation'
 import type { ChargerStation } from '../../types'
 import type { ClusterItem } from '../../hooks/useCluster'
 
@@ -113,12 +113,7 @@ function SingleStationMarker({ id, lat, lng, onStationClick }: SingleStationMark
       eventHandlers={{
         click: async () => {
           if (!stationRef.current) {
-            let s = await db.stations.get(id)
-            if (!s) s = await db.bnetza_stations.get(id)
-            if (!s) s = await db.irve_stations.get(id)
-            if (!s) s = await db.ndw_stations.get(id)
-            if (!s) s = await db.beev_stations.get(id)
-            stationRef.current = s ?? null
+            stationRef.current = await findStation(id) ?? null
           }
           if (stationRef.current) onStationClick(stationRef.current)
         },
