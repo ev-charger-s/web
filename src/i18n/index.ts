@@ -50,8 +50,11 @@ const pl = {
     source_de: '🇩🇪 Niemcy',
     source_fr: '🇫🇷 Francja',
     source_nl: '🇳🇱 Holandia',
-    loading_import_fr: 'Francja (IRVE)',
     loading_import_nl: 'Holandia (NDW)',
+    support_button: 'Wesprzyj',
+    support_title: 'Wesprzyj autora',
+    support_description: 'Jeśli podoba Ci się ta aplikacja i chcesz wesprzeć jej rozwój, możesz to zrobić na jednej z poniższych platform:',
+    support_thanks: 'Dziękuję za wsparcie! ❤️',
   },
 }
 
@@ -106,6 +109,10 @@ const en = {
     source_nl: '🇳🇱 Netherlands',
     loading_import_fr: 'France (IRVE)',
     loading_import_nl: 'Netherlands (NDW)',
+    support_button: 'Support',
+    support_title: 'Support the author',
+    support_description: 'If you like this app and want to support its development, you can do so through the following platforms:',
+    support_thanks: 'Thank you for your support! ❤️',
   },
 }
 
@@ -160,6 +167,10 @@ const de = {
     source_nl: '🇳🇱 Niederlande',
     loading_import_fr: 'Frankreich (IRVE)',
     loading_import_nl: 'Niederlande (NDW)',
+    support_button: 'Unterstützen',
+    support_title: 'Autor unterstützen',
+    support_description: 'Wenn Ihnen diese App gefällt und Sie ihre Entwicklung unterstützen möchten, können Sie dies auf folgenden Plattformen tun:',
+    support_thanks: 'Vielen Dank für Ihre Unterstützung! ❤️',
   },
 }
 
@@ -214,6 +225,10 @@ const fr = {
     source_fr: '🇫🇷 France',
     source_nl: '🇳🇱 Pays-Bas',
     loading_import_nl: 'Pays-Bas (NDW)',
+    support_button: 'Soutenir',
+    support_title: "Soutenir l'auteur",
+    support_description: "Si vous aimez cette application et souhaitez soutenir son développement, vous pouvez le faire sur les plateformes suivantes :",
+    support_thanks: 'Merci pour votre soutien ! ❤️',
   },
 }
 
