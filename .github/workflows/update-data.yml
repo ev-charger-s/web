@@ -94,6 +94,7 @@ jobs:
         run: node scripts/process-data.mjs
 
       - name: Commit and push changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
