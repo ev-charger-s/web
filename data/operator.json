@@ -603,7 +603,6 @@
 {"id":1848,"name":"Przedsi\u0119biorstwo Rob\u00f3t Drogowo-Mostowych \"MIKST\" Sp. z o.o.","code":"PL-DWC","phone":"+48608380589","email":"chojecki@mikst.pl","website":"http:\/\/www.mikst.pl","short_name":"MIKST","type":1,"country":"pl"},
 {"id":1849,"name":"POLMAX S.A. S.K.A.","code":"PL-BMY","phone":"+48696014674","email":"polmax@polmaxsa.pl","website":"http:\/\/www.polmaxsa.pl","short_name":"Polmax","type":1,"country":"pl"},
 {"id":1850,"name":"GreenWay Polska Sp. z o.o.","code":"PL-GWP","phone":"+48583251017","email":"bok@greenwaypolska.pl","website":"https:\/\/greenwaypolska.pl\/","short_name":"GreenWay","type":3,"country":"pl"},
-{"id":1851,"name":"Podkowa A.D. 1905 Marcin Podkowa","code":"PL-QQ9","phone":"+48504172750","email":"abramowicz.omega@gmail.com","short_name":"Podkowa A.D. 1905 Marcin Podkowa","type":1,"country":"pl"},
 {"id":1852,"name":"Favorite Gifts Print Europe Sp. z o.o.","code":"PL-4U5","phone":"+310344640250","website":"https:\/\/praca.favoritegifts.eu\/o-nas\/","short_name":"FGPE","type":1,"country":"pl"},
 {"id":1853,"name":"HEVEX Sp. z o.o.","code":"PL-4WE","phone":"+48573045632","email":"office@hevex.eu","website":"http:\/\/hevex.eu","short_name":"HEVEX","type":3,"country":"pl"},
 {"id":1854,"name":"ART - MAT Artur Grysiak","code":"PL-6WJ","phone":"+48728366188","email":"artur.grysiak@gmail.com","short_name":"ART-MAT","type":1,"country":"pl"},
@@ -721,4 +720,5 @@
 {"id":1992,"name":"Pa\u0142ac Saturna Leszek Pustu\u0142ka","code":"PL-UB7","phone":"+48322901390","email":"info@palacsaturna.pl","website":"http:\/\/www.palacsaturna.pl","short_name":"Pa\u0142ac Saturna","type":1,"country":"pl"},
 {"id":1993,"name":"Dell Products Poland Sp. z o.o.","code":"PL-2TH","phone":"+48571665666","email":"etauron@tauron.pl","website":"https:\/\/etauron.tauron.pl","short_name":"Dell","type":1,"country":"pl"},
 {"id":1994,"name":"GMINA SOB\u00d3TKA","code":"PL-Z6S","phone":"+48713351220","email":"URZAD@SOBOTKA.PL","website":"https:\/\/sobotka.pl\/","short_name":"GM","type":1,"country":"pl"},
-{"id":1995,"name":"MARMAT MARCIN PILIMAN","code":"PL-X4H","phone":"+48660448681","email":"restauracja@dzikages.szczecin.pl","type":1,"country":"pl"}], "generated":"2026-04-22T08:25:03+02:00"}
+{"id":1995,"name":"MARMAT MARCIN PILIMAN","code":"PL-X4H","phone":"+48660448681","email":"restauracja@dzikages.szczecin.pl","type":1,"country":"pl"},
+{"id":1996,"name":"PODKOWA A.D. 1905 Marcin Podkowa","code":"PL-H8C","phone":"+48692437664","email":"info@podkowa.eu","short_name":"PODKOWA A.D.1905","type":1,"country":"pl"}], "generated":"2026-04-22T10:20:03+02:00"}
