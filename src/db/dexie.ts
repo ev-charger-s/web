@@ -10,10 +10,6 @@ export interface DexieStation extends ChargerStation {
 
 const DB_VERSION = 6
 const EIPA_GENERATED_AT_KEY = 'chargers_generated_at'
-const BNETZA_GENERATED_AT_KEY = 'bnetza_generated_at'
-const IRVE_GENERATED_AT_KEY = 'irve_generated_at'
-const NDW_GENERATED_AT_KEY = 'ndw_generated_at'
-const BEEV_GENERATED_AT_KEY = 'beev_generated_at'
 
 const STORE_SCHEMA = [
   'id',
@@ -49,6 +45,9 @@ class ChargerDB extends Dexie {
 
 export const db = new ChargerDB()
 
+// Module-level dictionary — written once by loadData, extended by each country loader.
+// Concurrent loaders only ever merge into it, never overwrite the whole object,
+// so the lack of a lock is safe in practice.
 let _dictionary: EIPADictionary | null = null
 
 function toDexieStation(s: ChargerStation): DexieStation {
@@ -100,6 +99,52 @@ async function loadSource(opts: {
   return { count: data.stations.length, data }
 }
 
+/**
+ * Merge extra connector types from a country db.json into the shared dictionary.
+ * Safe to call from concurrent loaders — only adds entries not already present.
+ */
+function mergeExtraConnectors(extra: EIPADictionary['connector_interface_extra']) {
+  if (!_dictionary || !extra?.length) return
+  const existing = _dictionary.connector_interface_extra ?? []
+  const merged = [...existing]
+  for (const entry of extra) {
+    if (!merged.find((e) => e.id === entry.id)) merged.push(entry)
+  }
+  _dictionary = { ..._dictionary, connector_interface_extra: merged }
+}
+
+// ── Generic country loader ────────────────────────────────────────────────────
+// Used by all country loaders except PL (which also handles the main dictionary).
+
+interface CountrySourceOpts {
+  file: string
+  table: Table<DexieStation>
+  generatedAtKey: string
+  onProgress?: (loaded: number, total: number) => void
+}
+
+async function loadCountrySource(opts: CountrySourceOpts): Promise<{ count: number }> {
+  const existingCount = await opts.table.count()
+  const storedAt = localStorage.getItem(opts.generatedAtKey)
+  if (existingCount > 0 && storedAt) {
+    opts.onProgress?.(existingCount, existingCount)
+    return { count: existingCount }
+  }
+
+  const { count, data } = await loadSource({
+    url: `${import.meta.env.BASE_URL}${opts.file}`,
+    table: opts.table,
+    generatedAtKey: opts.generatedAtKey,
+    onProgress: opts.onProgress,
+  })
+
+  mergeExtraConnectors(data.dictionary?.connector_interface_extra)
+
+  return { count }
+}
+
+// ── Public loaders ────────────────────────────────────────────────────────────
+
 export async function loadData(
   onProgress?: (loaded: number, total: number) => void
 ): Promise<{ count: number; dictionary: EIPADictionary }> {
@@ -124,125 +169,41 @@ export async function loadData(
   return { count, dictionary: _dictionary! }
 }
 
-export async function loadBNetzAData(
-  onProgress?: (loaded: number, total: number) => void
-): Promise<{ count: number }> {
-  const existingCount = await db.bnetza_stations.count()
-  const storedAt = localStorage.getItem(BNETZA_GENERATED_AT_KEY)
-  if (existingCount > 0 && storedAt) {
-    onProgress?.(existingCount, existingCount)
-    return { count: existingCount }
-  }
-
-  const { count, data } = await loadSource({
-    url: `${import.meta.env.BASE_URL}bnetza.db.json`,
+export function loadBNetzAData(onProgress?: (loaded: number, total: number) => void) {
+  return loadCountrySource({
+    file: 'bnetza.db.json',
     table: db.bnetza_stations,
-    generatedAtKey: BNETZA_GENERATED_AT_KEY,
+    generatedAtKey: 'bnetza_generated_at',
     onProgress,
   })
-
-  // Merge extra connector types into dictionary
-  if (_dictionary && data.dictionary?.connector_interface_extra) {
-    _dictionary = {
-      ..._dictionary,
-      connector_interface_extra: data.dictionary.connector_interface_extra,
-    }
-  }
-
-  return { count }
 }
 
-export async function loadIRVEData(
-  onProgress?: (loaded: number, total: number) => void
-): Promise<{ count: number }> {
-  const existingCount = await db.irve_stations.count()
-  const storedAt = localStorage.getItem(IRVE_GENERATED_AT_KEY)
-  if (existingCount > 0 && storedAt) {
-    onProgress?.(existingCount, existingCount)
-    return { count: existingCount }
-  }
-
-  const { count, data } = await loadSource({
-    url: `${import.meta.env.BASE_URL}irve.db.json`,
+export function loadIRVEData(onProgress?: (loaded: number, total: number) => void) {
+  return loadCountrySource({
+    file: 'irve.db.json',
     table: db.irve_stations,
-    generatedAtKey: IRVE_GENERATED_AT_KEY,
+    generatedAtKey: 'irve_generated_at',
     onProgress,
   })
-
-  // Merge extra connector types into dictionary
-  if (_dictionary && data.dictionary?.connector_interface_extra) {
-    const existingExtra = _dictionary.connector_interface_extra ?? []
-    const merged = [...existingExtra]
-    for (const entry of data.dictionary.connector_interface_extra) {
-      if (!merged.find(e => e.id === entry.id)) merged.push(entry)
-    }
-    _dictionary = { ..._dictionary, connector_interface_extra: merged }
-  }
-
-  return { count }
 }
 
-export async function loadNDWData(
-  onProgress?: (loaded: number, total: number) => void
-): Promise<{ count: number }> {
-  const existingCount = await db.ndw_stations.count()
-  const storedAt = localStorage.getItem(NDW_GENERATED_AT_KEY)
-  if (existingCount > 0 && storedAt) {
-    onProgress?.(existingCount, existingCount)
-    return { count: existingCount }
-  }
-
-  const { count, data } = await loadSource({
-    url: `${import.meta.env.BASE_URL}ndw.db.json`,
+export function loadNDWData(onProgress?: (loaded: number, total: number) => void) {
+  return loadCountrySource({
+    file: 'ndw.db.json',
     table: db.ndw_stations,
-    generatedAtKey: NDW_GENERATED_AT_KEY,
+    generatedAtKey: 'ndw_generated_at',
     onProgress,
   })
-
-  // Merge extra connector types into dictionary
-  if (_dictionary && data.dictionary?.connector_interface_extra) {
-    const existingExtra = _dictionary.connector_interface_extra ?? []
-    const merged = [...existingExtra]
-    for (const entry of data.dictionary.connector_interface_extra) {
-      if (!merged.find(e => e.id === entry.id)) merged.push(entry)
-    }
-    _dictionary = { ..._dictionary, connector_interface_extra: merged }
-  }
-
-  return { count }
 }
 
-
-export async function loadBEEVData(
-  onProgress?: (loaded: number, total: number) => void
-): Promise<{ count: number }> {
-  const existingCount = await db.beev_stations.count()
-  const storedAt = localStorage.getItem(BEEV_GENERATED_AT_KEY)
-  if (existingCount > 0 && storedAt) {
-    onProgress?.(existingCount, existingCount)
-    return { count: existingCount }
-  }
-
-  const { count, data } = await loadSource({
-    url: `${import.meta.env.BASE_URL}beev.db.json`,
+export function loadBEEVData(onProgress?: (loaded: number, total: number) => void) {
+  return loadCountrySource({
+    file: 'beev.db.json',
     table: db.beev_stations,
-    generatedAtKey: BEEV_GENERATED_AT_KEY,
+    generatedAtKey: 'beev_generated_at',
     onProgress,
   })
-
-  // Merge extra connector types into dictionary
-  if (_dictionary && data.dictionary?.connector_interface_extra) {
-    const existingExtra = _dictionary.connector_interface_extra ?? []
-    const merged = [...existingExtra]
-    for (const entry of data.dictionary.connector_interface_extra) {
-      if (!merged.find(e => e.id === entry.id)) merged.push(entry)
-    }
-    _dictionary = { ..._dictionary, connector_interface_extra: merged }
-  }
-
-  return { count }
 }
-
 
 export function getDictionary(): EIPADictionary | null {
   return _dictionary
