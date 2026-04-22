@@ -261,15 +261,19 @@ export type CountryFilter = 'pl' | 'de' | 'fr' | 'nl' | 'be' | 'all'
 async function queryTable(table: Table<DexieStation>, filters: FilterParams): Promise<DexieStation[]> {
   let collection = table.toCollection()
 
+  // Dexie can only use one index at a time — use the first applicable index,
+  // then filter the second criterion in JavaScript to avoid silently dropping it.
   if (filters.charging_modes && filters.charging_modes.length > 0) {
     collection = table.where('charging_modes').anyOf(filters.charging_modes)
   }
 
-  if (filters.connector_interface_ids && filters.connector_interface_ids.length > 0) {
-    collection = table.where('connector_interface_ids').anyOf(filters.connector_interface_ids)
-  }
-
   let results = await collection.toArray()
+
+  // Apply connector_interface_ids filter in JS (cannot combine two where() calls)
+  if (filters.connector_interface_ids && filters.connector_interface_ids.length > 0) {
+    const ids = new Set(filters.connector_interface_ids)
+    results = results.filter((s) => s.connector_interface_ids.some((id) => ids.has(id)))
+  }
 
   if (filters.query && filters.query.trim().length > 0) {
     const q = filters.query.trim().toLowerCase()
