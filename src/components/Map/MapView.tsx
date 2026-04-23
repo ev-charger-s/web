@@ -77,12 +77,10 @@ interface ViewportListenerProps {
   onViewChange: (bbox: [number, number, number, number], zoom: number) => void
 }
 function ViewportListener({ onViewChange }: ViewportListenerProps) {
+  // Leaflet fires zoomend followed immediately by moveend on every zoom —
+  // listen only to moveend to avoid double cluster queries per zoom interaction.
   const map = useMapEvents({
     moveend: () => {
-      const b = map.getBounds()
-      onViewChange([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], Math.round(map.getZoom()))
-    },
-    zoomend: () => {
       const b = map.getBounds()
       onViewChange([b.getWest(), b.getSouth(), b.getEast(), b.getNorth()], Math.round(map.getZoom()))
     },
