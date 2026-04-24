@@ -1,8 +1,8 @@
-import { useState, useEffect, useReducer, useCallback } from 'react'
+import { useState, useEffect, useReducer, useCallback, useRef } from 'react'
 import { useTranslation } from 'react-i18next'
 import { loadData, loadBNetzAData, loadIRVEData, loadNDWData, loadBEEVData, getDictionary } from './db/dexie'
 import type { CountryFilter } from './db/dexie'
-import { COUNTRY_SOURCES } from './db/sources'
+import { COUNTRY_SOURCES, bboxIntersects } from './db/sources'
 import { useStations } from './hooks/useStations'
 import { useCluster } from './hooks/useCluster'
 import { useGeolocation } from './hooks/useGeolocation'
@@ -11,6 +11,7 @@ import MapView from './components/Map/MapView'
 import FiltersPanel from './components/Filters/FiltersPanel'
 import StationPanel from './components/StationPanel/StationPanel'
 import { SupportButton } from './components/Support/SupportModal'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import { findStation } from './db/findStation'
 import type { ChargerStation, EIPADictionary } from './types'
 import './i18n'
@@ -40,7 +41,8 @@ function setStationInUrl(id: number | null) {
 type CountryKey = (typeof COUNTRY_SOURCES)[number]['key']
 
 interface SourceState {
-  ready: boolean
+  triggered: boolean // loader has been started
+  ready: boolean     // loader has finished
   loaded: number
   total: number
 }
@@ -48,25 +50,22 @@ interface SourceState {
 type LoadingState = Record<CountryKey, SourceState>
 
 type LoadingAction =
+  | { type: 'trigger'; key: CountryKey }
   | { type: 'progress'; key: CountryKey; loaded: number; total: number }
   | { type: 'ready'; key: CountryKey }
 
 const initialLoadingState: LoadingState = Object.fromEntries(
-  COUNTRY_SOURCES.map(({ key }) => [key, { ready: false, loaded: 0, total: 0 }])
+  COUNTRY_SOURCES.map(({ key }) => [key, { triggered: false, ready: false, loaded: 0, total: 0 }])
 ) as LoadingState
 
 function loadingReducer(state: LoadingState, action: LoadingAction): LoadingState {
   switch (action.type) {
+    case 'trigger':
+      return { ...state, [action.key]: { ...state[action.key], triggered: true } }
     case 'progress':
-      return {
-        ...state,
-        [action.key]: { ...state[action.key], loaded: action.loaded, total: action.total },
-      }
+      return { ...state, [action.key]: { ...state[action.key], loaded: action.loaded, total: action.total } }
     case 'ready':
-      return {
-        ...state,
-        [action.key]: { ...state[action.key], ready: true },
-      }
+      return { ...state, [action.key]: { ...state[action.key], ready: true } }
   }
 }
 
@@ -95,46 +94,73 @@ export default function App() {
   const [country, setCountry] = useState<CountryFilter>('all')
   const [flyTo, setFlyTo] = useState<{ lat: number; lng: number; zoom: number } | null>(null)
 
-  const allLoaded = COUNTRY_SOURCES.every(({ key }) => loading[key].ready)
-  const { stations, filters, updateFilters, clearFilters } = useStations(allLoaded, country)
-  const { clusters, ready: clusterReady, getClusters, getClusterExpansionZoom } = useCluster(stations, allLoaded)
+  // PL is always loaded immediately; others are loaded when viewport intersects their bbox.
+  // allLoaded = all *triggered* sources are ready.
+  const allTriggeredReady = COUNTRY_SOURCES.every(
+    ({ key }) => !loading[key].triggered || loading[key].ready
+  )
+  const plReady = loading['pl'].ready
 
-  // Start all country loaders in parallel
-  useEffect(() => {
-    for (const { key } of COUNTRY_SOURCES) {
-      const load = LOADERS[key]
-      load((loaded, total) => dispatch({ type: 'progress', key, loaded, total }))
-        .then((result) => {
-          // PL loader returns dictionary — capture it
-          if (key === 'pl' && result && typeof result === 'object' && 'dictionary' in result) {
-            setDictionary((result as { dictionary: EIPADictionary }).dictionary)
-          }
+  const { stations, filters, updateFilters, clearFilters } = useStations(plReady, country)
+  const { clusters, ready: clusterReady, getClusters, getClusterExpansionZoom } = useCluster(stations, plReady)
+
+  // ── Country loader ────────────────────────────────────────────────────────────
+
+  const startLoader = useCallback((key: CountryKey) => {
+    dispatch({ type: 'trigger', key })
+    const load = LOADERS[key]
+    load((loaded, total) => dispatch({ type: 'progress', key, loaded, total }))
+      .then((result) => {
+        if (key === 'pl' && result && typeof result === 'object' && 'dictionary' in result) {
+          setDictionary((result as { dictionary: EIPADictionary }).dictionary)
+        }
+        dispatch({ type: 'ready', key })
+      })
+      .catch((e) => {
+        if (key === 'pl') {
+          console.error('EIPA load error:', e)
+          setDataError((e as Error).message)
+        } else {
+          console.error(`${key.toUpperCase()} load error:`, e)
           dispatch({ type: 'ready', key })
-        })
-        .catch((e) => {
-          // PL failure is fatal; other countries are non-fatal
-          if (key === 'pl') {
-            console.error('EIPA load error:', e)
-            setDataError((e as Error).message)
-          } else {
-            console.error(`${key.toUpperCase()} load error:`, e)
-            dispatch({ type: 'ready', key })
-          }
-        })
-    }
+        }
+      })
+  }, [])
+
+  // Always trigger PL immediately on mount
+  useEffect(() => {
+    startLoader('pl')
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // Fallback: if PL dictionary was already cached, getDictionary() will have it
   useEffect(() => {
-    if (allLoaded && !dictionary) {
+    if (plReady && !dictionary) {
       setDictionary(getDictionary())
     }
-  }, [allLoaded, dictionary])
+  }, [plReady, dictionary])
 
-  // On data loaded, open station from URL if present and fly to it
+  // ── Viewport-triggered lazy loading ──────────────────────────────────────────
+
+  const triggeredRef = useRef<Set<CountryKey>>(new Set(['pl']))
+
+  const handleViewChange = useCallback((bbox: [number, number, number, number], zoom: number) => {
+    // Check which non-triggered countries intersect the current viewport
+    for (const source of COUNTRY_SOURCES) {
+      if (source.key === 'pl') continue
+      if (triggeredRef.current.has(source.key)) continue
+      if (bboxIntersects(bbox, source.bbox)) {
+        triggeredRef.current.add(source.key)
+        startLoader(source.key)
+      }
+    }
+    // Forward to cluster worker
+    getClusters(bbox, zoom)
+  }, [getClusters, startLoader])
+
+  // On PL loaded, open station from URL if present and fly to it
   useEffect(() => {
-    if (!allLoaded) return
+    if (!plReady) return
     const id = getStationIdFromUrl()
     if (id == null) return
     findStation(id).then((s) => {
@@ -143,7 +169,7 @@ export default function App() {
         setFlyTo({ lat: s.lat, lng: s.lng, zoom: 17 })
       }
     })
-  }, [allLoaded])
+  }, [plReady])
 
   const handleStationClick = useCallback((station: ChargerStation) => {
     setSelectedStation(station)
@@ -175,16 +201,17 @@ export default function App() {
     : null
 
   const switchLang = () => {
-    const langs = ['pl', 'en', 'de', 'fr']
+    const langs = ['pl', 'en', 'de', 'fr', 'nl']
     const next = langs[(langs.indexOf(i18n.language) + 1) % langs.length]
     i18n.changeLanguage(next)
     localStorage.setItem('lang', next)
   }
 
-  // ── Loading screen ──────────────────────────────────────────────────────────
-  if (!allLoaded && !dataError) {
-    const totalLoaded = COUNTRY_SOURCES.reduce((sum, { key }) => sum + loading[key].loaded, 0)
-    const totalItems  = COUNTRY_SOURCES.reduce((sum, { key }) => sum + loading[key].total,  0)
+  // ── Loading screen (shown until PL is ready) ─────────────────────────────────
+  if (!plReady && !dataError) {
+    const triggeredSources = COUNTRY_SOURCES.filter(({ key }) => loading[key].triggered)
+    const totalLoaded = triggeredSources.reduce((sum, { key }) => sum + loading[key].loaded, 0)
+    const totalItems  = triggeredSources.reduce((sum, { key }) => sum + loading[key].total,  0)
     const pct = totalItems > 0 ? Math.round((totalLoaded / totalItems) * 100) : null
 
     return (
@@ -201,7 +228,7 @@ export default function App() {
                 />
               </div>
               <div className="flex flex-col gap-1 text-xs text-gray-400">
-                {COUNTRY_SOURCES.map(({ key, i18nLoadingKey }) => {
+                {triggeredSources.map(({ key, i18nLoadingKey }) => {
                   const { ready, loaded, total } = loading[key]
                   return (
                     <div key={key} className="flex justify-between">
@@ -249,22 +276,12 @@ export default function App() {
         </span>
         <div className="flex-1" />
 
-        {/* Country filter — driven by COUNTRY_SOURCES registry */}
-        <div className="flex rounded-lg border border-gray-300 dark:border-gray-600 overflow-hidden text-xs">
-          {(['all', ...COUNTRY_SOURCES.map((s) => s.key)] as CountryFilter[]).map((c) => (
-            <button
-              key={c}
-              onClick={() => setCountry(c)}
-              className={`px-2 py-1 transition-colors ${
-                country === c
-                  ? 'bg-green-600 text-white'
-                  : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700'
-              }`}
-            >
-              {t(`source_${c}`)}
-            </button>
-          ))}
-        </div>
+        {/* Background loading indicator — shown when non-PL sources are loading */}
+        {!allTriggeredReady && (
+          <span className="text-xs text-gray-400 dark:text-gray-500 animate-pulse hidden sm:block">
+            {t('loading_import')}…
+          </span>
+        )}
 
         <button
           onClick={() => { locate() }}
@@ -284,7 +301,7 @@ export default function App() {
           onClick={switchLang}
           className="text-xs px-2 py-1 rounded border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700"
         >
-          {i18n.language === 'pl' ? t('lang_en') : i18n.language === 'en' ? t('lang_de') : i18n.language === 'de' ? t('lang_fr') : t('lang_pl')}
+          {i18n.language === 'pl' ? t('lang_en') : i18n.language === 'en' ? t('lang_de') : i18n.language === 'de' ? t('lang_fr') : i18n.language === 'fr' ? t('lang_nl') : t('lang_pl')}
         </button>
         <SupportButton />
         <button
@@ -314,6 +331,8 @@ export default function App() {
             onUpdate={updateFilters}
             onClear={clearFilters}
             stationCount={stations.length}
+            country={country}
+            onCountryChange={setCountry}
           />
         </aside>
 
@@ -327,19 +346,29 @@ export default function App() {
 
         {/* Map */}
         <main className="flex-1 relative">
-          <MapView
-            clusters={clusters}
-            clusterReady={clusterReady}
-            userLat={flyTo?.lat ?? userLat}
-            userLng={flyTo?.lng ?? userLng}
-            flyZoom={flyTo?.zoom}
-            onViewChange={getClusters}
-            onClusterClick={(clusterId, lat, lng) => {
-              const expansionZoom = getClusterExpansionZoom(clusterId)
-              setFlyTo({ lat, lng, zoom: expansionZoom })
-            }}
-            onStationClick={handleStationClick}
-          />
+          <ErrorBoundary fallback={
+            <div className="h-full flex items-center justify-center bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
+              <div className="text-center p-8">
+                <div className="text-4xl mb-3">🗺️</div>
+                <div className="font-semibold">Map failed to load</div>
+                <div className="text-sm mt-1 text-gray-400">Try reloading the page</div>
+              </div>
+            </div>
+          }>
+            <MapView
+              clusters={clusters}
+              clusterReady={clusterReady}
+              userLat={flyTo?.lat ?? userLat}
+              userLng={flyTo?.lng ?? userLng}
+              flyZoom={flyTo?.zoom}
+              onViewChange={handleViewChange}
+              onClusterClick={(clusterId, lat, lng) => {
+                const expansionZoom = getClusterExpansionZoom(clusterId)
+                setFlyTo({ lat, lng, zoom: expansionZoom })
+              }}
+              onStationClick={handleStationClick}
+            />
+          </ErrorBoundary>
         </main>
 
         {/* Station detail panel */}

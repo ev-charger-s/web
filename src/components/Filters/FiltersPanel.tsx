@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import type { EIPADictionary } from '../../types'
-import type { FilterParams } from '../../db/dexie'
+import type { FilterParams, CountryFilter } from '../../db/dexie'
+import { COUNTRY_SOURCES } from '../../db/sources'
 
 interface FiltersProps {
   filters: FilterParams
@@ -8,9 +9,11 @@ interface FiltersProps {
   onUpdate: (partial: Partial<FilterParams>) => void
   onClear: () => void
   stationCount: number
+  country: CountryFilter
+  onCountryChange: (c: CountryFilter) => void
 }
 
-export default function FiltersPanel({ filters, dictionary, onUpdate, onClear, stationCount }: FiltersProps) {
+export default function FiltersPanel({ filters, dictionary, onUpdate, onClear, stationCount, country, onCountryChange }: FiltersProps) {
   const { t } = useTranslation()
 
   const chargingModes = dictionary?.charging_mode ?? []
@@ -33,6 +36,26 @@ export default function FiltersPanel({ filters, dictionary, onUpdate, onClear, s
 
   return (
     <div className="flex flex-col h-full overflow-y-auto p-3 gap-4 text-sm">
+      {/* Country filter */}
+      <div>
+        <div className="font-semibold text-gray-700 dark:text-gray-300 mb-2">{t('station_type')}</div>
+        <div className="flex flex-wrap gap-1.5">
+          {(['all', ...COUNTRY_SOURCES.map((s) => s.key)] as CountryFilter[]).map((c) => (
+            <button
+              key={c}
+              onClick={() => onCountryChange(c)}
+              className={`px-2 py-1 rounded-full text-xs border transition-colors ${
+                country === c
+                  ? 'bg-green-600 text-white border-green-600'
+                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:border-green-500'
+              }`}
+            >
+              {t(`source_${c}`)}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Search */}
       <div>
         <input
