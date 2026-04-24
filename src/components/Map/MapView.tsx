@@ -145,7 +145,7 @@ export default function MapView({
   return (
     <MapContainer
       center={[52.069167, 19.480556]}
-      zoom={6}
+      zoom={8}
       className="h-full w-full z-0"
       preferCanvas
     >
