@@ -1,6 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
 import React from 'react'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import { ErrorBoundary } from '../components/ErrorBoundary'
 
 // Component that throws on render
@@ -51,7 +51,7 @@ describe('ErrorBoundary', () => {
   it('"Try again" resets the boundary so non-throwing child can render', () => {
     // Wrapper with controlled throw state
     function TestWrapper() {
-      const [shouldThrow, setShouldThrow] = React.useState(true)
+      const [shouldThrow] = React.useState(true)
       return (
         <ErrorBoundary>
           {shouldThrow ? (
