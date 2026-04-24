@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// scripts/process-data.mjs
+// scripts/process-eipa.mjs
 // Merges EIPA JSON files into public/chargers.db.json for Dexie
 
 import fs from 'fs'

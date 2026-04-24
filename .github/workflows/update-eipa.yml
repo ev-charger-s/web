@@ -91,7 +91,7 @@ jobs:
           node-version: '20'
 
       - name: Process data into chargers.db.json
-        run: node scripts/process-data.mjs
+        run: node scripts/process-eipa.mjs
 
       - name: Commit and push changes
         id: commit
