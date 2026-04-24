@@ -4,8 +4,8 @@
 
 import fs from 'fs'
 import path from 'path'
-import https from 'https'
 import { fileURLToPath } from 'url'
+import { downloadFile } from './lib/download.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const outputDir = path.join(__dirname, '..', 'data', 'bnetza')
@@ -29,47 +29,14 @@ function getCandidateUrls() {
   return urls
 }
 
-function downloadFile(url, dest) {
-  return new Promise((resolve, reject) => {
-    const file = fs.createWriteStream(dest)
-    https.get(url, (res) => {
-      if (res.statusCode === 301 || res.statusCode === 302) {
-        file.close()
-        fs.unlinkSync(dest)
-        downloadFile(res.headers.location, dest).then(resolve).catch(reject)
-        return
-      }
-      if (res.statusCode !== 200) {
-        file.close()
-        fs.unlinkSync(dest)
-        reject(new Error(`HTTP ${res.statusCode}`))
-        return
-      }
-      let downloaded = 0
-      res.on('data', (chunk) => {
-        downloaded += chunk.length
-        process.stdout.write(`\r  Downloaded: ${(downloaded / 1024 / 1024).toFixed(1)} MB`)
-      })
-      res.pipe(file)
-      file.on('finish', () => { file.close(); console.log(''); resolve() })
-    }).on('error', (err) => {
-      file.close()
-      if (fs.existsSync(dest)) fs.unlinkSync(dest)
-      reject(err)
-    })
-  })
-}
-
 async function fetchLatest() {
   const candidates = getCandidateUrls()
   for (const url of candidates) {
     const filename = path.basename(url)
     const dest = path.join(outputDir, filename)
 
-    // Already have this file
     if (fs.existsSync(dest)) {
       console.log(`Already up to date: ${filename}`)
-      // Write current filename to a manifest so process-bnetza knows which file to use
       fs.writeFileSync(path.join(outputDir, 'latest.txt'), filename)
       return filename
     }

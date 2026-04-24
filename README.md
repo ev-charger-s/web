@@ -18,28 +18,22 @@ npm install
 npm run dev
 ```
 
-### Generowanie danych lokalnie
+### Aktualizacja danych lokalnie
 
 ```bash
-# EIPA (Polska) — wymaga tokenu w zmiennej środowiskowej
-EIPA_TOKEN=<token> node scripts/fetch-eipa.mjs
-node scripts/process-data.mjs
+# Wszystkie źródła naraz
+npm run update
 
-# BNetzA (Niemcy)
-node scripts/fetch-bnetza.mjs
-node scripts/process-bnetza.mjs
+# Wybrane źródła
+npm run update:eipa    # 🇵🇱 Polska — wymaga danych w data/ (fetch osobno)
+npm run update:bnetza  # 🇩🇪 Niemcy
+npm run update:irve    # 🇫🇷 Francja
+npm run update:ndw     # 🇳🇱 Holandia
+npm run update:beev    # 🇧🇪 Belgia
 
-# IRVE (Francja)
-node scripts/fetch-irve.mjs
-node scripts/process-irve.mjs
-
-# NDW (Holandia)
-node scripts/fetch-ndw.mjs
-node scripts/process-ndw.mjs
-
-# BEEV (Belgia)
-node scripts/fetch-beev.mjs
-node scripts/process-beev.mjs
+# Kilka źródeł jednocześnie (bezpośrednio przez skrypt)
+node scripts/update.mjs --bnetza --irve --ndw
+node scripts/update.mjs --help   # pełna lista flag
 ```
 
 ---
@@ -85,11 +79,13 @@ node scripts/process-beev.mjs
 
 ---
 
-## Architektura danych
+## Architektura
+
+### Dane
 
 ```
 public/
-  chargers.db.json     # EIPA — generowany przez scripts/process-data.mjs
+  chargers.db.json     # EIPA — generowany przez scripts/process-eipa.mjs
   bnetza.db.json       # BNetzA — generowany przez scripts/process-bnetza.mjs
   irve.db.json         # IRVE — generowany przez scripts/process-irve.mjs
   ndw.db.json          # NDW — generowany przez scripts/process-ndw.mjs
@@ -100,6 +96,11 @@ data/
   irve/                # IRVE CSV (gitignored) + latest.txt
   ndw/                 # NDW JSON GZ (gitignored)
   beev/                # BEEV OCPI JSON (gitignored)
+```
+
+### Skrypty
+
+```
 scripts/
   fetch-bnetza.mjs     # Pobieranie CSV BNetzA
   process-bnetza.mjs   # Parsowanie CSV → bnetza.db.json
@@ -109,20 +110,54 @@ scripts/
   process-ndw.mjs      # Parsowanie OCPI → ndw.db.json
   fetch-beev.mjs       # Pobieranie OCPI JSON z road.io (transportdata.be)
   process-beev.mjs     # Parsowanie OCPI 2.2.1 → beev.db.json
-  process-data.mjs     # Łączenie EIPA raw → chargers.db.json
-.github/workflows/
-  update-data.yml      # EIPA — co godzinę
-  update-bnetza.yml    # BNetzA — 1× dziennie (03:30 UTC)
-  update-irve.yml      # IRVE — 1× dziennie (03:45 UTC)
-  update-ndw.yml       # NDW — 1× dziennie (04:00 UTC)
-  update-beev.yml      # BEEV — 1× dziennie (04:15 UTC)
+  process-eipa.mjs     # Łączenie EIPA raw → chargers.db.json
+  update.mjs           # Unified CLI: --all / --eipa / --bnetza / --irve / --ndw / --beev
+  lib/
+    download.mjs       # Wspólne: downloadFile(), downloadAndDecompress(), httpsGet()
+    ocpi-connectors.mjs# Wspólne: STANDARD_MAP, mapConnector(), powerKw(), hashId()
+    json-output.mjs    # Wspólne: writeDbJson() z null-stripping replacer
 ```
+
+### Frontend (`src/`)
+
+```
+src/
+  App.tsx              # Root — useReducer dla stanu ładowania, COUNTRY_SOURCES-driven UI
+  db/
+    dexie.ts           # Dexie setup, loadData(), loadCountrySource() (generyczna), queryStations()
+    sources.ts         # COUNTRY_SOURCES registry — jedyne miejsce do edycji przy dodawaniu kraju
+    findStation.ts     # findStation(id) — przeszukuje wszystkie tabele sekwencyjnie
+  hooks/
+    useStations.ts     # Zapytania do Dexie z debounce i cleanup
+    useCluster.ts      # Supercluster worker + main-thread SC dla expansion zoom
+    useGeolocation.ts  # Geolokalizacja
+    useTheme.ts        # Dark/light mode
+  components/
+    Map/MapView.tsx    # Leaflet map, SingleStationMarker (używa findStation)
+    Filters/FiltersPanel.tsx
+    StationPanel/StationPanel.tsx  # Rozpoznaje connector_interface_extra
+    Support/SupportModal.tsx
+  workers/
+    cluster.worker.ts  # Web Worker dla Supercluster
+  i18n/index.ts        # PL / EN / DE / FR
+  types/index.ts       # Typy ChargerStation, EIPADictionary itp.
+```
+
+### Dodawanie nowego kraju
+
+Wymagane zmiany (5 plików):
+
+1. `scripts/fetch-<kraj>.mjs` + `scripts/process-<kraj>.mjs` — pobieranie i parsowanie
+2. `src/db/dexie.ts` — nowa tabela Dexie + wywołanie `loadCountrySource()`
+3. `src/db/sources.ts` — nowy wpis w `COUNTRY_SOURCES`
+4. `src/i18n/index.ts` — klucze `source_<kraj>` i `loading_import_<kraj>` (PL/EN/DE/FR)
+5. `.github/workflows/update-<kraj>.yml` — GH Action (cron)
 
 ## GitHub Actions
 
 | Workflow | Cron | Źródło | Commit |
 |---|---|---|---|
-| `update-data.yml` | Co godzinę | EIPA API | `public/chargers.db.json` |
+| `update-eipa.yml` | Co godzinę | EIPA API | `public/chargers.db.json` |
 | `update-bnetza.yml` | 03:30 UTC | BNetzA CSV | `public/bnetza.db.json` |
 | `update-irve.yml` | 03:45 UTC | IRVE CSV (data.gouv.fr) | `public/irve.db.json` |
 | `update-ndw.yml` | 04:00 UTC | NDW OCPI JSON GZ (opendata.ndw.nu) | `public/ndw.db.json` |

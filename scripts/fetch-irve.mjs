@@ -5,8 +5,8 @@
 
 import fs from 'fs'
 import path from 'path'
-import https from 'https'
 import { fileURLToPath } from 'url'
+import { downloadFile, httpsGet } from './lib/download.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const outputDir = path.join(__dirname, '..', 'data', 'irve')
@@ -15,52 +15,6 @@ const API_URL = `https://www.data.gouv.fr/api/1/datasets/${DATASET_ID}/`
 const LATEST_FILE = path.join(outputDir, 'latest.txt')
 
 fs.mkdirSync(outputDir, { recursive: true })
-
-function httpsGet(url) {
-  return new Promise((resolve, reject) => {
-    https.get(url, { headers: { 'User-Agent': 'ev-charger-map/1.0' } }, (res) => {
-      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        const next = res.headers.location.startsWith('http')
-          ? res.headers.location
-          : new URL(res.headers.location, url).toString()
-        return httpsGet(next).then(resolve).catch(reject)
-      }
-      if (res.statusCode !== 200) return reject(new Error(`HTTP ${res.statusCode} for ${url}`))
-      let data = ''
-      res.on('data', (c) => (data += c))
-      res.on('end', () => resolve(data))
-    }).on('error', reject)
-  })
-}
-
-function downloadFile(url, dest) {
-  return new Promise((resolve, reject) => {
-    const file = fs.createWriteStream(dest)
-    https.get(url, { headers: { 'User-Agent': 'ev-charger-map/1.0' } }, (res) => {
-      if (res.statusCode === 301 || res.statusCode === 302) {
-        file.close()
-        fs.unlinkSync(dest)
-        return downloadFile(res.headers.location, dest).then(resolve).catch(reject)
-      }
-      if (res.statusCode !== 200) {
-        file.close()
-        fs.unlinkSync(dest)
-        return reject(new Error(`HTTP ${res.statusCode}`))
-      }
-      let downloaded = 0
-      res.on('data', (chunk) => {
-        downloaded += chunk.length
-        process.stdout.write(`\r  Downloaded: ${(downloaded / 1024 / 1024).toFixed(1)} MB`)
-      })
-      res.pipe(file)
-      file.on('finish', () => { file.close(); console.log(''); resolve() })
-    }).on('error', (err) => {
-      file.close()
-      if (fs.existsSync(dest)) fs.unlinkSync(dest)
-      reject(err)
-    })
-  })
-}
 
 async function fetchLatest() {
   console.log('Fetching IRVE dataset metadata from data.gouv.fr...')

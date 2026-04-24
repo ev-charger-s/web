@@ -28,7 +28,6 @@ export function useCluster(stations: DexieStation[], dataLoaded: boolean): UseCl
 
     const worker = new Worker(new URL('../workers/cluster.worker.ts', import.meta.url), { type: 'module' })
     workerRef.current = worker
-
     worker.onmessage = (e: MessageEvent) => {
       const msg = e.data
       if (msg.type === 'ready') {
@@ -70,8 +69,7 @@ export function useCluster(stations: DexieStation[], dataLoaded: boolean): UseCl
       scRef.current = null
       setReady(false)
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [dataLoaded, stations.length])
+  }, [dataLoaded, stations])
 
   const getClusters = useCallback((bbox: [number, number, number, number], zoom: number) => {
     lastQueryRef.current = { bbox, zoom }

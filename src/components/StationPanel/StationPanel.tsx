@@ -14,8 +14,12 @@ export default function StationPanel({ station, dictionary, onClose }: Props) {
   if (!station) return null
 
   const getConnectorName = (id: number) => {
+    // First check standard connector_interface list
     const c = dictionary?.connector_interface.find((x) => x.id === id)
-    return c?.description ?? c?.name ?? `#${id}`
+    if (c) return c.description ?? c.name ?? `#${id}`
+    // Fall back to connector_interface_extra (BNetzA/IRVE/NDW/BEEV extra types)
+    const extra = dictionary?.connector_interface_extra?.find((x) => x.id === id)
+    return extra?.description ?? extra?.name ?? `#${id}`
   }
 
   const getChargingMode = (id: number) => {
