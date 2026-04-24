@@ -85,7 +85,9 @@ node scripts/process-beev.mjs
 
 ---
 
-## Architektura danych
+## Architektura
+
+### Dane
 
 ```
 public/
@@ -100,6 +102,11 @@ data/
   irve/                # IRVE CSV (gitignored) + latest.txt
   ndw/                 # NDW JSON GZ (gitignored)
   beev/                # BEEV OCPI JSON (gitignored)
+```
+
+### Skrypty
+
+```
 scripts/
   fetch-bnetza.mjs     # Pobieranie CSV BNetzA
   process-bnetza.mjs   # Parsowanie CSV → bnetza.db.json
@@ -110,13 +117,46 @@ scripts/
   fetch-beev.mjs       # Pobieranie OCPI JSON z road.io (transportdata.be)
   process-beev.mjs     # Parsowanie OCPI 2.2.1 → beev.db.json
   process-data.mjs     # Łączenie EIPA raw → chargers.db.json
-.github/workflows/
-  update-data.yml      # EIPA — co godzinę
-  update-bnetza.yml    # BNetzA — 1× dziennie (03:30 UTC)
-  update-irve.yml      # IRVE — 1× dziennie (03:45 UTC)
-  update-ndw.yml       # NDW — 1× dziennie (04:00 UTC)
-  update-beev.yml      # BEEV — 1× dziennie (04:15 UTC)
+  lib/
+    download.mjs       # Wspólne: downloadFile(), downloadAndDecompress(), httpsGet()
+    ocpi-connectors.mjs# Wspólne: STANDARD_MAP, mapConnector(), powerKw(), hashId()
+    json-output.mjs    # Wspólne: writeDbJson() z null-stripping replacer
 ```
+
+### Frontend (`src/`)
+
+```
+src/
+  App.tsx              # Root — useReducer dla stanu ładowania, COUNTRY_SOURCES-driven UI
+  db/
+    dexie.ts           # Dexie setup, loadData(), loadCountrySource() (generyczna), queryStations()
+    sources.ts         # COUNTRY_SOURCES registry — jedyne miejsce do edycji przy dodawaniu kraju
+    findStation.ts     # findStation(id) — przeszukuje wszystkie tabele sekwencyjnie
+  hooks/
+    useStations.ts     # Zapytania do Dexie z debounce i cleanup
+    useCluster.ts      # Supercluster worker + main-thread SC dla expansion zoom
+    useGeolocation.ts  # Geolokalizacja
+    useTheme.ts        # Dark/light mode
+  components/
+    Map/MapView.tsx    # Leaflet map, SingleStationMarker (używa findStation)
+    Filters/FiltersPanel.tsx
+    StationPanel/StationPanel.tsx  # Rozpoznaje connector_interface_extra
+    Support/SupportModal.tsx
+  workers/
+    cluster.worker.ts  # Web Worker dla Supercluster
+  i18n/index.ts        # PL / EN / DE / FR
+  types/index.ts       # Typy ChargerStation, EIPADictionary itp.
+```
+
+### Dodawanie nowego kraju
+
+Wymagane zmiany (5 plików):
+
+1. `scripts/fetch-<kraj>.mjs` + `scripts/process-<kraj>.mjs` — pobieranie i parsowanie
+2. `src/db/dexie.ts` — nowa tabela Dexie + wywołanie `loadCountrySource()`
+3. `src/db/sources.ts` — nowy wpis w `COUNTRY_SOURCES`
+4. `src/i18n/index.ts` — klucze `source_<kraj>` i `loading_import_<kraj>` (PL/EN/DE/FR)
+5. `.github/workflows/update-<kraj>.yml` — GH Action (cron)
 
 ## GitHub Actions
 
