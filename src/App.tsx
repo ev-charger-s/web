@@ -279,10 +279,9 @@ export default function App() {
         {/* Background loading indicator — shown when non-PL sources are loading */}
         {!allTriggeredReady && (
           <span className="text-xs text-gray-400 dark:text-gray-500 animate-pulse hidden sm:block">
-            {t('loading_import')}…
+            ⚡
           </span>
         )}
-
         <button
           onClick={() => { locate() }}
           disabled={geoLoading}
@@ -379,6 +378,37 @@ export default function App() {
             onClose={handleClosePanel}
           />
         )}
+
+        {/* Background country loading toasts */}
+        {(() => {
+          const active = COUNTRY_SOURCES.filter(({ key }) => loading[key].triggered && !loading[key].ready && key !== 'pl')
+          if (active.length === 0) return null
+          return (
+            <div className="absolute bottom-4 left-4 z-40 flex flex-col gap-2">
+              {active.map(({ key, flag, i18nLoadingKey }) => {
+                const { loaded, total } = loading[key]
+                const pct = total > 0 ? Math.round((loaded / total) * 100) : null
+                return (
+                  <div
+                    key={key}
+                    className="w-52 bg-gray-900/90 dark:bg-gray-800/90 text-white rounded-xl shadow-xl px-3 py-2.5 backdrop-blur-sm"
+                  >
+                    <div className="flex items-center justify-between mb-1.5 text-xs">
+                      <span>{flag} {t(i18nLoadingKey)}</span>
+                      <span className="text-gray-400">{pct !== null ? `${pct}%` : '…'}</span>
+                    </div>
+                    <div className="w-full bg-gray-700 rounded-full h-1.5">
+                      <div
+                        className="bg-green-500 h-1.5 rounded-full transition-all duration-200"
+                        style={{ width: pct !== null ? `${pct}%` : '8%' }}
+                      />
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+          )
+        })()}
 
         {/* Geo error toast */}
         {geoToastVisible && geoError && (
