@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/process-irve.mjs
 // Converts French IRVE CSV (schema v2.3.x) → public/irve.db.json
-// Same ChargerStation format as chargers.db.json, with source: 'fr'
+// Same ChargerStation format as eipa.db.json, with source: 'fr'
 //
 // IRVE CSV: UTF-8, comma-separated, one row = one PDC (point de charge)
 // Grouping: by id_station_itinerance (station ID)

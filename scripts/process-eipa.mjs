@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // scripts/process-eipa.mjs
-// Merges EIPA JSON files into public/chargers.db.json for Dexie
+// Merges EIPA JSON files into public/eipa.db.json for Dexie
 
 import fs from 'fs'
 import path from 'path'
@@ -156,7 +156,7 @@ const output = {
 }
 
 fs.mkdirSync(outputDir, { recursive: true })
-const outputFile = path.join(outputDir, 'chargers.db.json')
+const outputFile = path.join(outputDir, 'eipa.db.json')
 fs.writeFileSync(outputFile, JSON.stringify(output))
 
 const sizeMB = (fs.statSync(outputFile).size / 1024 / 1024).toFixed(2)

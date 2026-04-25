@@ -44,7 +44,7 @@ node scripts/update.mjs --help   # pełna lista flag
 
 | Kraj | Rejestr | Plik | Aktualizacja | Uwagi |
 |---|---|---|---|---|
-| 🇵🇱 Polska | [EIPA — Ewidencja Infrastruktury Paliw Alternatywnych](https://eipa.udt.gov.pl) | `public/chargers.db.json` | Co godzinę (GH Action) | API OCPI; token wymagany; ~5 700 stacji |
+| 🇵🇱 Polska | [EIPA — Ewidencja Infrastruktury Paliw Alternatywnych](https://eipa.udt.gov.pl) | `public/eipa.db.json` | Co godzinę (GH Action) | API OCPI; token wymagany; ~5 700 stacji |
 | 🇩🇪 Niemcy | [BNetzA Ladesäulenregister](https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/E-Mobilitaet/) | `public/bnetza.db.json` | 1× dziennie (GH Action) | CSV bulk; darmowy, bez rejestracji; ~71 000 lokalizacji |
 | 🇫🇷 Francja | [Base nationale des IRVE](https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/) | `public/irve.db.json` | 1× dziennie (GH Action) | CSV bulk; darmowy, CC BY, bez klucza; ~62 700 lokalizacji (216k PDC) |
 | 🇳🇱 Holandia | [NDW — Nationaal Dataportaal Wegverkeer](https://opendata.ndw.nu) | `public/ndw.db.json` | 1× dziennie (GH Action) | OCPI 2.x JSON GZ; darmowy, bez rejestracji; ~89 400 lokalizacji (225k złącz) |
@@ -85,7 +85,7 @@ node scripts/update.mjs --help   # pełna lista flag
 
 ```
 public/
-  chargers.db.json     # EIPA — generowany przez scripts/process-eipa.mjs
+  eipa.db.json     # EIPA — generowany przez scripts/process-eipa.mjs
   bnetza.db.json       # BNetzA — generowany przez scripts/process-bnetza.mjs
   irve.db.json         # IRVE — generowany przez scripts/process-irve.mjs
   ndw.db.json          # NDW — generowany przez scripts/process-ndw.mjs
@@ -110,7 +110,7 @@ scripts/
   process-ndw.mjs      # Parsowanie OCPI → ndw.db.json
   fetch-beev.mjs       # Pobieranie OCPI JSON z road.io (transportdata.be)
   process-beev.mjs     # Parsowanie OCPI 2.2.1 → beev.db.json
-  process-eipa.mjs     # Łączenie EIPA raw → chargers.db.json
+  process-eipa.mjs     # Łączenie EIPA raw → eipa.db.json
   update.mjs           # Unified CLI: --all / --eipa / --bnetza / --irve / --ndw / --beev
   lib/
     download.mjs       # Wspólne: downloadFile(), downloadAndDecompress(), httpsGet()
@@ -157,7 +157,7 @@ Wymagane zmiany (5 plików):
 
 | Workflow | Cron | Źródło | Commit |
 |---|---|---|---|
-| `update-eipa.yml` | Co godzinę | EIPA API | `public/chargers.db.json` |
+| `update-eipa.yml` | Co godzinę | EIPA API | `public/eipa.db.json` |
 | `update-bnetza.yml` | 03:30 UTC | BNetzA CSV | `public/bnetza.db.json` |
 | `update-irve.yml` | 03:45 UTC | IRVE CSV (data.gouv.fr) | `public/irve.db.json` |
 | `update-ndw.yml` | 04:00 UTC | NDW OCPI JSON GZ (opendata.ndw.nu) | `public/ndw.db.json` |

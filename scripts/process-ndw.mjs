@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/process-ndw.mjs
 // Converts NDW OCPI JSON → public/ndw.db.json
-// Same ChargerStation format as chargers.db.json, with source: 'nl'
+// Same ChargerStation format as eipa.db.json, with source: 'nl'
 //
 // Input: data/ndw/charging_point_locations_ocpi.json
 // Format: OCPI 2.x Location objects (one location = one station)

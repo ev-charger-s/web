@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/process-bnetza.mjs
 // Converts BNetzA Ladesäulenregister CSV → public/bnetza.db.json
-// Same ChargerStation format as chargers.db.json, with source: 'de'
+// Same ChargerStation format as eipa.db.json, with source: 'de'
 
 import fs from 'fs'
 import path from 'path'

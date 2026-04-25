@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // scripts/process-beev.mjs
 // Converts road.io OCPI 2.2.1 JSON → public/beev.db.json
-// Same ChargerStation format as chargers.db.json, with source: 'be'
+// Same ChargerStation format as eipa.db.json, with source: 'be'
 //
 // Input: data/beev/locations.json
 // Format: OCPI 2.2.1 Location objects (one location = one station)

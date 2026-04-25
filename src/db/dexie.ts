@@ -156,7 +156,7 @@ export async function loadData(
   }
 
   const { count, data } = await loadSource({
-    url: `${import.meta.env.BASE_URL}chargers.db.json`,
+    url: `${import.meta.env.BASE_URL}eipa.db.json`,
     table: db.stations,
     generatedAtKey: EIPA_GENERATED_AT_KEY,
     onProgress,
