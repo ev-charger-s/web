@@ -7,13 +7,14 @@ on:
 
 permissions:
   contents: write
-  actions: write
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
 
     steps:
       - name: Checkout
@@ -45,8 +46,11 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Trigger deploy
-        if: steps.commit.outputs.changed == 'true'
-        run: gh workflow run deploy.yml
-        env:
-          GH_TOKEN: ${{ github.token }}
+  deploy:
+    needs: update
+    if: needs.update.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
