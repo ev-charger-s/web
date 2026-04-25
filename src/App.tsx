@@ -90,7 +90,7 @@ export default function App() {
   const [dataError, setDataError] = useState<string | null>(null)
   const [dictionary, setDictionary] = useState<EIPADictionary | null>(null)
   const [selectedStation, setSelectedStation] = useState<ChargerStation | null>(null)
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(() => window.innerWidth >= 768)
   const [country, setCountry] = useState<CountryFilter>('all')
   const [flyTo, setFlyTo] = useState<{ lat: number; lng: number; zoom: number } | null>(null)
 
