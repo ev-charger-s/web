@@ -290,7 +290,7 @@
 {"id":397,"name":"Miasto Mi\u0144sk Mazowiecki","code":"PL-TBR","phone":"+48257595382","email":"lukasz.parchomenko@umminskmaz.pl","website":"https:\/\/www.minsk-maz.pl\/","short_name":"Miasto Mi\u0144sk Maz.","type":1,"country":"pl"},
 {"id":399,"name":"Zielona Energia Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-XGY","phone":"+48510177778","email":"biuro@zielonae.pl","website":"http:\/\/www.zielonae.pl","short_name":"Zielona Energia Sp. z o.o.","type":1,"country":"pl"},
 {"id":400,"name":"DARTOM SP. Z O.O.","code":"PL-SZ9","phone":"+48785740950","website":"http:\/\/www.purelng.pl","short_name":"Pure LNG","type":1,"country":"pl"},
-{"id":401,"name":"Budimex Mobility Sp\u00f3\u0142ka Akcyjna","code":"PL-SSS","phone":"+48573433777","website":"https:\/\/budimexmobility.pl\/","short_name":"Budimex PPP S.A.","type":1,"country":"pl"},
+{"id":401,"name":"Budimex Mobility Sp\u00f3\u0142ka Akcyjna","code":"PL-SSS","phone":"+48573433777","website":"https:\/\/budimexmobility.pl\/","short_name":"Budimex PPP S.A.","type":3,"country":"pl"},
 {"id":403,"name":"Gmina Rawicz Urz\u0105d Miejski Gminy Rawicz","code":"PL-M1S","phone":"+65656164980","email":"umg@rawicz.eu","short_name":"Urz\u0105d Miejski Gminy Rawicz","type":1,"country":"pl"},
 {"id":404,"name":"Powerbell Engineering sp. z o.o.","code":"PL-A5R","phone":"+48604881426","email":"biuro@powerbell.co","website":"http:\/\/ipowerme.co","short_name":"PBE sp. z o.o.","type":1,"country":"pl"},
 {"id":406,"name":"TARGOR TRUCK Sp. z o. o.","code":"PL-RPU","phone":"+48515276866","email":"s.chrostowski@targor-truck.pl","website":"http:\/\/www.targor-truck.pl","short_name":"TARGOR TRUCK Sp. z o. o.","type":1,"country":"pl"},
@@ -723,4 +723,6 @@
 {"id":1995,"name":"MARMAT MARCIN PILIMAN","code":"PL-X4H","phone":"+48660448681","email":"restauracja@dzikages.szczecin.pl","type":1,"country":"pl"},
 {"id":1996,"name":"PODKOWA A.D. 1905 Marcin Podkowa","code":"PL-H8C","phone":"+48692437664","email":"info@podkowa.eu","short_name":"PODKOWA A.D.1905","type":1,"country":"pl"},
 {"id":1997,"name":"KLIF ENERGY SP\u00d3\u0141KA Z O.O., SP\u00d3\u0141KA KOMANDYTOWA","code":"PL-B21","phone":"+48781555806","email":"piotr.szewczyk@klifenergy.com","website":"http:\/\/www.klifenergy.com","short_name":"KLIF ENERGY SP. Z O.O., SP. K.","type":1,"country":"pl"},
-{"id":2000,"name":"Doko Sp. z o.o.","code":"PL-ZDJ","phone":"+48603661310","email":"info@doko.pl","website":"http:\/\/www.doko.pl","short_name":"Doko","type":1,"country":"pl"}], "generated":"2026-04-27T10:00:02+02:00"}
+{"id":1999,"name":"PM3D S.A.","code":"PL-WIN","phone":"+48885450826","email":"maksymilian.awtuch@pm3d.pl","website":"https:\/\/pm3d.pl\/","type":1,"country":"pl"},
+{"id":2000,"name":"Doko Sp. z o.o.","code":"PL-ZDJ","phone":"+48603661310","email":"info@doko.pl","website":"http:\/\/www.doko.pl","short_name":"Doko","type":1,"country":"pl"},
+{"id":2001,"name":"MIASTO RYBNIK ZARZ\u0104D DR\u00d3G MIEJSKICH W RYBNIKU","code":"PL-ZQ5","phone":"+48324221725","email":"parkingi@zdm.rybnik.pl","website":"https:\/\/zdm.rybnik.pl\/","short_name":"ZDM W RYBNIKU","type":1,"country":"pl"}], "generated":"2026-04-27T12:50:03+02:00"}
