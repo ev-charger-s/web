@@ -688,7 +688,6 @@
 {"id":1955,"name":"CLARO AKTYWA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-Z3Y","phone":"+48662260025","email":"ladowarka@claroaktywa.pl","short_name":"Claro Aktywa sp z o.o.","type":1,"country":"pl"},
 {"id":1956,"name":"ELKO-BIS Systemy Odgromowe Sp. z o.o.","code":"PL-158","phone":"+48713306920","email":"elkobis@elkobis.com.pl","website":"https:\/\/elkobis.com.pl\/","short_name":"ELKO-BIS","type":1,"country":"pl"},
 {"id":1957,"name":"Flis, Pierzcha\u0142a S.J.","code":"PL-BX4","phone":"+48222128457","email":"elocity@afrodytaspa.pl","website":"http:\/\/www.afrodytaspa.pl","short_name":"Afrodytaspa","type":3,"country":"pl"},
-{"id":1958,"name":"Volta Holding s.r.o.","code":"PL-BN6","phone":"+420733764374","email":"support@plugvolta.com","short_name":"Volta","type":3,"country":"cz"},
 {"id":1959,"name":"IMMO PARK SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TS2","phone":"+48717804983","email":"parking.nowy.targ@immopark.pl","website":"https:\/\/parkingnowytargwroclaw.group-indigo.com","short_name":"IMMO PARK SP. Z O.O.","type":1,"country":"pl"},
 {"id":1960,"name":"Develia S.A","code":"PL-QU3","phone":"+48585000112","email":"gdansk@develia.pl","website":"http:\/\/develia.pl","short_name":"Develia S.A.","type":1,"country":"pl"},
 {"id":1962,"name":"Regionalne Centrum Naukowo- Technologiczne","code":"PL-YE5","phone":"+48609290121","email":"rezerwacje@rcnt.pl","website":"https:\/\/cndavinci.pl","type":1,"country":"pl"},
@@ -725,4 +724,4 @@
 {"id":1997,"name":"KLIF ENERGY SP\u00d3\u0141KA Z O.O., SP\u00d3\u0141KA KOMANDYTOWA","code":"PL-B21","phone":"+48781555806","email":"piotr.szewczyk@klifenergy.com","website":"http:\/\/www.klifenergy.com","short_name":"KLIF ENERGY SP. Z O.O., SP. K.","type":1,"country":"pl"},
 {"id":1999,"name":"PM3D S.A.","code":"PL-WIN","phone":"+48885450826","email":"maksymilian.awtuch@pm3d.pl","website":"https:\/\/pm3d.pl\/","type":1,"country":"pl"},
 {"id":2000,"name":"Doko Sp. z o.o.","code":"PL-ZDJ","phone":"+48603661310","email":"info@doko.pl","website":"http:\/\/www.doko.pl","short_name":"Doko","type":1,"country":"pl"},
-{"id":2001,"name":"MIASTO RYBNIK ZARZ\u0104D DR\u00d3G MIEJSKICH W RYBNIKU","code":"PL-ZQ5","phone":"+48324221725","email":"parkingi@zdm.rybnik.pl","website":"https:\/\/zdm.rybnik.pl\/","short_name":"ZDM W RYBNIKU","type":1,"country":"pl"}], "generated":"2026-05-04T07:20:03+02:00"}
+{"id":2001,"name":"MIASTO RYBNIK ZARZ\u0104D DR\u00d3G MIEJSKICH W RYBNIKU","code":"PL-ZQ5","phone":"+48324221725","email":"parkingi@zdm.rybnik.pl","website":"https:\/\/zdm.rybnik.pl\/","short_name":"ZDM W RYBNIKU","type":1,"country":"pl"}], "generated":"2026-05-04T10:10:03+02:00"}
