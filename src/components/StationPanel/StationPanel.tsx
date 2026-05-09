@@ -68,6 +68,19 @@ export default function StationPanel({ station, dictionary, onClose }: Props) {
           </div>
         </section>
 
+        {/* Google Maps navigation */}
+        <section>
+          <a
+            href={`https://www.google.com/maps/dir/?api=1&destination=${station.lat},${station.lng}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-blue-600 dark:text-blue-400 hover:underline"
+          >
+            <span>📍</span>
+            {t('navigate_google_maps')}
+          </a>
+        </section>
+
         {/* Auth methods */}
         {station.authentication_methods.length > 0 && (
           <section>
