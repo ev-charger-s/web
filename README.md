@@ -11,6 +11,16 @@ Mapa ładowarek EV dla samochodów elektrycznych — PWA/SPA (React + Vite + Tai
 - **Dexie** (IndexedDB) — lokalna baza danych stacji
 - **i18next** — internacjonalizacja (PL / EN / DE / FR)
 
+## Funkcje
+
+- Interaktywna mapa z klastrowaniem stacji ładowania
+- Filtrowanie po trybie ładowania, złączu, mocy i typie stacji
+- Panel szczegółów stacji z informacjami o złączach, cenach i statusie
+- **Nawigacja do stacji** — link „Nawiguj z Google Maps" otwiera trasę dojazdu do wybranej stacji
+- Geolokalizacja użytkownika
+- Tryb ciemny / jasny
+- Obsługa 4 języków (PL / EN / DE / FR)
+
 ## Uruchamianie lokalnie
 
 ```bash
@@ -135,7 +145,7 @@ src/
   components/
     Map/MapView.tsx    # Leaflet map, SingleStationMarker (używa findStation)
     Filters/FiltersPanel.tsx
-    StationPanel/StationPanel.tsx  # Rozpoznaje connector_interface_extra
+    StationPanel/StationPanel.tsx  # Rozpoznaje connector_interface_extra; link nawigacji Google Maps
     Support/SupportModal.tsx
   workers/
     cluster.worker.ts  # Web Worker dla Supercluster
