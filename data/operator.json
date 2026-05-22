@@ -23,13 +23,11 @@
 {"id":33,"name":"Last Mile Solutions","code":"PL-LMS","phone":"+48797986165","email":"info@lastmilesolutions.com","website":"http:\/\/www.lastmilesolutions.com","short_name":"PLLMS","type":3,"country":"pl"},
 {"id":34,"name":"MAGAR Sp. z o.o.","code":"PL-WAQ","phone":"+48666819246","email":"desk@garvest.com","short_name":"MAGAR-P4","type":1,"country":"pl"},
 {"id":35,"name":"POWER EV Sp. z o.o.","code":"PL-ECX","phone":"222330811","email":"info@dopower.eu","website":"http:\/\/www.dopower.pl","short_name":"POWER_EV","type":1,"country":"pl"},
-{"id":36,"name":"Impwar Sp. z o.o.","code":"PL-1HC","phone":"+48768570510","email":"serwis@impwar.legnica.pl","short_name":"Impwar","type":1,"country":"pl"},
 {"id":37,"name":"Smart City Polska Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-RX8","phone":"792-261-111","email":"office@altilium.pl","website":"http:\/\/smartcitypoland.com","short_name":"Smart City Polska Sp. z o.o.","type":1,"country":"pl"},
 {"id":38,"name":"Techenergo","code":"PL-TEO","phone":"690-012-314","email":"d.puchala@techenergo.pl","short_name":"TE","type":1,"country":"pl"},
 {"id":39,"name":"City Parking Group S.A.","code":"PL-7CC","phone":"+48566430022","email":"biuro@citypg.pl","short_name":"CPG","type":1,"country":"pl"},
 {"id":40,"name":"CITYOS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-RFW","phone":"+48 690644278","email":"biuro@cityos.pl","website":"http:\/\/www.cityos.pl","short_name":"cityOs","type":1,"country":"pl"},
 {"id":41,"name":"Energa Obr\u00f3t S. A.","code":"PL-KM8","phone":"555-555-537","email":"emobility@energa.pl","website":"https:\/\/emobility.pl\/","type":1,"country":"pl"},
-{"id":42,"name":"IMPWAR SP. Z O.O.","code":"PL-NQN","phone":"601901602","email":"bielany@impwar.pl","type":1,"country":"pl"},
 {"id":44,"name":"ORLEN S.A.","code":"PL-PKN","phone":"+48502167536","website":"https:\/\/opinie.orlen.pl\/","short_name":"ORLEN","type":3,"country":"pl"},
 {"id":45,"name":"E.ON Polska S.A.","code":"PL-FPK","phone":"+48228213131","email":"elektromobilnosc@eon.pl","website":"https:\/\/eon.pl\/dla-domu\/oferta\/e-mobility\/publicznie-dostepne-ladowarki","short_name":"E.ON","type":1,"country":"pl"},
 {"id":46,"name":"Gmina Miejska Legionowo","code":"PL-HA6","phone":"227664068","email":"inwestycje@um.legionowo.pl","type":1,"country":"pl"},
@@ -724,4 +722,4 @@
 {"id":1999,"name":"PM3D S.A.","code":"PL-WIN","phone":"+48885450826","email":"maksymilian.awtuch@pm3d.pl","website":"https:\/\/pm3d.pl\/","type":1,"country":"pl"},
 {"id":2000,"name":"Doko Sp. z o.o.","code":"PL-ZDJ","phone":"+48603661310","email":"info@doko.pl","website":"http:\/\/www.doko.pl","short_name":"Doko","type":1,"country":"pl"},
 {"id":2001,"name":"MIASTO RYBNIK ZARZ\u0104D DR\u00d3G MIEJSKICH W RYBNIKU","code":"PL-ZQ5","phone":"+48324221725","email":"parkingi@zdm.rybnik.pl","website":"https:\/\/zdm.rybnik.pl\/","short_name":"ZDM W RYBNIKU","type":1,"country":"pl"},
-{"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"}], "generated":"2026-05-22T12:10:03+02:00"}
+{"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"}], "generated":"2026-05-22T15:15:03+02:00"}
