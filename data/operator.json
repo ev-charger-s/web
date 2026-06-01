@@ -34,7 +34,6 @@
 {"id":47,"name":"Kolejowe Zak\u0142ady \u0141\u0105czno\u015bci sp. z o.o.","code":"PL-YWT","phone":"+48525183670","email":"biuro@kzl.com.pl","website":"https:\/\/www.kzl.com.pl","short_name":"KZ\u0141","type":1,"country":"pl"},
 {"id":48,"name":"BMW Vertriebs GmbH Sp. z o.o. oddzia\u0142 w Polsce","code":"PL-SE7","phone":"22-279-71-00","email":"biuro@bmw.pl","website":"https:\/\/www.bmw.pl\/pl\/index.html","short_name":"BMW Polska","type":1,"country":"pl"},
 {"id":49,"name":"Zak\u0142\u0105d Produkcji Sprz\u0119tu O\u015bwietleniowego \"ROSA\" Stanis\u0142aw Rosa","code":"PL-X9D","phone":"+48668418039","email":"aszewczuk@rosa.pl","short_name":"ROSA","type":1,"country":"pl"},
-{"id":50,"name":"Przedsi\u0119biorstwo Handlowe AD*REM Wojciech Teszner","code":"PL-CF5","phone":"914844215","email":"dyrektor@ad-rem.pl","short_name":"P.H. AD*REM","type":1,"country":"pl"},
 {"id":52,"name":"ZK MOTORS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-15Y","phone":"+48734188493","email":"wkmiec@playada.pl","type":1,"country":"pl"},
 {"id":53,"name":"ENGIE Technika Instalacyjna Sp. z o.o.","code":"PL-ES3","phone":"228519740","email":"evbox@engie.com","type":1,"country":"pl"},
 {"id":54,"name":"ZAK\u0141AD DOSKONALENIA ZAWODOWEGO","code":"PL-PDX","phone":"12 397-21-31","email":"p.tarkowski@krowodrzahotel.pl","short_name":"ZDZ KRAK\u00d3W","type":1,"country":"pl"},
@@ -86,7 +85,6 @@
 {"id":112,"name":"Zarz\u0105d Morskiego Portu Gda\u0144sk S.A.","code":"PL-JNH","phone":"510106516","email":"dyspozytor_gpz@portgdansk.pl","short_name":"ZMPG S.A.","type":1,"country":"pl"},
 {"id":113,"name":"Sie\u0107 Badawcza \u0141ukasiewicz - Instytut Elektrotechniki","code":"PL-FQ5","phone":"+48221125384","email":"ladowarki@iel.pl","website":"https:\/\/iel.pl\/","short_name":"\u0141-IEL","type":1,"country":"pl"},
 {"id":114,"name":"MIM Sp. z o.o.","code":"PL-DKA","phone":"22-100-23-41","website":"http:\/\/www.mcer.pl","short_name":"MCER","type":1,"country":"pl"},
-{"id":115,"name":"P. H. ANKAR Grzegorz Kuruc","code":"PL-R6U","phone":"501039791","email":"ankarbiuro2@gmail.com","website":"http:\/\/www.ankarmodameska.pl","short_name":"Ankar","type":1,"country":"pl"},
 {"id":116,"name":"GZOG Energy Sp. z o.o.","code":"PL-ABF","phone":"+48323761999","email":"sekretariat@gzog.pl","short_name":"GZOG Energy Sp. z o.o.","type":1,"country":"pl"},
 {"id":117,"name":"Zak\u0142ad Energetyki Cieplnej Sp. z o.o.","code":"PL-3ZJ","phone":"723221730","website":"https:\/\/www.zec-bialogard.pl","type":1,"country":"pl"},
 {"id":118,"name":"Citronex I Sp. z o. o.","code":"PL-7Z6","phone":"608625198","email":"paliwa@citronex.pl","website":"http:\/\/www.dyskontpaliwowy.pl","short_name":"Citronex","type":1,"country":"pl"},
@@ -725,4 +723,4 @@
 {"id":2005,"name":"GKN Driveline Polska Sp. z o.o.","code":"PL-33A","phone":"+48507302609","email":"biuro@wtyczka.eu","website":"http:\/\/wtyczka.eu","short_name":"GKN Driveline","type":1,"country":"pl"},
 {"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"},
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
-{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-01T05:50:02+02:00"}
+{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-01T17:45:03+02:00"}
