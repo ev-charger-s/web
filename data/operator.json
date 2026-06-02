@@ -1,5 +1,5 @@
 {"data":[{"id":3,"name":"Wenar Sp. z o.o.","code":"PL-WEN","phone":"780070766","email":"info@wenar.pl","website":"https:\/\/www.e-mob.pl\/","short_name":"Wenar","type":1,"country":"pl"},
-{"id":4,"name":"EV PLUS Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-GJC","phone":"533708555","email":"biuro@evplus.com.pl","website":"http:\/\/evplus.com.pl","short_name":"EV PLUS Sp. z o.o.","type":1,"country":"pl"},
+{"id":4,"name":"EV PLUS Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-GJC","phone":"+48533708555","email":"biuro@evplus.com.pl","website":"http:\/\/evplus.com.pl","short_name":"EV PLUS Sp. z o.o.","type":1,"country":"pl"},
 {"id":5,"name":"GreenWay Polska Sp. z o.o.","code":"PL-7R5","phone":"48-58-325-10-17","email":"bok@greenwaypolska.pl","website":"http:\/\/greenwaypolska.pl\/","short_name":"GWPL","type":1,"country":"pl"},
 {"id":6,"name":"GO+ EAuto sp. z o.o.","code":"PL-MYE","phone":"515515243","email":"biuro@gopluseauto.pl","website":"https:\/\/www.gopluseauto.pl\/","short_name":"GO+ EAuto","type":1,"country":"pl"},
 {"id":8,"name":"PGE Nowa Energia Sp. z o.o.","code":"PL-PGE","phone":"22-344-55-66","email":"nowa.energia@gkpge.pl","short_name":"PGE Nowa Energia","type":1,"country":"pl"},
@@ -33,7 +33,6 @@
 {"id":46,"name":"Gmina Miejska Legionowo","code":"PL-HA6","phone":"227664068","email":"inwestycje@um.legionowo.pl","type":1,"country":"pl"},
 {"id":47,"name":"Kolejowe Zak\u0142ady \u0141\u0105czno\u015bci sp. z o.o.","code":"PL-YWT","phone":"+48525183670","email":"biuro@kzl.com.pl","website":"https:\/\/www.kzl.com.pl","short_name":"KZ\u0141","type":1,"country":"pl"},
 {"id":48,"name":"BMW Vertriebs GmbH Sp. z o.o. oddzia\u0142 w Polsce","code":"PL-SE7","phone":"22-279-71-00","email":"biuro@bmw.pl","website":"https:\/\/www.bmw.pl\/pl\/index.html","short_name":"BMW Polska","type":1,"country":"pl"},
-{"id":49,"name":"Zak\u0142\u0105d Produkcji Sprz\u0119tu O\u015bwietleniowego \"ROSA\" Stanis\u0142aw Rosa","code":"PL-X9D","phone":"+48668418039","email":"aszewczuk@rosa.pl","short_name":"ROSA","type":1,"country":"pl"},
 {"id":52,"name":"ZK MOTORS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-15Y","phone":"+48734188493","email":"wkmiec@playada.pl","type":1,"country":"pl"},
 {"id":53,"name":"ENGIE Technika Instalacyjna Sp. z o.o.","code":"PL-ES3","phone":"228519740","email":"evbox@engie.com","type":1,"country":"pl"},
 {"id":54,"name":"ZAK\u0141AD DOSKONALENIA ZAWODOWEGO","code":"PL-PDX","phone":"12 397-21-31","email":"p.tarkowski@krowodrzahotel.pl","short_name":"ZDZ KRAK\u00d3W","type":1,"country":"pl"},
@@ -724,4 +723,4 @@
 {"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"},
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
-{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-02T09:10:03+02:00"}
+{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-02T13:55:03+02:00"}
