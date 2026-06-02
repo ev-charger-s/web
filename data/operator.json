@@ -59,7 +59,6 @@
 {"id":82,"name":"Urz\u0105d Miasta i Gminy Pobiedziska","code":"PL-PC7","phone":"618977100","email":"umig@pobiedziska.pl","website":"http:\/\/www.pobiedziska.pl","type":1,"country":"pl"},
 {"id":83,"name":"ING Bank \u015al\u0105ski S.A.","code":"PL-H1G","phone":"693-180-034","email":"bartlomiej.grzywinski@ing.pl","website":"http:\/\/ing.pl","short_name":"ING Bank","type":1,"country":"pl"},
 {"id":84,"name":"ESV S.A.","code":"PL-9QQ","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"ESV","type":1,"country":"pl"},
-{"id":85,"name":"AUTO SALON \u015aWITO\u0143-PACZKOWSKI H. \u015aWITO\u0143, H. i E. PACZKOWSCY SP.J.","code":"PL-G3K","phone":"767592600","email":"sekretariat@switon-paczkowski.pl","website":"http:\/\/www.switon-paczkowski.pl","type":1,"country":"pl"},
 {"id":86,"name":"Michelin Polska S.A","code":"PL-SCE","phone":"+48895394510","email":"jerzy.przybylowski@michelin.com","short_name":"Michelin","type":1,"country":"pl"},
 {"id":87,"name":"\u201eIGNASZAK\u201d sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp.k.","code":"PL-NXA","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"IGNASZAK","type":1,"country":"pl"},
 {"id":88,"name":"Toyota Motors Manufacturing Poland Sp. z o.o.","code":"PL-Z1G","phone":"797701840","email":"mkoczur@takenaka.pl","short_name":"TMMP-W","type":1,"country":"pl"},
@@ -723,4 +722,4 @@
 {"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"},
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
-{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-02T13:55:03+02:00"}
+{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-02T19:10:03+02:00"}
