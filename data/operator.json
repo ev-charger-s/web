@@ -65,7 +65,6 @@
 {"id":90,"name":"PHU HADM Mieczys\u0142aw Gramatowski","code":"PL-Y5H","phone":"720820164","email":"serwis.elblag@hadm.pl","website":"http:\/\/www.hadm.pl","short_name":"HADM Skoda i Citroen","type":1,"country":"pl"},
 {"id":91,"name":"GreenGoo Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-P1U","phone":"800802801","email":"info@greengoo.eu","short_name":"GreenGoo Sp. z o.o.","type":1,"country":"pl"},
 {"id":92,"name":"Televend Pawe\u0142 O\u017cga","code":"PL-RJB","phone":"+48662176677","email":"info@evmeter.pl","website":"http:\/\/www.evmeter.pl","short_name":"Televend","type":1,"country":"pl"},
-{"id":93,"name":"FLUOR S.A.","code":"PL-8BN","phone":"48322391500","email":"fluor.gliwice@fluor.com","website":"http:\/\/www.fluor.com","type":1,"country":"pl"},
 {"id":95,"name":"Shell Polska Sp. z o.o.","code":"PL-PHB","phone":"+48225700000","email":"kartybiuroobslugi-pl@shell.com","website":"http:\/\/www.shell.pl\/lngdlabiznesu","short_name":"Shell Polska","type":1,"country":"pl"},
 {"id":96,"name":"NOXO ENERGY Sp. z o.o.","code":"PL-NOX","phone":"224794040","email":"zamow@noxo.energy","website":"http:\/\/www.noxo.energy","short_name":"NOXO.","type":1,"country":"pl"},
 {"id":98,"name":"Platan Property Sp. z o.o.","code":"PL-1EE","phone":"32-278-67-62","email":"platan@apsysgroup.pl","short_name":"Platan","type":1,"country":"pl"},
@@ -722,4 +721,4 @@
 {"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"},
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
-{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-03T07:50:03+02:00"}
+{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-03T12:50:03+02:00"}
