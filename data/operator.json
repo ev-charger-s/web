@@ -1,7 +1,7 @@
 {"data":[{"id":3,"name":"Wenar Sp. z o.o.","code":"PL-WEN","phone":"780070766","email":"info@wenar.pl","website":"https:\/\/www.e-mob.pl\/","short_name":"Wenar","type":1,"country":"pl"},
 {"id":4,"name":"EV PLUS Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-GJC","phone":"+48533708555","email":"biuro@evplus.com.pl","website":"http:\/\/evplus.com.pl","short_name":"EV PLUS Sp. z o.o.","type":1,"country":"pl"},
 {"id":5,"name":"GreenWay Polska Sp. z o.o.","code":"PL-7R5","phone":"48-58-325-10-17","email":"bok@greenwaypolska.pl","website":"http:\/\/greenwaypolska.pl\/","short_name":"GWPL","type":1,"country":"pl"},
-{"id":6,"name":"GO+ EAuto sp. z o.o.","code":"PL-MYE","phone":"515515243","email":"biuro@gopluseauto.pl","website":"https:\/\/www.gopluseauto.pl\/","short_name":"GO+ EAuto","type":1,"country":"pl"},
+{"id":6,"name":"GO+ EAuto sp. z o.o.","code":"PL-MYE","phone":"+48515515243","email":"biuro@gopluseauto.pl","website":"https:\/\/www.gopluseauto.pl\/","short_name":"GO+ EAuto","type":1,"country":"pl"},
 {"id":8,"name":"PGE Nowa Energia Sp. z o.o.","code":"PL-PGE","phone":"22-344-55-66","email":"nowa.energia@gkpge.pl","short_name":"PGE Nowa Energia","type":1,"country":"pl"},
 {"id":9,"name":"Edward Biel Producent Rozdzielnic Elektrycznych","code":"PL-K64","phone":"+48696673646","email":"biuro@prebiel.pl","website":"http:\/\/www.evb24.pl","short_name":"PRE Edward Biel","type":1,"country":"pl"},
 {"id":10,"name":"S\u0105deckie Wodoci\u0105gi Sp. z o.o.","code":"PL-CBG","phone":"184438643","email":"biuro@swns.pl","short_name":"SWNS","type":1,"country":"pl"},
@@ -720,4 +720,4 @@
 {"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"},
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
-{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-08T07:20:03+02:00"}
+{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-08T12:10:03+02:00"}
