@@ -38,7 +38,6 @@
 {"id":55,"name":"ENEA S.A.","code":"PL-GG8","phone":"+48727564125","website":"http:\/\/www.enea.pl","short_name":"ENEA","type":1,"country":"pl"},
 {"id":56,"name":"\u0141adowatt Sp. z o.o.","code":"PL-TTP","phone":"791710289","email":"info@ladowatt.eu","website":"http:\/\/www.ladowatt.eu","short_name":"\u0141adowatt","type":1,"country":"pl"},
 {"id":57,"name":"Stacja \u0141adowania Pojazd\u00f3w","code":"PL-UQF","phone":"690910280","email":"biuro@hymon.pl","short_name":"Stacja \u0141adowania Pojazd\u00f3w","type":1,"country":"pl"},
-{"id":59,"name":"RAWICOM EV Sp. z o.o.","code":"PL-CXM","phone":"+48523078080","email":"biuro@rawicom.pl","website":"http:\/\/www.revnet.pl","short_name":"RAWICOM EV","type":1,"country":"pl"},
 {"id":61,"name":"Energy Management Systems","code":"PL-AXX","phone":"+48602723324","email":"mwlas@ems.gda.pl","website":"http:\/\/evvolta.ems.gda.pl","type":1,"country":"pl"},
 {"id":62,"name":"Lidl sp. z o.o. sp. k.","code":"PL-Q55","phone":"800-012-071","website":"http:\/\/www.lidl.pl","type":1,"country":"pl"},
 {"id":63,"name":"Kaufland Polska Markety Sp. z o.o. Sp. j.","code":"PL-3T1","phone":"+48800300062","email":"e-auto@kaufland.pl","website":"https:\/\/sklep.kaufland.pl\/uslugi\/stacje-ladowania.html","short_name":"Kaufland Polska Markety","type":1,"country":"pl"},
@@ -718,4 +717,4 @@
 {"id":2007,"name":"PPHU JACKER JACEK SIKORA","code":"PL-KAC","phone":"+48-511-849-078","email":"firma@jacker.pl","website":"http:\/\/www.jacker.pl","short_name":"JACKER","type":3,"country":"pl"},
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
-{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-11T07:15:03+02:00"}
+{"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"}], "generated":"2026-06-11T11:55:03+02:00"}
