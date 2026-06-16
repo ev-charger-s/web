@@ -42,7 +42,7 @@
 {"id":62,"name":"Lidl sp. z o.o. sp. k.","code":"PL-Q55","phone":"800-012-071","website":"http:\/\/www.lidl.pl","type":1,"country":"pl"},
 {"id":63,"name":"Kaufland Polska Markety Sp. z o.o. Sp. j.","code":"PL-3T1","phone":"+48800300062","email":"e-auto@kaufland.pl","website":"https:\/\/sklep.kaufland.pl\/uslugi\/stacje-ladowania.html","short_name":"Kaufland Polska Markety","type":1,"country":"pl"},
 {"id":64,"name":"Arinea sp. z o.o","code":"PL-Z75","phone":"+48609321481","email":"biuro@arinea.pl","website":"http:\/\/arinea.pl","type":3,"country":"pl"},
-{"id":65,"name":"Urz\u0105d Gminy Nadarzyn","code":"PL-74W","phone":"227298185","email":"gmina@nadarzyn.pl","website":"http:\/\/www.nadarzyn.pl","type":1,"country":"pl"},
+{"id":65,"name":"Urz\u0105d Gminy Nadarzyn","code":"PL-74W","phone":"+48227298185","email":"gmina@nadarzyn.pl","website":"http:\/\/www.nadarzyn.pl","type":1,"country":"pl"},
 {"id":68,"name":"EVBox Poland Sp. z o.o.","code":"PL-K31","phone":"661-106-687","email":"wojciech.dziwisz@ev-box.com","website":"https:\/\/evbox.com\/en\/hey-evbox-support","short_name":"EVBox","type":1,"country":"pl"},
 {"id":69,"name":"PANATTONI DEVELOPMENT COMPANY SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104 SP\u00d3\u0141KA KOMANDYTOWA","code":"PL-M1H","phone":"+48669690434","email":"michal.grzywinski@kiongroup.com","type":1,"country":"pl"},
 {"id":70,"name":"Inchcape Motor Polska Sp. z o.o.","code":"PL-GC7","phone":"225333500","email":"salon.warszawa@bmw-imp.pl","website":"http:\/\/www.warszawa.bmw-inchcape.pl","short_name":"Inchcape Motor Polska Sp. z o.o.","type":1,"country":"pl"},
@@ -66,7 +66,7 @@
 {"id":95,"name":"Shell Polska Sp. z o.o.","code":"PL-PHB","phone":"+48225700000","email":"kartybiuroobslugi-pl@shell.com","website":"http:\/\/www.shell.pl\/lngdlabiznesu","short_name":"Shell Polska","type":1,"country":"pl"},
 {"id":96,"name":"NOXO ENERGY Sp. z o.o.","code":"PL-NOX","phone":"224794040","email":"zamow@noxo.energy","website":"http:\/\/www.noxo.energy","short_name":"NOXO.","type":1,"country":"pl"},
 {"id":98,"name":"Platan Property Sp. z o.o.","code":"PL-1EE","phone":"32-278-67-62","email":"platan@apsysgroup.pl","short_name":"Platan","type":1,"country":"pl"},
-{"id":99,"name":"Auto Tim Janeczoko sp. z o.o.","code":"PL-BJD","phone":"+48601558163","email":"krystian@autotim.com.pl","website":"http:\/\/www.fiat-opole.pl","short_name":"AutoTim","type":1,"country":"pl"},
+{"id":99,"name":"Auto Tim Janeczko sp. z o.o.","code":"PL-BJD","phone":"+48601558163","email":"krystian@autotim.com.pl","website":"http:\/\/www.fiat-opole.pl","short_name":"AutoTim","type":1,"country":"pl"},
 {"id":101,"name":"PHU BURSIAK Sp. z o.o.","code":"PL-E6Z","phone":"503094985","email":"piotr.lesiak@bursiak.pl","website":"http:\/\/www.bursiak.pl","short_name":"BURSIAK","type":1,"country":"pl"},
 {"id":102,"name":"Ekoenergetyka Polska S.A.","code":"PL-GPF","phone":"683282068","email":"contact@ekoenergetyka.com.pl","website":"https:\/\/ekoenergetyka.com.pl\/","type":1,"country":"pl"},
 {"id":103,"name":"\u017babka Polska Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-1NQ","phone":"+48185-428-428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"\u017babka Polska Sp. z o. o.","type":1,"country":"pl"},
@@ -715,4 +715,4 @@
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
 {"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"},
-{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"}], "generated":"2026-06-16T08:15:03+02:00"}
+{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"}], "generated":"2026-06-16T13:55:03+02:00"}
