@@ -256,7 +256,7 @@
 {"id":377,"name":"BIONANOPARK sp. z o.o.","code":"PL-YXJ","phone":"+48422807676","email":"biuro@bionanopark.pl","website":"http:\/\/bionanopark.pl","type":1,"country":"pl"},
 {"id":378,"name":"EUROLOOP Sp. z o.o.","code":"PL-8A3","phone":"+48606705540","email":"contact@willbert.tech","website":"http:\/\/www.willbert.tech","short_name":"PL-WLB","type":3,"country":"pl"},
 {"id":380,"name":"Top Auto Andrzej Arefiew","code":"PL-P76","phone":"+48856616802","email":"elektryfikacja@topauto.com.pl","website":"http:\/\/www.topauto.com.pl","short_name":"Top Auto","type":1,"country":"pl"},
-{"id":381,"name":"Horyzont EV Sp. z o.o.","code":"PL-1SN","phone":"+48513282828","email":"kontakt@horyzontev.pl","website":"http:\/\/www.horyzontev.pl","short_name":"Horyzont EV","type":3,"country":"pl"},
+{"id":381,"name":"KPE Horyzont EV Sp. z o.o.","code":"PL-1SN","phone":"+48513282828","email":"kontakt@horyzontev.pl","website":"http:\/\/www.horyzontev.pl","short_name":"Horyzont EV","type":3,"country":"pl"},
 {"id":382,"name":"Stawowy Group Sp\u00f3\u0142ka z ograniczona odpowiedzialno\u015bci\u0105 Sp\u00f3\u0142ka komandytowa","code":"PL-FF7","phone":"+48338107700","email":"piotr.oko@stawowy.com.pl","website":"http:\/\/stawowy.hyundai.pl","short_name":"Stawowy group Sp. z o.o. Sp.k.","type":1,"country":"pl"},
 {"id":383,"name":"FHU s.c. STACJA PALIW J.P WSZELAKI","code":"PL-HAN","phone":"+48602502092","email":"pawel-wszelaki@wp.pl","type":1,"country":"pl"},
 {"id":384,"name":"Gmina Rawicz","code":"PL-RDZ","phone":"+48656164980","email":"umg@rawicz.eu","type":1,"country":"pl"},
@@ -711,4 +711,4 @@
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
 {"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"},
-{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"}], "generated":"2026-06-17T13:20:03+02:00"}
+{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"}], "generated":"2026-06-17T16:40:03+02:00"}
