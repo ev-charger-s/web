@@ -105,7 +105,6 @@
 {"id":146,"name":"Zesp\u00f3\u0142 Elektrowni Wodnych Niedzica Sp\u00f3\u0142ka Akcyjna","code":"PL-51C","phone":"182610150","email":"sekretariat@niedzica.pl","short_name":"ZEW Niedzica S.A.","type":1,"country":"pl"},
 {"id":147,"name":"Ursa Maior sp. z o.o. SKA","code":"PL-JQE","phone":"134612510","email":"stacja@ursamaior.pl","website":"http:\/\/www.ursamaior.pl","type":1,"country":"pl"},
 {"id":150,"name":"Plichta Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 Sp\u00f3\u0142ka komandytowa","code":"PL-9W5","phone":"502-605-566","email":"kc@lastmilesolutions.com","website":"http:\/\/www.lastmilesolutions.com","short_name":"Plichta Sp. z o.o.","type":1,"country":"pl"},
-{"id":151,"name":"Arinea-Tech Anna Piorun","code":"PL-UD9","phone":"791555861","email":"biuro@arinea.pl","website":"http:\/\/www.wallbox.pl","short_name":"Arinea-Tech","type":1,"country":"pl"},
 {"id":152,"name":"Euro-NET Sp. z o. o.","code":"PL-QB8","phone":"571411029","email":"michal.witczak@euro.com.pl","short_name":"EURO","type":1,"country":"pl"},
 {"id":153,"name":"Berdychowski Sp.J.","code":"PL-B7G","phone":"502291765","email":"serwis@berdychowski.com.pl","website":"https:\/\/berdychowski.dealer.volkswagen.pl","short_name":"Berdychowski Sp.J.","type":1,"country":"pl"},
 {"id":154,"name":"\u015awito\u0144-Paczkowski sp. z o.o.","code":"PL-BQP","phone":"68-478-69-00","email":"sekretariat_zgora@switon-paczkowski.pl","website":"http:\/\/www.switon-paczkowski.pl","short_name":"\u015awito\u0144-Paczkowski sp. z o.o.","type":1,"country":"pl"},
@@ -711,4 +710,4 @@
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
 {"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"},
-{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"}], "generated":"2026-06-19T08:00:03+02:00"}
+{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"}], "generated":"2026-06-19T13:05:03+02:00"}
