@@ -147,7 +147,7 @@
 {"id":207,"name":"SIGMA TECHNOLOGY & ENERGY SOLUTIONS Sp. z o.o.","code":"PL-8P7","phone":"+48570799500","email":"operator@sigmapolska.pl","short_name":"SIGMA","type":1,"country":"pl"},
 {"id":209,"name":"Danuta i Ryszard Czach Sp. z o.o. Autoryzowany Dealer VOLVO","code":"PL-XZP","phone":"+48178668160","email":"j.szeliga@czach.dealervolvo.pl","website":"https:\/\/czach.volvocars-partner.pl","short_name":"Dealer VOLVO","type":1,"country":"pl"},
 {"id":211,"name":"Film Hotel Sp. z o. o.","code":"PL-DEJ","phone":"422088000","email":"lcjdl.res@hilton.com","website":"http:\/\/www.doubletreelodz.pl","short_name":"DoubleTree by Hilton \u0141\u00f3d\u017a","type":1,"country":"pl"},
-{"id":212,"name":"Gmina Walce","code":"PL-RZD","phone":"774660113","email":"gok@walce.pl","short_name":"UG Walce","type":1,"country":"pl"},
+{"id":212,"name":"Gmina Walce","code":"PL-RZD","phone":"+48774660113","email":"gok@walce.pl","short_name":"UG Walce","type":1,"country":"pl"},
 {"id":214,"name":"Tomasz Bonk","code":"PL-FBN","phone":"697902904","email":"tomaszbonk@me.com","short_name":"TB","type":1,"country":"pl"},
 {"id":215,"name":"Gmina Kaczory","code":"PL-71D","phone":"663222338","email":"gospodarkakomunalna@kaczory.pl","website":"http:\/\/www.kaczory.pl","short_name":"Gmina Kaczory","type":1,"country":"pl"},
 {"id":217,"name":"Wadowscy Sp. z o.o.","code":"PL-5Z9","phone":"693408600","website":"http:\/\/wadowscy.dealervolvo.pl","type":1,"country":"pl"},
@@ -169,7 +169,6 @@
 {"id":236,"name":"AUTORYZOWANY DEALER VOLKSWAGENA-STASZAK","code":"PL-FZ5","phone":"607077792","email":"anna.staszak@vwstaszak.pl","short_name":"VOLKSWAGEN STASZAK","type":1,"country":"pl"},
 {"id":237,"name":"EKOEN Sp. z o.o.","code":"PL-P2W","phone":"+48699585858","email":"kontakt@ekoen.pl","website":"https:\/\/ekoen.pl\/","short_name":"EKOEN","type":3,"country":"pl"},
 {"id":238,"name":"Gmina Wo\u0142omin","code":"PL-J3H","phone":"22 763-30-92, 22 763-30-95","email":"piotr.witek@wolomin.org.pl","short_name":"Gmin Wo\u0142omin","type":1,"country":"pl"},
-{"id":239,"name":"OILER Sp\u00f3\u0142ka Akcyjna","code":"PL-RGK","phone":"+48664041497","email":"biuro@oiler.pl","website":"http:\/\/oiler.com.pl","short_name":"OILER SA","type":1,"country":"pl"},
 {"id":240,"name":"G&G Auto Rzesz\u00f3w Sp. z o.o.","code":"PL-GN6","phone":"+48178607000","email":"kontakt.vw@ggautorzeszow.pl","website":"https:\/\/ggautorzeszow.dealer.volkswagen.pl\/osobowe","short_name":"G&G Auto Rzesz\u00f3w","type":1,"country":"pl"},
 {"id":242,"name":"Gmina Cieszan\u00f3w","code":"PL-5RF","phone":"166311076","email":"cieszanow@vp.pl","website":"http:\/\/www.cieszanow.pl","type":1,"country":"pl"},
 {"id":243,"name":"Mareckie Inwestycje Miejskie Sp. z o.o.","code":"PL-PFH","phone":"22-100-23-33","website":"http:\/\/www.mcer.pl","short_name":"MiM","type":1,"country":"pl"},
@@ -710,4 +709,5 @@
 {"id":2009,"name":"Eway Operator Sp. z o.o.","code":"PL-628","phone":"+48666832689","email":"konrad.kolodziejczyk@eway.pl","short_name":"Eway","type":1,"country":"pl"},
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
 {"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"},
-{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"}], "generated":"2026-06-22T10:45:03+02:00"}
+{"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"},
+{"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"}], "generated":"2026-06-22T16:20:03+02:00"}
