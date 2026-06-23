@@ -1,1 +1,1 @@
-consolidation-etalab-schema-irve-statique-v-2.3.1-20260621.csv
+consolidation-etalab-schema-irve-statique-v-2.3.1-20260623.csv
