@@ -156,7 +156,7 @@
 {"id":222,"name":"BENEPOL SP. Z O.O.","code":"PL-DWB","phone":"668888052","website":"http:\/\/www.benepol.pl","short_name":"BENEPOL","type":1,"country":"pl"},
 {"id":223,"name":"PLUGBOX EUROPE SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-JKN","phone":"+48795359785","email":"info@plugbox.eu","website":"http:\/\/www.plugbox.eu","short_name":"PLUGBOX EUROPE Sp. z o.o.","type":1,"country":"pl"},
 {"id":225,"name":"Cyfrowe Sieci Multimedialne Sp. z o.o.","code":"PL-5BG","phone":"158135656","email":"biuro@csmm.pl","website":"http:\/\/www.vely.pl","short_name":"CSMM","type":1,"country":"pl"},
-{"id":226,"name":"SIE\u0143KO I SYN SP. Z.O.O.","code":"PL-APH","phone":"856644100","website":"http:\/\/www.sienkoisyn.com.pl","short_name":"SIE\u0143KO I SYN","type":1,"country":"pl"},
+{"id":226,"name":"SIE\u0143KO I SYN SP. Z.O.O.","code":"PL-APH","phone":"+48856644100","website":"http:\/\/www.sienkoisyn.com.pl","short_name":"SIE\u0143KO I SYN","type":1,"country":"pl"},
 {"id":227,"name":"Urz\u0105d Miejski w Bytowie","code":"PL-YGP","phone":"598222317","email":"urzad@bytow.com.pl","website":"http:\/\/www.bytow.com.pl","short_name":"UM Byt\u00f3w.","type":1,"country":"pl"},
 {"id":228,"name":"G&G AUTO LUBLIN Sp. z o.o.","code":"PL-T29","phone":"81 469-77-00","email":"kontakt@ggautolublin.pl","short_name":"G&G AUTO LUBLIN Sp. z o.o.","type":1,"country":"pl"},
 {"id":229,"name":"ZIMNY AUTO Sp\u00f3\u0142ka z o.o.","code":"PL-1GW","phone":"+48601365943","email":"cezary.miedzianowski@zimny.com.pl","website":"http:\/\/www.zimny.com.pl","short_name":"ZIMNY AUTO","type":1,"country":"pl"},
@@ -710,4 +710,4 @@
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
 {"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"},
 {"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"},
-{"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"}], "generated":"2026-06-24T08:05:03+02:00"}
+{"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"}], "generated":"2026-06-24T12:10:03+02:00"}
