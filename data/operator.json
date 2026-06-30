@@ -149,7 +149,7 @@
 {"id":212,"name":"Gmina Walce","code":"PL-RZD","phone":"+48774660113","email":"gok@walce.pl","short_name":"UG Walce","type":1,"country":"pl"},
 {"id":214,"name":"Tomasz Bonk","code":"PL-FBN","phone":"697902904","email":"tomaszbonk@me.com","short_name":"TB","type":1,"country":"pl"},
 {"id":215,"name":"Gmina Kaczory","code":"PL-71D","phone":"663222338","email":"gospodarkakomunalna@kaczory.pl","website":"http:\/\/www.kaczory.pl","short_name":"Gmina Kaczory","type":1,"country":"pl"},
-{"id":217,"name":"Wadowscy Sp. z o.o.","code":"PL-5Z9","phone":"693408600","website":"http:\/\/wadowscy.dealervolvo.pl","type":1,"country":"pl"},
+{"id":217,"name":"Wadowscy Sp. z o.o.","code":"PL-5Z9","phone":"+48693408600","website":"http:\/\/wadowscy.dealervolvo.pl","type":1,"country":"pl"},
 {"id":218,"name":"Rex Auto Sp. z o.o.","code":"PL-AQP","phone":"+48535737767","email":"serwis@poczta.rexauto.com.pl","website":"http:\/\/www.rexauto.com.pl","short_name":"Rex Auto Sp. z o.o.","type":1,"country":"pl"},
 {"id":219,"name":"GMINA NIEPO\u0141OMICE","code":"PL-PA2","phone":"+48122509419","email":"magistrat@niepolomice.eu","website":"http:\/\/e`niepolomice","short_name":"GMINA NIEPO\u0141OMICE","type":1,"country":"pl"},
 {"id":222,"name":"BENEPOL SP. Z O.O.","code":"PL-DWB","phone":"668888052","website":"http:\/\/www.benepol.pl","short_name":"BENEPOL","type":1,"country":"pl"},
@@ -706,4 +706,4 @@
 {"id":2011,"name":"UMED SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TSU","phone":"+48-535-731-443","email":"l.kolodziejczyk@umed.pl","short_name":"UMED","type":1,"country":"pl"},
 {"id":2012,"name":"SUNUP.PL sp. z o. o.","code":"PL-SUN","phone":"+48690307090","email":"biuro@sunup.pl","short_name":"SunUp.pl","type":3,"country":"pl"},
 {"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"},
-{"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"}], "generated":"2026-06-30T03:55:03+02:00"}
+{"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"}], "generated":"2026-06-30T08:40:03+02:00"}
