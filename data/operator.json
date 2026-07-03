@@ -152,7 +152,7 @@
 {"id":217,"name":"Wadowscy Sp. z o.o.","code":"PL-5Z9","phone":"+48693408600","website":"http:\/\/wadowscy.dealervolvo.pl","type":1,"country":"pl"},
 {"id":218,"name":"Rex Auto Sp. z o.o.","code":"PL-AQP","phone":"+48535737767","email":"serwis@poczta.rexauto.com.pl","website":"http:\/\/www.rexauto.com.pl","short_name":"Rex Auto Sp. z o.o.","type":1,"country":"pl"},
 {"id":219,"name":"GMINA NIEPO\u0141OMICE","code":"PL-PA2","phone":"+48122509419","email":"magistrat@niepolomice.eu","website":"http:\/\/e`niepolomice","short_name":"GMINA NIEPO\u0141OMICE","type":1,"country":"pl"},
-{"id":222,"name":"BENEPOL SP. Z O.O.","code":"PL-DWB","phone":"668888052","website":"http:\/\/www.benepol.pl","short_name":"BENEPOL","type":1,"country":"pl"},
+{"id":222,"name":"BENEPOL SP. Z O.O.","code":"PL-DWB","phone":"+48668888052","website":"http:\/\/www.benepol.pl","short_name":"BENEPOL","type":1,"country":"pl"},
 {"id":223,"name":"PLUGBOX EUROPE SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-JKN","phone":"+48795359785","email":"info@plugbox.eu","website":"http:\/\/www.plugbox.eu","short_name":"PLUGBOX EUROPE Sp. z o.o.","type":1,"country":"pl"},
 {"id":225,"name":"Cyfrowe Sieci Multimedialne Sp. z o.o.","code":"PL-5BG","phone":"+48158135656","email":"biuro@csmm.pl","website":"http:\/\/www.vely.pl","short_name":"CSMM","type":1,"country":"pl"},
 {"id":228,"name":"G&G AUTO LUBLIN Sp. z o.o.","code":"PL-T29","phone":"81 469-77-00","email":"kontakt@ggautolublin.pl","short_name":"G&G AUTO LUBLIN Sp. z o.o.","type":1,"country":"pl"},
@@ -708,4 +708,4 @@
 {"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"},
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-TZH","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
-{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-03T13:55:03+02:00"}
+{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-03T16:55:03+02:00"}
