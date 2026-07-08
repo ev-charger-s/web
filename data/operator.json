@@ -26,7 +26,7 @@
 {"id":38,"name":"Techenergo","code":"PL-TEO","phone":"690-012-314","email":"d.puchala@techenergo.pl","short_name":"TE","type":1,"country":"pl"},
 {"id":39,"name":"City Parking Group S.A.","code":"PL-7CC","phone":"+48566430022","email":"biuro@citypg.pl","short_name":"CPG","type":1,"country":"pl"},
 {"id":40,"name":"CITYOS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-RFW","phone":"+48 690644278","email":"biuro@cityos.pl","website":"http:\/\/www.cityos.pl","short_name":"cityOs","type":1,"country":"pl"},
-{"id":41,"name":"Energa Obr\u00f3t S. A.","code":"PL-KM8","phone":"555-555-537","email":"emobility@energa.pl","website":"https:\/\/emobility.pl\/","type":1,"country":"pl"},
+{"id":41,"name":"Energa Obr\u00f3t S. A.","code":"PL-KM8","phone":"+48555555537","email":"emobility@energa.pl","website":"https:\/\/emobility.pl\/","type":1,"country":"pl"},
 {"id":44,"name":"ORLEN S.A.","code":"PL-PKN","phone":"+48502167536","website":"https:\/\/opinie.orlen.pl\/","short_name":"ORLEN","type":3,"country":"pl"},
 {"id":45,"name":"E.ON Polska S.A.","code":"PL-FPK","phone":"+48228213131","email":"elektromobilnosc@eon.pl","website":"https:\/\/eon.pl\/dla-domu\/oferta\/e-mobility\/publicznie-dostepne-ladowarki","short_name":"E.ON","type":1,"country":"pl"},
 {"id":46,"name":"Gmina Miejska Legionowo","code":"PL-HA6","phone":"227664068","email":"inwestycje@um.legionowo.pl","type":1,"country":"pl"},
@@ -708,4 +708,4 @@
 {"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"},
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
-{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-08T06:50:02+02:00"}
+{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-08T10:00:03+02:00"}
