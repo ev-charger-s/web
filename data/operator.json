@@ -209,7 +209,6 @@
 {"id":309,"name":"Gmina Micha\u0142owice","code":"PL-GFU","phone":"+48223509191","email":"sekretariat@michalowice.pl","website":"http:\/\/michalowice.pl","type":1,"country":"pl"},
 {"id":310,"name":"Firma Tranzit Micha\u0142 Pozna\u0144ski","code":"PL-16A","phone":"+48578080501","email":"tranzit.biuro@gmail.com","short_name":"Firma Tranzit Micha\u0142 Pozna\u0144ski","type":1,"country":"pl"},
 {"id":311,"name":"CORUM XL","code":"PL-T7U","phone":"+48504339290","email":"axis@cbre.com","type":1,"country":"pl"},
-{"id":312,"name":"Jakub  Taborski, Gra\u017cyna Taborska, Aleksandra Zmy\u015blony s.c. Taborscy","code":"PL-K68","phone":"+48693380455","email":"jwtk@interia.pl","website":"http:\/\/jwtk.pl","short_name":"s.c. Taborscy","type":1,"country":"pl"},
 {"id":313,"name":"Complex-Bud Szymon Steuer","code":"PL-9JB","phone":"+48-508-648-015","email":"remontujesz-budujesz@wp.pl","website":"http:\/\/remontujesz-budujesz@wp.pl","type":1,"country":"pl"},
 {"id":314,"name":"Meta International sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-ZR2","phone":"+48516777774","email":"magdalena.pastor@meta-hotel.pl","short_name":"Meta International sp. z o.o.","type":1,"country":"pl"},
 {"id":332,"name":"Gmina Rokietnica","code":"PL-PYX","phone":"+48618960600","email":"urzad@rokitnica.pl","website":"https:\/\/rokietnica.pl\/kontakt\/","type":1,"country":"pl"},
@@ -706,4 +705,4 @@
 {"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"},
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
-{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-09T10:20:03+02:00"}
+{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-09T13:40:03+02:00"}
