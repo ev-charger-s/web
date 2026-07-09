@@ -57,7 +57,6 @@
 {"id":82,"name":"Urz\u0105d Miasta i Gminy Pobiedziska","code":"PL-PC7","phone":"618977100","email":"umig@pobiedziska.pl","website":"http:\/\/www.pobiedziska.pl","type":1,"country":"pl"},
 {"id":83,"name":"ING Bank \u015al\u0105ski S.A.","code":"PL-H1G","phone":"693-180-034","email":"bartlomiej.grzywinski@ing.pl","website":"http:\/\/ing.pl","short_name":"ING Bank","type":1,"country":"pl"},
 {"id":84,"name":"ESV S.A.","code":"PL-9QQ","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"ESV","type":1,"country":"pl"},
-{"id":86,"name":"Michelin Polska S.A","code":"PL-SCE","phone":"+48895394510","email":"jerzy.przybylowski@michelin.com","short_name":"Michelin","type":1,"country":"pl"},
 {"id":87,"name":"\u201eIGNASZAK\u201d sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp.k.","code":"PL-NXA","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"IGNASZAK","type":1,"country":"pl"},
 {"id":88,"name":"Toyota Motors Manufacturing Poland Sp. z o.o.","code":"PL-Z1G","phone":"797701840","email":"mkoczur@takenaka.pl","short_name":"TMMP-W","type":1,"country":"pl"},
 {"id":90,"name":"PHU HADM Mieczys\u0142aw Gramatowski","code":"PL-Y5H","phone":"720820164","email":"serwis.elblag@hadm.pl","website":"http:\/\/www.hadm.pl","short_name":"HADM Skoda i Citroen","type":1,"country":"pl"},
@@ -165,7 +164,6 @@
 {"id":235,"name":"AKADEMIA G\u00d3RNICZO-HUTNICZA","code":"PL-YK1","phone":"+48222907992","email":"support@elo.city","website":"http:\/\/www.elo.city","short_name":"MSAGH","type":1,"country":"pl"},
 {"id":236,"name":"AUTORYZOWANY DEALER VOLKSWAGENA-STASZAK","code":"PL-FZ5","phone":"607077792","email":"anna.staszak@vwstaszak.pl","short_name":"VOLKSWAGEN STASZAK","type":1,"country":"pl"},
 {"id":237,"name":"EKOEN Sp. z o.o.","code":"PL-P2W","phone":"+48699585858","email":"kontakt@ekoen.pl","website":"https:\/\/ekoen.pl\/","short_name":"EKOEN","type":3,"country":"pl"},
-{"id":238,"name":"Gmina Wo\u0142omin","code":"PL-J3H","phone":"22 763-30-92, 22 763-30-95","email":"piotr.witek@wolomin.org.pl","short_name":"Gmin Wo\u0142omin","type":1,"country":"pl"},
 {"id":240,"name":"G&G Auto Rzesz\u00f3w Sp. z o.o.","code":"PL-GN6","phone":"+48178607000","email":"kontakt.vw@ggautorzeszow.pl","website":"https:\/\/ggautorzeszow.dealer.volkswagen.pl\/osobowe","short_name":"G&G Auto Rzesz\u00f3w","type":1,"country":"pl"},
 {"id":242,"name":"Gmina Cieszan\u00f3w","code":"PL-5RF","phone":"166311076","email":"cieszanow@vp.pl","website":"http:\/\/www.cieszanow.pl","type":1,"country":"pl"},
 {"id":243,"name":"Mareckie Inwestycje Miejskie Sp. z o.o.","code":"PL-PFH","phone":"22-100-23-33","website":"http:\/\/www.mcer.pl","short_name":"MiM","type":1,"country":"pl"},
@@ -708,4 +706,4 @@
 {"id":2014,"name":"BFK Profit LTD","code":"PL-DYC","phone":"+48665391312","email":"kontakt@fajnakwatera.pl","website":"http:\/\/www.fajnakwatera.pl","short_name":"BFK PROFIT","type":1,"country":"gb"},
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
-{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-09T06:45:03+02:00"}
+{"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"}], "generated":"2026-07-09T10:20:03+02:00"}
