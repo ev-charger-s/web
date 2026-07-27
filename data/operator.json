@@ -620,7 +620,7 @@
 {"id":1906,"name":"Bieszczadzki Park Narodowy","code":"PL-7G9","phone":"+48724751305","email":"draton@bdpn.pl","short_name":"BdPN","type":1,"country":"pl"},
 {"id":1907,"name":"stacjeladowania.com sp. z o.o.","code":"PL-STL","phone":"+48604687041","email":"kontakt@stacjeladowania.com","website":"http:\/\/stacjeladowania.com","short_name":"stacjeladowania.com","type":3,"country":"pl"},
 {"id":1908,"name":"Iness Hotel Sp. z o.o.","code":"PL-K9D","phone":"+48-667-106-107","website":"http:\/\/www.inesshotel.pl","short_name":"Iness Hotel","type":1,"country":"pl"},
-{"id":1909,"name":"50five","code":"NL-505","phone":"+48-502-605-566","email":"info@50five.com","website":"http:\/\/www.50five.com","short_name":"50five","type":3,"country":"nl"},
+{"id":1909,"name":"50five B.V.","code":"NL-505","phone":"+48-502-605-566","email":"info@50five.com","website":"http:\/\/www.50five.com","short_name":"50five","type":3,"country":"nl"},
 {"id":1910,"name":"Hotel Chopin M.Pliszka","code":"PL-2EH","phone":"+48600914158","email":"hotel@hotelchopin.pl","website":"http:\/\/hotelchopin.pl","type":1,"country":"pl"},
 {"id":1911,"name":"Colian sp. z o.o.","code":"PL-PP6","phone":"+48625903300","email":"opatowek@colian.com","website":"https:\/\/colian.com\/","short_name":"Colian","type":1,"country":"pl"},
 {"id":1912,"name":"MOKOTOW I PROPCO SPO\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-35P","phone":"+48883197269","email":"t.faszczewski@profm.com.pl","type":1,"country":"pl"},
@@ -706,4 +706,4 @@
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
-{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-27T07:30:03+02:00"}
+{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-27T11:20:03+02:00"}
