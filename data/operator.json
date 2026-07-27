@@ -85,7 +85,6 @@
 {"id":124,"name":"Bohemia Motors Sp. z o.o.","code":"PL-R52","phone":"+48507316743","website":"http:\/\/www.volkswagengdansk.pl","short_name":"Bohemia Motors","type":1,"country":"pl"},
 {"id":125,"name":"EPO WAREHOUSE SP. Z O.O.","code":"PL-QWK","phone":"532747809","email":"info@epolng.pl","website":"http:\/\/www.epolng.pl","short_name":"EPO LNG","type":1,"country":"pl"},
 {"id":127,"name":"AUTO LELLEK GROUP Sp. zo. o Sp. k.","code":"PL-KT3","phone":"77-400-70-00","email":"info@lellek.com.pl","website":"https:\/\/portal.lellek.pl\/","type":1,"country":"pl"},
-{"id":130,"name":"BENEPOL","code":"PL-3RF","phone":"583038936","email":"recepcja.gd@benepol.pl","short_name":"Benepol Gda\u0144sk","type":1,"country":"pl"},
 {"id":131,"name":"\"P and V\" sp. z o.o.","code":"PL-Q8C","phone":"795400015","email":"recepcja@pandv.com.pl","website":"https:\/\/potisandverso.pl\/","type":1,"country":"pl"},
 {"id":132,"name":"CurrentDrive Polska","code":"PL-GAM","phone":"604212880","email":"hello@currentdrive.pl","website":"http:\/\/currentdrive.pl","type":1,"country":"pl"},
 {"id":133,"name":"MIASTO KUTNO","code":"PL-18C","phone":"+48-24-253-11-00","email":"urzad@um.kutno.pl","type":1,"country":"pl"},
@@ -706,4 +705,4 @@
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
-{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-27T11:20:03+02:00"}
+{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-27T14:45:03+02:00"}
