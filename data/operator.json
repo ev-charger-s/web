@@ -265,7 +265,6 @@
 {"id":403,"name":"Gmina Rawicz Urz\u0105d Miejski Gminy Rawicz","code":"PL-M1S","phone":"+65656164980","email":"umg@rawicz.eu","short_name":"Urz\u0105d Miejski Gminy Rawicz","type":1,"country":"pl"},
 {"id":404,"name":"Powerbell Engineering sp. z o.o.","code":"PL-A5R","phone":"+48604881426","email":"biuro@powerbell.co","website":"http:\/\/ipowerme.co","short_name":"PBE sp. z o.o.","type":1,"country":"pl"},
 {"id":406,"name":"TARGOR TRUCK Sp. z o. o.","code":"PL-RPU","phone":"+48515276866","email":"s.chrostowski@targor-truck.pl","website":"http:\/\/www.targor-truck.pl","short_name":"TARGOR TRUCK Sp. z o. o.","type":1,"country":"pl"},
-{"id":407,"name":"DWS Grundbesitz GmbH Sp. z o.o. oddzia\u0142 w Polsce","code":"PL-UNJ","phone":"+48-664-708-127","email":"anna.sienkiewicz@colliers.com","short_name":"DWS Grundbesitz","type":1,"country":"pl"},
 {"id":408,"name":"Qwello Polska Sp\u00f3\u0142ka z Ograniczon\u0105 Odpowiedzialno\u015bci\u0105","code":"PL-QWC","phone":"+48607309874","email":"lce@qwello.eu","website":"http:\/\/qwello.eu","short_name":"Qwello Polska Sp. z o.o.","type":1,"country":"pl"},
 {"id":412,"name":"DDB AUTO BOGACKA SP\u00d3\u0141KA KOMANDYTOWA","code":"PL-FP2","phone":"+48914827827","email":"info@ddb.mercedes-benz.pl","type":1,"country":"pl"},
 {"id":413,"name":"INTER SERWIS SP. Z O.O.","code":"PL-Y7N","phone":"+48483005015","email":"office@friolog.es","short_name":"INTER SERWIS","type":1,"country":"pl"},
@@ -313,7 +312,6 @@
 {"id":467,"name":"CHARGE POLSKA SP Z O O","code":"PL-8BA","phone":"+48535968256","email":"help@chargeeuropa.com","type":1,"country":"pl"},
 {"id":468,"name":"Auto Dutkiewicz Jacek Dutkiewicz","code":"PL-69Q","phone":"+48-669-536-529","email":"instal.mar@op.pl","short_name":"Dutkiewicz EV","type":1,"country":"pl"},
 {"id":469,"name":"W- ELECTRIC MA\u0141GORZATA WR\u00d3BLEWSKA","code":"PL-M3H","phone":"+48-512-371-405","email":"welectric.wroblewska@gmail.com","website":"http:\/\/welectric.wroblewska@gmail.com","type":1,"country":"pl"},
-{"id":470,"name":"Polski Transport Ci\u0119\u017carowy sp. z o.o.","code":"PL-K4J","phone":"+48542850019","email":"angama@poczta.onet.pl","type":1,"country":"pl"},
 {"id":473,"name":"Energia Polska sp. z o.o.","code":"PL-RJQ","phone":"+48717152894","email":"bok@energiapolska.com.pl","website":"http:\/\/www.energiapolska.com.pl","short_name":"Energia Polska","type":1,"country":"pl"},
 {"id":476,"name":"Caleg sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-J1P","phone":"+48684521282","email":"info@caleg.pl","website":"http:\/\/www.caleg.pl","short_name":"Caleg sp. z o.o.","type":1,"country":"pl"},
 {"id":477,"name":"KMG INVESTMENTS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-22F","phone":"+48729994884","email":"biuro@kmginvestments.pl","type":1,"country":"pl"},
@@ -429,7 +427,6 @@
 {"id":1661,"name":"Falcodrive Sp. z o.o.","code":"PL-MWC","phone":"+48534984684","email":"r.traczyk@anypark.pl","website":"https:\/\/anypark.pl\/","short_name":"Falcodrive","type":3,"country":"pl"},
 {"id":1662,"name":"3 WINDY sp. z o.o.","code":"PL-5C5","phone":"+48512101777","email":"support@3chargy.com","website":"https:\/\/3topay.com","short_name":"3 to PAY","type":3,"country":"pl"},
 {"id":1663,"name":"NEXET Sp. z o.o.","code":"PL-UPZ","phone":"+48175061515","website":"http:\/\/naladowani.eu","type":3,"country":"pl"},
-{"id":1664,"name":"ZEG ZAK\u0141AD ELEKTRYCZNY SP. Z O.O.","code":"PL-UYC","phone":"+48509681579","email":"info@zeggryfice.pl","short_name":"ZEG","type":1,"country":"pl"},
 {"id":1665,"name":"PHILLIPS-MEDISIZE Poland Sp. z o.o.","code":"PL-D6F","phone":"+48883840349","email":"sekretariatPMPL@molex.com","website":"http:\/\/www.phillipsmedisize.com","short_name":"PMPL","type":1,"country":"pl"},
 {"id":1667,"name":"ASTER STREAMS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-3P8","phone":"+48509253090","email":"marcin.swider@aster-streams.pl","website":"http:\/\/aster-streams.pl","short_name":"Aster Streams","type":1,"country":"pl"},
 {"id":1668,"name":"Hazel sp\u00f3\u0142ka z o.o.","code":"PL-FQ7","phone":"+48531402135","email":"hazel.adrian.wojcik@gmail.com","website":"http:\/\/www.hazel-ev.com","short_name":"Hazel","type":1,"country":"pl"},
@@ -497,7 +494,6 @@
 {"id":1745,"name":"SKURGWY CAMPING","code":"PL-687","phone":"+48601889908","email":"skurgwy@gmail.com","website":"http:\/\/www.skurgwy.com","type":1,"country":"pl"},
 {"id":1746,"name":"SP\u00d3\u0141DZIELNIA SOCJALNA \"GRUPA BUDOWLANA\"","code":"PL-35K","phone":"+48222907992","email":"support@elo.city","short_name":"SP\u00d3\u0141DZIELNIA SOCJALNA \"GRUPA BUDOWLANA\"","type":1,"country":"pl"},
 {"id":1748,"name":"Euroset S. C. Marzena Bia\u0142ek Jaros\u0142aw Biel","code":"PL-B8F","phone":"+48506117032","email":"biuro@euroset.com.pl","website":"http:\/\/www.euroset.com.pl","short_name":"Euroset S. C.","type":1,"country":"pl"},
-{"id":1750,"name":"Przedsi\u0119biorstwo Handlowe MOTO-GAMA Miros\u0142aw Kazula","code":"PL-9JA","phone":"+48-609-793-754","email":"moto.gama@interia.eu","short_name":"P.H. MOTO-GAMA Miros\u0142aw Kazula","type":1,"country":"pl"},
 {"id":1751,"name":"Natural Hotel Group Sp. z o.o","code":"PL-YTD","phone":"+48451596932","email":"event@naturalhotel.pl","type":3,"country":"pl"},
 {"id":1752,"name":"Hotel MAXIM Sp. z o.o.","code":"PL-U4W","phone":"+48728440574","email":"info@hotelmaxim.pl","website":"http:\/\/hotelmaxim.pl","short_name":"Maxim","type":1,"country":"pl"},
 {"id":1753,"name":"Leroy Merlin Inwestycje Sp. z o.o.","code":"PL-BYN","phone":"+48-504-256-969","email":"mbartnikiewicz@leroymerlin.pl","website":"http:\/\/leroymerlin.pl","short_name":"Leroy Merlin","type":1,"country":"pl"},
@@ -705,4 +701,4 @@
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
-{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-29T10:10:02+02:00"}
+{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-29T13:10:03+02:00"}
