@@ -507,7 +507,6 @@
 {"id":1765,"name":"Energa O\u015bwietlenie sp. z o.o.","code":"PL-G24","phone":"+48-58-760-77-20","email":"kancelaria.oswietlenie@energa.pl","website":"http:\/\/www.energa-oswietlenie.pl","short_name":"Energa O\u015bwietlenie","type":1,"country":"pl"},
 {"id":1766,"name":"Wsp\u00f3lnota Mieszkaniowe Wielopole 36","code":"PL-XZD","phone":"+48-786-111-058","email":"m.wojtowicz@nordhome.com.pl","short_name":"WM W36","type":1,"country":"pl"},
 {"id":1767,"name":"Green Gas & Garden sp z oo","code":"PL-TSN","phone":"+48737-077-077","email":"biuro@greengas.info","website":"http:\/\/www.greengas.info","short_name":"Green Gas","type":3,"country":"pl"},
-{"id":1768,"name":"Wsp\u00f3lnota Mieszkaniowa przy ul. Wielopole 36-38 w Mechelinkach","code":"PL-DUT","phone":"+48586653627","email":"biuro@nordhome.com.pl","short_name":"Wielopole 36-38 w Mechelinkach","type":1,"country":"pl"},
 {"id":1769,"name":"WABO COMPANY SP. Z O.O.","code":"PL-4DS","phone":"+48500131651","email":"wabocompany@gmail.com","website":"https:\/\/wabo-co.com\/","short_name":"WABO COMPANY","type":1,"country":"pl"},
 {"id":1770,"name":"Enepar Sp. z o. o.","code":"PL-P7A","phone":"+48533163183","email":"ladowarki@enepar.pl","website":"http:\/\/www.enepar.pl","short_name":"Enepar","type":3,"country":"pl"},
 {"id":1772,"name":"Dworek Komorno","code":"PL-TJU","phone":"+48774033919","email":"dworek@dworekkomorno.eu","website":"http:\/\/www.dworekkomorno.eu","type":1,"country":"pl"},
@@ -551,7 +550,7 @@
 {"id":1828,"name":"Coral W. Perkowski, J.Perkowski sp. k.","code":"PL-VOL","phone":"+48856544526","email":"voltowa@coral.com.pl","website":"http:\/\/voltowa.com","short_name":"CORAL","type":3,"country":"pl"},
 {"id":1829,"name":"Hotel Shuma sp\u00f3\u0142ka jawna Latos","code":"PL-N5W","phone":"+48531761517","email":"hotel@hotelshuma.pl","website":"http:\/\/www.hotelshuma.pl","type":1,"country":"pl"},
 {"id":1830,"name":"Gmina Miejska Krak\u00f3w- Zarz\u0105d Transportu Publicznego","code":"PL-PYU","phone":"+48126168669","email":"dyspozytornia@ztp.krakow.pl","website":"http:\/\/www.ztp.krakow.pl","short_name":"GMK","type":1,"country":"pl"},
-{"id":1831,"name":"O\u015bwietlenie Uliczne i Drogowe sp. z o.o.","code":"PL-9TE","phone":"+48625985270","email":"poczta@ouid.pl","website":"https:\/\/www.oswietlenie.kalisz.pl","short_name":"OUiD","type":1,"country":"pl"},
+{"id":1831,"name":"EO\u015a sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-9TE","phone":"+48625985270","email":"poczta@ouid.pl","website":"http:\/\/www.eos.pl","short_name":"EO\u015a","type":1,"country":"pl"},
 {"id":1832,"name":"ECOFACTOR Sp. z o.o","code":"PL-59A","phone":"+380977988880","email":"info@ecofactor.eu","website":"http:\/\/www.ecofactortech.com","short_name":"ECOFACTOR","type":3,"country":"pl"},
 {"id":1833,"name":"PRKING SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-PZA","phone":"+48796677771","email":"SHOP@PRKING.IN","website":"http:\/\/PRKING.IN","short_name":"PRKING SP. Z O.O.","type":1,"country":"pl"},
 {"id":1834,"name":"GreenWay Polska Sp. z o.o.","code":"PL-GWN","phone":"+48583251077","email":"bok@greenwaypolska.pl","website":"https:\/\/greenwaypolska.pl","type":3,"country":"pl"},
@@ -698,4 +697,4 @@
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
-{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-30T09:20:03+02:00"}
+{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-30T12:05:03+02:00"}
