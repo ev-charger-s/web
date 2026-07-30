@@ -310,7 +310,6 @@
 {"id":465,"name":"Flowbird Polska Sp. z o.o.","code":"FR-FLB","phone":"+48579810154","email":"grzegorz.gawronski@flowbird.group","short_name":"Flowbird Polska","type":3,"country":"pl"},
 {"id":466,"name":"ELOMOTO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-QAB","phone":"+48222692022","email":"biuro@elomoto.eco","website":"https:\/\/www.elomoto.eco\/","short_name":"ELOMOTO","type":1,"country":"pl"},
 {"id":467,"name":"CHARGE POLSKA SP Z O O","code":"PL-8BA","phone":"+48535968256","email":"help@chargeeuropa.com","type":1,"country":"pl"},
-{"id":468,"name":"Auto Dutkiewicz Jacek Dutkiewicz","code":"PL-69Q","phone":"+48-669-536-529","email":"instal.mar@op.pl","short_name":"Dutkiewicz EV","type":1,"country":"pl"},
 {"id":469,"name":"W- ELECTRIC MA\u0141GORZATA WR\u00d3BLEWSKA","code":"PL-M3H","phone":"+48-512-371-405","email":"welectric.wroblewska@gmail.com","website":"http:\/\/welectric.wroblewska@gmail.com","type":1,"country":"pl"},
 {"id":473,"name":"Energia Polska sp. z o.o.","code":"PL-RJQ","phone":"+48717152894","email":"bok@energiapolska.com.pl","website":"http:\/\/www.energiapolska.com.pl","short_name":"Energia Polska","type":1,"country":"pl"},
 {"id":476,"name":"Caleg sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-J1P","phone":"+48684521282","email":"info@caleg.pl","website":"http:\/\/www.caleg.pl","short_name":"Caleg sp. z o.o.","type":1,"country":"pl"},
@@ -479,7 +478,6 @@
 {"id":1726,"name":"COMP SP\u00d3\u0141KA AKCYJNA","code":"PL-W92","phone":"+48695555638","email":"ecopower@elzab.pl","short_name":"COMP S.A.","type":1,"country":"pl"},
 {"id":1729,"name":"Paulina Lewandowska Green Drive","code":"PL-79K","phone":"+48792311008","email":"greendrivegk@gmail.com","website":"http:\/\/www.greendrive.pl","short_name":"Green Drive","type":1,"country":"pl"},
 {"id":1730,"name":"KRZYSZTOF ZALEWSKI POKOJE GO\u015aCINNE ZALEWSKI","code":"PL-2GP","phone":"+48501666001","email":"recepcja@pokojezalewski.pl","website":"http:\/\/pokojezalewski.pl","short_name":"POKOJE GO\u015aCINNE ZALEWSKI","type":1,"country":"pl"},
-{"id":1731,"name":"STRAAG Sp.z o.o.","code":"PL-WN2","phone":"+48602559009","website":"http:\/\/www.straag.com","type":3,"country":"pl"},
 {"id":1732,"name":"Malinowe Hotele Sp. z o. o.","code":"PL-3KK","phone":"+48413704000","email":"recepcja@malinowyzdroj.pl","website":"http:\/\/www.malinowehotele.pl","short_name":"Malinowe Hotele Sp. z o. o.","type":1,"country":"pl"},
 {"id":1734,"name":"CarCharger24 Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6KW","phone":"+48733369343","email":"info@carcharger24.com","short_name":"CarCharger24 Sp z o.o.","type":1,"country":"pl"},
 {"id":1735,"name":"MLP Pruszk\u00f3w II","code":"PL-9BA","phone":"+48227383010","email":"info@mlpgroup.com","website":"http:\/\/www.mlpgroup.com","short_name":"MLP II","type":1,"country":"pl"},
@@ -488,7 +486,6 @@
 {"id":1738,"name":"Osmolice Sp. z o.o. Sp. K.","code":"PL-GMF","phone":"+48-500-755-700","email":"biuro@dworosmolice.pl","website":"https:\/\/dworosmolice.pl\/dwor-osmolice\/","short_name":"Dw\u00f3r Osmolice","type":1,"country":"pl"},
 {"id":1739,"name":"Ikea Industry Poland Sp. z o.o.","code":"PL-BUJ","phone":"+48914323032","email":"ikeaindustry.poland@inter.ikea.com","website":"http:\/\/www.industry.ikea.pl","short_name":"Ikea Industry Poland","type":1,"country":"pl"},
 {"id":1740,"name":"Just sp. z o. o.","code":"PL-DA9","phone":"+48124300261","email":"biuro@just-krakow.pl","short_name":"Just","type":1,"country":"pl"},
-{"id":1741,"name":"Dom Bez Koszt\u00f3w Sp. z o. o.","code":"PL-87E","phone":"+48666097967","email":"biuro@dombezkosztow.com","website":"http:\/\/www.bezkosztow.com","short_name":"DBK","type":1,"country":"pl"},
 {"id":1743,"name":"Auchan Polska sp. z o.o.","code":"PL-ZXF","phone":"+48224440222","email":"kontakt@auchan.pl","website":"https:\/\/www.auchan.pl\/","short_name":"Auchan Polska","type":1,"country":"pl"},
 {"id":1744,"name":"OLIMP WARMI\u0143SKA KR\u0118\u017bEL KOWALSKA KRZYSIEK SP\u00d3\u0141KA KOMANDYTOWA","code":"PL-1DM","phone":"+48534233227","email":"kielce@olimprest.pl","type":1,"country":"pl"},
 {"id":1745,"name":"SKURGWY CAMPING","code":"PL-687","phone":"+48601889908","email":"skurgwy@gmail.com","website":"http:\/\/www.skurgwy.com","type":1,"country":"pl"},
@@ -508,7 +505,6 @@
 {"id":1766,"name":"Wsp\u00f3lnota Mieszkaniowe Wielopole 36","code":"PL-XZD","phone":"+48-786-111-058","email":"m.wojtowicz@nordhome.com.pl","short_name":"WM W36","type":1,"country":"pl"},
 {"id":1767,"name":"Green Gas & Garden sp z oo","code":"PL-TSN","phone":"+48737-077-077","email":"biuro@greengas.info","website":"http:\/\/www.greengas.info","short_name":"Green Gas","type":3,"country":"pl"},
 {"id":1769,"name":"WABO COMPANY SP. Z O.O.","code":"PL-4DS","phone":"+48500131651","email":"wabocompany@gmail.com","website":"https:\/\/wabo-co.com\/","short_name":"WABO COMPANY","type":1,"country":"pl"},
-{"id":1770,"name":"Enepar Sp. z o. o.","code":"PL-P7A","phone":"+48533163183","email":"ladowarki@enepar.pl","website":"http:\/\/www.enepar.pl","short_name":"Enepar","type":3,"country":"pl"},
 {"id":1772,"name":"Dworek Komorno","code":"PL-TJU","phone":"+48774033919","email":"dworek@dworekkomorno.eu","website":"http:\/\/www.dworekkomorno.eu","type":1,"country":"pl"},
 {"id":1774,"name":"\"PODGRODZIE\" KACZMAREK I WSP\u00d3LNICY SP\u00d3\u0141KA JAWNA","code":"PL-TQT","phone":"+48603373283","email":"hotel@podgrodzie.com.pl","website":"http:\/\/podgrodzie.com.pl","short_name":"PODGRODZIE","type":1,"country":"pl"},
 {"id":1776,"name":"THALE sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp\u00f3\u0142ka komandytowa","code":"PL-QGC","phone":"+48-895-211-975","email":"administracja@niczuk.pl","website":"http:\/\/www.niczuk.pl","short_name":"THALE sp. z o.o. sp.k.","type":1,"country":"pl"},
@@ -697,4 +693,4 @@
 {"id":2015,"name":"Przedsi\u0119biorstwo Komunalne Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-6US","phone":"+48856552577","email":"sekretariat@pksiemiatycze.pl","website":"http:\/\/pksiemiatycze.pl","short_name":"PK Siemiatycze","type":1,"country":"pl"},
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
-{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-30T12:05:03+02:00"}
+{"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"}], "generated":"2026-07-30T14:20:03+02:00"}
