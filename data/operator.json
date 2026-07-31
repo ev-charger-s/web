@@ -217,7 +217,6 @@
 {"id":337,"name":"Gmina Celestyn\u00f3w","code":"PL-24Z","phone":"+48227897060","website":"http:\/\/www.celestynow.pl","short_name":"Gmina Celestyn\u00f3w","type":1,"country":"pl"},
 {"id":338,"name":"Kazbud smg Kazimierz Sapkowski","code":"PL-CCE","phone":"+48-604-205-131","email":"kazbudsmg@wp.pl","short_name":"Kazbud smg","type":1,"country":"pl"},
 {"id":340,"name":"Firma Handlowo-Us\u0142ugowa TOPOR\u00d3W Helena Top\u00f3r","code":"PL-DM5","phone":"+48605211911","email":"biuro@toporow.pl","website":"https:\/\/www.toporow.pl\/","short_name":"TOPOR\u00d3W","type":3,"country":"pl"},
-{"id":341,"name":"Global Sp. z o. o.","code":"PL-D5F","phone":"+48509231343","email":"recepcja@hotel-alpin.pl","website":"http:\/\/www.hotel-alpin.pl","type":1,"country":"pl"},
 {"id":342,"name":"Silesia Ring Sp. z o.o. Spk. k.","code":"PL-1J2","phone":"+48691017555","email":"biuro@silesiaring.pl","website":"https:\/\/www.silesiaring.pl","short_name":"Silesia Ring","type":1,"country":"pl"},
 {"id":344,"name":"IntegracjaB2B","code":"PL-PRH","phone":"+48500090094","email":"michal.palma@ib2b.pl","website":"http:\/\/ib2b.pl","short_name":"IB2B","type":1,"country":"pl"},
 {"id":346,"name":"Grupa Inwestycyjna HOSSA S.A.","code":"PL-9F5","phone":"+48787871726","email":"info@hossabiz.pl","website":"http:\/\/www.","short_name":"Hossa SA","type":1,"country":"pl"},
@@ -403,7 +402,6 @@
 {"id":1632,"name":"Bednarek Sp. z o. o.","code":"PL-S59","phone":"+48799611260","website":"https:\/\/volvocarbednarek.pl","short_name":"Volvo Bednarek","type":1,"country":"pl"},
 {"id":1634,"name":"FHU Maria G\u0105sior-Wo\u017ana","code":"PL-U9Y","phone":"+48691600222","email":"biuro@starykamionek.pl","type":1,"country":"pl"},
 {"id":1635,"name":"Gmina Nowiny","code":"PL-SM2","phone":"+48-041-347-50-00","email":"sekretariat@nowiny.com.pl","type":1,"country":"pl"},
-{"id":1636,"name":"STACJA \u0141ADOWANIA VOLVO BIELANY","code":"PL-C6R","phone":"+48512390041","email":"kontakt@intercar.dealervolvo.pl","website":"http:\/\/volvocarwroclawbielany.pl","type":1,"country":"pl"},
 {"id":1637,"name":"Autorud Stalowa Wola sp z o.o.","code":"PL-CPN","phone":"+48158445333","email":"sekretariat@autorudstw.pl","website":"https:\/\/autorud-stalowawola.dealer.volkswagen.pl\/osobowe","short_name":"Autorud StW","type":1,"country":"pl"},
 {"id":1638,"name":"EWT Automotive Polska Sp. z o.o","code":"PL-YQ8","phone":"+48538695745","email":"marcin.karolewski@ewt.pl","short_name":"EWT Automotive","type":1,"country":"pl"},
 {"id":1640,"name":"ChargeWise Dystrybucja Sp. z o.o.","code":"PL-CHW","phone":"+48571288397","email":"support@chargewise.pl","website":"http:\/\/www.chargewise.pl","short_name":"ChargeWise","type":3,"country":"pl"},
@@ -542,7 +540,6 @@
 {"id":1828,"name":"Coral W. Perkowski, J.Perkowski sp. k.","code":"PL-VOL","phone":"+48856544526","email":"voltowa@coral.com.pl","website":"http:\/\/voltowa.com","short_name":"CORAL","type":3,"country":"pl"},
 {"id":1829,"name":"Hotel Shuma sp\u00f3\u0142ka jawna Latos","code":"PL-N5W","phone":"+48531761517","email":"hotel@hotelshuma.pl","website":"http:\/\/www.hotelshuma.pl","type":1,"country":"pl"},
 {"id":1830,"name":"Gmina Miejska Krak\u00f3w- Zarz\u0105d Transportu Publicznego","code":"PL-PYU","phone":"+48126168669","email":"dyspozytornia@ztp.krakow.pl","website":"http:\/\/www.ztp.krakow.pl","short_name":"GMK","type":1,"country":"pl"},
-{"id":1831,"name":"EO\u015a sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-9TE","phone":"+48625985270","email":"poczta@ouid.pl","website":"http:\/\/www.eos.pl","short_name":"EO\u015a","type":1,"country":"pl"},
 {"id":1832,"name":"ECOFACTOR Sp. z o.o","code":"PL-59A","phone":"+380977988880","email":"info@ecofactor.eu","website":"http:\/\/www.ecofactortech.com","short_name":"ECOFACTOR","type":3,"country":"pl"},
 {"id":1833,"name":"PRKING SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-PZA","phone":"+48796677771","email":"SHOP@PRKING.IN","website":"http:\/\/PRKING.IN","short_name":"PRKING SP. Z O.O.","type":1,"country":"pl"},
 {"id":1834,"name":"GreenWay Polska Sp. z o.o.","code":"PL-GWN","phone":"+48583251077","email":"bok@greenwaypolska.pl","website":"https:\/\/greenwaypolska.pl","type":3,"country":"pl"},
@@ -688,4 +685,4 @@
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
-{"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"}], "generated":"2026-07-31T07:20:03+02:00"}
+{"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"}], "generated":"2026-07-31T10:25:03+02:00"}
