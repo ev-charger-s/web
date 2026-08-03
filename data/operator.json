@@ -352,7 +352,6 @@
 {"id":526,"name":"PAK-PCE Stacje H2","code":"PL-A54","phone":"+48222136236","email":"kontakt@stacjeneso.pl","website":"http:\/\/www.stacjeneso.pl","short_name":"NESO","type":3,"country":"pl"},
 {"id":527,"name":"Tesla Poland sp. z o.o.","code":"PL-TSL","phone":"+48223072645","website":"http:\/\/www.tesla.com","short_name":"Tesla","type":3,"country":"pl"},
 {"id":528,"name":"Gmina Wisznia Ma\u0142a","code":"PL-3G2","phone":"+48713084800","website":"http:\/\/www.wiszniamala.pl","type":3,"country":"pl"},
-{"id":529,"name":"Lokum Walerego S\u0142awka 9","code":"PL-7UE","phone":"+48-123-848-384","email":"krakow@lokumdeweloper.pl","short_name":"Lokum","type":3,"country":"pl"},
 {"id":530,"name":"HURAMITELL INVESTMENTS Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-NKW","phone":"+48-885-855-073","email":"ochrona.face2face@juwentus.pl","website":"http:\/\/www.investika.cz","type":1,"country":"pl"},
 {"id":531,"name":"P.P.U.H. \"ORION\" SACEWICZ KRZYSZTOF","code":"PL-JUG","phone":"+48884800608","email":"biuro@orion-bp.pl","website":"http:\/\/www.samochody-elektryczne.eu","short_name":"ORION","type":1,"country":"pl"},
 {"id":532,"name":"ALDO LESZEK D\u0141UGO\u0141\u0118CKI I ANDRZEJ D\u0141UGO\u0141\u0118CKI SP\u00d3\u0141KA KOMANDYTOWO-AKCYJNA","code":"PL-XN1","phone":"+48-297-727-570","email":"biuro@aldo.agro.pl","website":"https:\/\/www.aldo.agro.pl\/","short_name":"ALDO","type":1,"country":"pl"},
@@ -682,4 +681,4 @@
 {"id":2019,"name":"Erinion sp. z o.o.","code":"PL-ERI","phone":"+4642501960","email":"Support@erinioncharge.com","short_name":"PL*ERI","type":1,"country":"pl"},
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
-{"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"}], "generated":"2026-08-03T14:20:03+02:00"}
+{"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"}], "generated":"2026-08-03T17:30:03+02:00"}
