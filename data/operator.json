@@ -118,7 +118,6 @@
 {"id":167,"name":"Nexity Hotel Conrad Comfort","code":"PL-9K2","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"Hotel Conrad","type":1,"country":"pl"},
 {"id":168,"name":"Auto Forum Sp.z.o.o.","code":"PL-UNN","phone":"+48243661111","email":"serwis@autoforum.pl","type":1,"country":"pl"},
 {"id":169,"name":"AUTO HA\u0143CZA","code":"PL-MC6","phone":"875630543","email":"serwis@autohancza.pl","website":"http:\/\/www.autohancza.vw.pl","short_name":"AUTO HA\u0143CZA","type":1,"country":"pl"},
-{"id":170,"name":"W\u0105tarski Sp. z o.o.","code":"PL-MRE","phone":"502-60-55-66","email":"zarzad@skoda.watarski.pl","website":"http:\/\/www.skoda.watarski.pl","type":1,"country":"pl"},
 {"id":171,"name":"GMINA NOWY TOMY\u015aL","code":"PL-UFN","phone":"61-44-26-600","email":"urzad@nowytomysl.pl","website":"https:\/\/nowytomysl.pl\/","short_name":"GMINA NOWY TOMY\u015aL","type":1,"country":"pl"},
 {"id":172,"name":"Dino Polska S.A.","code":"PL-XHP","phone":"+48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"Dino","type":1,"country":"pl"},
 {"id":174,"name":"wczasowa8.pl Pawe\u0142 Tykwi\u0144ski","code":"PL-2AB","phone":"501764552","email":"biuro@wczasowa8.pl","website":"http:\/\/wczasowa8.pl","short_name":"wczasowa8.pl","type":1,"country":"pl"},
@@ -678,4 +677,5 @@
 {"id":2020,"name":"PHU EDWARD BU\u0141AWA","code":"PL-6JP","phone":"+48609603162","email":"serwis@bulawa.pl","website":"http:\/\/www.bulawa.pl","short_name":"PHU EDWARD BU\u0141AWA","type":3,"country":"pl"},
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
 {"id":2026,"name":"Invicta Sp. z o.o.","code":"PL-JNT","phone":"+48585858800","email":"invicta@invicta.pl","short_name":"Invicta","type":1,"country":"pl"},
-{"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"}], "generated":"2026-08-06T09:30:03+02:00"}
+{"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
+{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-06T12:20:03+02:00"}
