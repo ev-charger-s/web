@@ -181,7 +181,6 @@
 {"id":273,"name":"Urz\u0105d Miejski w Pu\u0142tuska","code":"PL-YKW","phone":"+48509027016","email":"agnieszka.siekierska@pultusk.pl","website":"https:\/\/pultusk.pl\/","short_name":"UMPu\u0142tusk","type":3,"country":"pl"},
 {"id":274,"name":"Scandic Polen Sp. z o.o.","code":"PL-BAG","phone":"+48717870000","website":"https:\/\/www.scandichotels.com","type":3,"country":"pl"},
 {"id":275,"name":"G&G Sp. z o.o.","code":"PL-PTQ","phone":"+48606609110","email":"sprzedaz@grupagg.pl","website":"https:\/\/ladowarki-samochodowe.pl","short_name":"G&G Sp. z o.o.","type":1,"country":"pl"},
-{"id":276,"name":"SAINT-GOBAIN INNOVATIVE MATERIALS POLSKA SP\u00d3\u0141KA Z O.O. Oddzia\u0142 Glass w D\u0105browie G\u00f3rniczej","code":"PL-BA9","phone":"+48664434806","email":"andrzej.puszkarski@saint-gobain.com","short_name":"SGIMP","type":1,"country":"pl"},
 {"id":278,"name":"ShareP Poland P.S.A.","code":"PL-AMW","phone":"+48227774141","email":"support@sharep.io","website":"https:\/\/sharep.io\/pl\/","type":3,"country":"pl"},
 {"id":279,"name":"Circle K Polska Sp. z o.o.","code":"PL-CKE","phone":"+48222552255","email":"BOK@circlekeurope.com","website":"http:\/\/circlek.pl","short_name":"Circle K","type":3,"country":"pl"},
 {"id":280,"name":"Dynamica Sp. z o.o.","code":"PL-HX1","phone":"+48225120550","email":"serwis.warszawa@dynamica.pl","website":"http:\/\/www.dynamica.pl","type":1,"country":"pl"},
@@ -423,7 +422,6 @@
 {"id":1671,"name":"Przedsi\u0119biorstwo Oczyszczania Miasta EKO Sp. z o.o.","code":"PL-EWK","phone":"+48627642296","email":"biuro@eko.kalisz.pl","website":"http:\/\/www.eko.kalisz.pl","type":1,"country":"pl"},
 {"id":1672,"name":"Krzysztof Kulik Przedsi\u0119biorstwo Budowlane Handlowo Us\u0142ugowe \u201eROB\u201d","code":"PL-8NX","phone":"+48533169594","email":"ev@grupalemon.pl","website":"http:\/\/ev.grupalemon.pl","short_name":"Krzysztof Kulik P.B.H.U. \u201eROB\u201d","type":3,"country":"pl"},
 {"id":1673,"name":"Duda-Cars S.A.","code":"PL-HSU","phone":"+48-692-128-109","email":"klaudia.magdziarz@duda-cars.mercedes-benz.pl","type":1,"country":"pl"},
-{"id":1674,"name":"Wichary Technic sp. z o.o. sp. k.","code":"PL-QWB","phone":"+48-696-032-570","email":"wojciech.wichary@zpue.pl","website":"https:\/\/wicharytechnic.pl\/","type":1,"country":"pl"},
 {"id":1675,"name":"Wichary Technic sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp\u00f3\u0142ka komandytowa","code":"PL-RPY","phone":"+48322738270","email":"biuro@wicharytechnic.pl","website":"http:\/\/www.wicharytechnic.pl","short_name":"Wichary Technic","type":1,"country":"pl"},
 {"id":1676,"name":"Xchange Elite sp. z o.o.","code":"PL-XCR","phone":"+48690297582","email":"powiadomienia@xchargers.pl","website":"https:\/\/www.xchargers.com.pl\/","short_name":"Xchange","type":3,"country":"pl"},
 {"id":1678,"name":"A&M Stacja Paliw Andrzej Olszewski","code":"PL-MR1","phone":"+48-603-765-320","email":"magdalena_o@wp.pl","short_name":"A&M Andrzej Olszewski","type":3,"country":"pl"},
@@ -678,4 +676,4 @@
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
 {"id":2026,"name":"Invicta Sp. z o.o.","code":"PL-JNT","phone":"+48585858800","email":"invicta@invicta.pl","short_name":"Invicta","type":1,"country":"pl"},
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
-{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-06T12:20:03+02:00"}
+{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-06T14:45:03+02:00"}
