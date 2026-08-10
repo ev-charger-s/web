@@ -525,7 +525,6 @@
 {"id":1821,"name":"ODEKA Andrzej Wojciechowski","code":"PL-B9A","phone":"+48663410645","email":"biuro@odeka.pl","short_name":"ODEKA","type":1,"country":"pl"},
 {"id":1823,"name":"TCL Operations Polska Sp. z o.o.","code":"PL-2G7","phone":"+48504114257","email":"office@tcl.com","short_name":"TCL Polska","type":1,"country":"pl"},
 {"id":1825,"name":"LPG Polonia Sp. zo.o. SKA","code":"PL-UMA","phone":"+48502533518","email":"LNG@LPGPOLONIA.PL","website":"http:\/\/WW.LPGPOLONIA.PL","type":1,"country":"pl"},
-{"id":1826,"name":"\"DAN CAKE POLONIA\" SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-TQC","phone":"+48603302763","email":"b.rachwal@dancake.pl","short_name":"DAN CAKE POLONIA","type":1,"country":"pl"},
 {"id":1827,"name":"Nord Estate Sp. z o.o.","code":"PL-Y97","phone":"+48-796-436-274","email":"d.bielawski@nordestate.pl","short_name":"Nord Estate Sp. z o.o.","type":1,"country":"pl"},
 {"id":1828,"name":"Coral W. Perkowski, J.Perkowski sp. k.","code":"PL-VOL","phone":"+48856544526","email":"voltowa@coral.com.pl","website":"http:\/\/voltowa.com","short_name":"CORAL","type":3,"country":"pl"},
 {"id":1829,"name":"Hotel Shuma sp\u00f3\u0142ka jawna Latos","code":"PL-N5W","phone":"+48531761517","email":"hotel@hotelshuma.pl","website":"http:\/\/www.hotelshuma.pl","type":1,"country":"pl"},
@@ -676,4 +675,4 @@
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
 {"id":2026,"name":"Invicta Sp. z o.o.","code":"PL-JNT","phone":"+48585858800","email":"invicta@invicta.pl","short_name":"Invicta","type":1,"country":"pl"},
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
-{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-10T09:00:03+02:00"}
+{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-10T11:00:03+02:00"}
