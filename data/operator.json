@@ -594,7 +594,6 @@
 {"id":1911,"name":"Colian sp. z o.o.","code":"PL-PP6","phone":"+48625903300","email":"opatowek@colian.com","website":"https:\/\/colian.com\/","short_name":"Colian","type":1,"country":"pl"},
 {"id":1912,"name":"MOKOTOW I PROPCO SPO\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-35P","phone":"+48883197269","email":"t.faszczewski@profm.com.pl","type":1,"country":"pl"},
 {"id":1913,"name":"Indigo Polska SA","code":"PL-EXK","phone":"+48885333311","website":"http:\/\/group-indigo.com","type":1,"country":"pl"},
-{"id":1914,"name":"LOGICOR (HUSARIAN 1) Sp. z o.o.","code":"PL-66T","phone":"+48228202020","email":"bartlomiej.serwatko@cushwake.com","website":"http:\/\/www.elo.city","short_name":"Husarian","type":1,"country":"pl"},
 {"id":1915,"name":"Leroy - Merlin Polska sp. z o.o.","code":"PL-Z19","phone":"+48-505-519-973","email":"eipa.lmp@leroymerlin.pl","website":"http:\/\/leroymerlen.pl","type":1,"country":"pl"},
 {"id":1916,"name":"Golden Invest Sp. z o.o.","code":"PL-WG4","phone":"+48-504-256-969","email":"eipa.goldeninvest@leroymerlin.pl","website":"http:\/\/leroymerlen.pl","type":1,"country":"pl"},
 {"id":1917,"name":"Leroy Merlin Polska Sp. z o.o.  SP\u00d3\u0141KA KOMANDYTOWO-AKCYJNA","code":"PL-PZU","phone":"+48-504-256-969","email":"eipa.lmpska@leroymerlin.pl","website":"http:\/\/leroymerlin.pl","type":1,"country":"pl"},
@@ -675,4 +674,4 @@
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
 {"id":2026,"name":"Invicta Sp. z o.o.","code":"PL-JNT","phone":"+48585858800","email":"invicta@invicta.pl","short_name":"Invicta","type":1,"country":"pl"},
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
-{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-10T14:35:03+02:00"}
+{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-10T16:05:03+02:00"}
