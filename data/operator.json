@@ -405,7 +405,6 @@
 {"id":1648,"name":"Fin Well Investments Sp. z o.o.","code":"PL-DC1","phone":"+48-794-088-116","email":"office@sandvaley.pl","website":"http:\/\/sandvalley.pl","short_name":"Fin Well","type":1,"country":"pl"},
 {"id":1649,"name":"EWT Automotive Polska Sp. z o.o.","code":"PL-DU3","phone":"+48-42-2802400","website":"https:\/\/www.mercedes-benz-trucks-ewt.pl\/pl_PL\/buy\/dealer-locator\/home\/kontakt.html","short_name":"EWT Automotive Polska","type":1,"country":"pl"},
 {"id":1652,"name":"DWOREK \"GOLIKOWO\" JOANNA GOLIK","code":"PL-9DT","phone":"+48222907992","email":"support@elo.city","type":1,"country":"pl"},
-{"id":1653,"name":"BILMEX - TANK SP. Z O.O. SP. K.","code":"PL-RU1","phone":"+48185428428","email":"contact@nexity.io","website":"http:\/\/nexity.io","short_name":"NEXITY BILMEX-TANK","type":1,"country":"pl"},
 {"id":1654,"name":"Dr Irena Eris SA","code":"PL-5E1","phone":"+48696494449","email":"natasza.jaronska@drirenaeris.com","website":"http:\/\/www.drirenaeris.com","short_name":"Dr Irena Eris","type":1,"country":"pl"},
 {"id":1656,"name":"E.ON Polska S.A.","code":"PL-EON","phone":"+48228214646","email":"emobility@eon.pl","website":"https:\/\/eondrive.pl\/","type":3,"country":"pl"},
 {"id":1657,"name":"PPUH  \"MARS\"","code":"PL-NJM","phone":"+48601637013","email":"biuro@okoniny.pl","website":"http:\/\/okoniny.pl","short_name":"\"MARS\"","type":1,"country":"pl"},
@@ -674,4 +673,4 @@
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
 {"id":2026,"name":"Invicta Sp. z o.o.","code":"PL-JNT","phone":"+48585858800","email":"invicta@invicta.pl","short_name":"Invicta","type":1,"country":"pl"},
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
-{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-11T09:55:03+02:00"}
+{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-11T11:45:03+02:00"}
