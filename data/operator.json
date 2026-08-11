@@ -53,7 +53,7 @@
 {"id":78,"name":"Pogoria Property Sp. z o.o.","code":"PL-SZZ","phone":"32-6399833","website":"http:\/\/www.ch-pogoria.pl","type":1,"country":"pl"},
 {"id":79,"name":"Energa O\u015bwietlenie sp. z o.o.","code":"PL-E99","phone":"+48555555537","email":"emobility@energa.pl","website":"http:\/\/web.emobility.pl","short_name":"EO\u015a","type":1,"country":"pl"},
 {"id":80,"name":"Zak\u0142ad Gospodarki Mieszkaniowej","code":"PL-6XY","phone":"227-555-231","email":"biuro@zgmgrodzisk.pl","website":"http:\/\/www.zgmgrodzisk.pl","short_name":"ZGM","type":1,"country":"pl"},
-{"id":81,"name":"Miasto Nowy S\u0105cz","code":"PL-AFG","phone":"18-415-65-50","email":"jkupczak@nowysacz.pl","type":1,"country":"pl"},
+{"id":81,"name":"Miasto Nowy S\u0105cz","code":"PL-AFG","phone":"+48184156550","email":"jkupczak@nowysacz.pl","type":1,"country":"pl"},
 {"id":82,"name":"Urz\u0105d Miasta i Gminy Pobiedziska","code":"PL-PC7","phone":"618977100","email":"umig@pobiedziska.pl","website":"http:\/\/www.pobiedziska.pl","type":1,"country":"pl"},
 {"id":83,"name":"ING Bank \u015al\u0105ski S.A.","code":"PL-H1G","phone":"693-180-034","email":"bartlomiej.grzywinski@ing.pl","website":"http:\/\/ing.pl","short_name":"ING Bank","type":1,"country":"pl"},
 {"id":84,"name":"ESV S.A.","code":"PL-9QQ","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"ESV","type":1,"country":"pl"},
@@ -674,4 +674,4 @@
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
 {"id":2026,"name":"Invicta Sp. z o.o.","code":"PL-JNT","phone":"+48585858800","email":"invicta@invicta.pl","short_name":"Invicta","type":1,"country":"pl"},
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
-{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-11T08:40:03+02:00"}
+{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-11T09:55:03+02:00"}
