@@ -651,7 +651,6 @@
 {"id":1988,"name":"PHH Hotele Sp. z o.o.","code":"PL-8QC","phone":"+48224171090","email":"sekretariat@phhhotele.pl","website":"https:\/\/phhhotele.pl","short_name":"PHH Hotele Sp. z o.o.","type":1,"country":"pl"},
 {"id":1989,"name":"Gmina Koronowo","code":"PL-276","phone":"+48523826424","email":"agata.kasprzyk@um.koronowo.pl","type":1,"country":"pl"},
 {"id":1990,"name":"Aedilis Zielonka sp.k.","code":"PL-C8Q","phone":"+48536826200","email":"biuro@aedilis.pl","website":"http:\/\/www.aedilis.pl","short_name":"Aedilis","type":1,"country":"pl"},
-{"id":1991,"name":"Med-Interplast Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-7Z5","phone":"+48856881710","email":"HB635@ACCOR.COM","short_name":"Med-Interplast","type":1,"country":"pl"},
 {"id":1992,"name":"Pa\u0142ac Saturna Leszek Pustu\u0142ka","code":"PL-UB7","phone":"+48322901390","email":"info@palacsaturna.pl","website":"http:\/\/www.palacsaturna.pl","short_name":"Pa\u0142ac Saturna","type":1,"country":"pl"},
 {"id":1993,"name":"Dell Products Poland Sp. z o.o.","code":"PL-2TH","phone":"+48571665666","email":"etauron@tauron.pl","website":"https:\/\/etauron.tauron.pl","short_name":"Dell","type":1,"country":"pl"},
 {"id":1994,"name":"GMINA SOB\u00d3TKA","code":"PL-Z6S","phone":"+48713351220","email":"URZAD@SOBOTKA.PL","website":"https:\/\/sobotka.pl\/","short_name":"GM","type":1,"country":"pl"},
@@ -673,4 +672,4 @@
 {"id":2022,"name":"STACJA NOWA GDYNIA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8GB","phone":"+48691910356","website":"http:\/\/stacjanowagdynia.pl","short_name":"STACJA NOWA GDYNIA","type":1,"country":"pl"},
 {"id":2026,"name":"Invicta Sp. z o.o.","code":"PL-JNT","phone":"+48585858800","email":"invicta@invicta.pl","short_name":"Invicta","type":1,"country":"pl"},
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
-{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-12T10:55:03+02:00"}
+{"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"}], "generated":"2026-08-12T12:45:02+02:00"}
