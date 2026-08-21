@@ -72,7 +72,6 @@
 {"id":105,"name":"Automoc Polska sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-8GY","phone":"790211129","email":"t.biernat@automocpolska.pl","website":"https:\/\/automocpolska.pl\/","short_name":"Automoc Polska Sp. z o.o.","type":1,"country":"pl"},
 {"id":106,"name":"Dobro\u0144 JTB Sp. z o. o. sp. k.","code":"PL-EY2","phone":"426130770","email":"salon@skoda-dobron.pl","website":"http:\/\/skoda-dobron.pl","short_name":"Dobro\u0144 JTB","type":1,"country":"pl"},
 {"id":107,"name":"NEVADA INVEST MAREK CHMIELEWSKI","code":"PL-NY7","phone":"797140493","email":"ladowarki@subsolelab.pl","website":"http:\/\/www.subsolelab.pl","short_name":"Stacja \u0141adowania SubsoleLAB","type":1,"country":"pl"},
-{"id":109,"name":"AUTO-BLAK SP. Z O.O.","code":"PL-GTA","phone":"228991966","email":"kontakt@auto-blak.pl","website":"http:\/\/www.auto-blak.pl","short_name":"AUTO-BLAK","type":1,"country":"pl"},
 {"id":110,"name":"Business House Renata Fr\u0105czkiewicz","code":"PL-YCQ","phone":"422560666","email":"biuro@business-house.co","short_name":"Business House","type":1,"country":"pl"},
 {"id":112,"name":"Zarz\u0105d Morskiego Portu Gda\u0144sk S.A.","code":"PL-JNH","phone":"510106516","email":"dyspozytor_gpz@portgdansk.pl","short_name":"ZMPG S.A.","type":1,"country":"pl"},
 {"id":114,"name":"MIM Sp. z o.o.","code":"PL-DKA","phone":"22-100-23-41","website":"http:\/\/www.mcer.pl","short_name":"MCER","type":1,"country":"pl"},
@@ -671,4 +670,4 @@
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
 {"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"},
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
-{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-21T10:20:03+02:00"}
+{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-21T11:20:03+02:00"}
