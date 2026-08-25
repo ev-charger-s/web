@@ -54,7 +54,6 @@
 {"id":79,"name":"Energa O\u015bwietlenie sp. z o.o.","code":"PL-E99","phone":"+48555555537","email":"emobility@energa.pl","website":"http:\/\/web.emobility.pl","short_name":"EO\u015a","type":1,"country":"pl"},
 {"id":80,"name":"Zak\u0142ad Gospodarki Mieszkaniowej","code":"PL-6XY","phone":"227-555-231","email":"biuro@zgmgrodzisk.pl","website":"http:\/\/www.zgmgrodzisk.pl","short_name":"ZGM","type":1,"country":"pl"},
 {"id":81,"name":"Miasto Nowy S\u0105cz","code":"PL-AFG","phone":"+48184156550","email":"jkupczak@nowysacz.pl","type":1,"country":"pl"},
-{"id":82,"name":"Urz\u0105d Miasta i Gminy Pobiedziska","code":"PL-PC7","phone":"618977100","email":"umig@pobiedziska.pl","website":"http:\/\/www.pobiedziska.pl","type":1,"country":"pl"},
 {"id":83,"name":"ING Bank \u015al\u0105ski S.A.","code":"PL-H1G","phone":"693-180-034","email":"bartlomiej.grzywinski@ing.pl","website":"http:\/\/ing.pl","short_name":"ING Bank","type":1,"country":"pl"},
 {"id":84,"name":"ESV S.A.","code":"PL-9QQ","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"ESV","type":1,"country":"pl"},
 {"id":87,"name":"\u201eIGNASZAK\u201d sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp.k.","code":"PL-NXA","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"IGNASZAK","type":1,"country":"pl"},
@@ -670,4 +669,4 @@
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
 {"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"},
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
-{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-25T12:15:03+02:00"}
+{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-25T13:10:03+02:00"}
