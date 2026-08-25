@@ -55,7 +55,6 @@
 {"id":80,"name":"Zak\u0142ad Gospodarki Mieszkaniowej","code":"PL-6XY","phone":"227-555-231","email":"biuro@zgmgrodzisk.pl","website":"http:\/\/www.zgmgrodzisk.pl","short_name":"ZGM","type":1,"country":"pl"},
 {"id":81,"name":"Miasto Nowy S\u0105cz","code":"PL-AFG","phone":"+48184156550","email":"jkupczak@nowysacz.pl","type":1,"country":"pl"},
 {"id":83,"name":"ING Bank \u015al\u0105ski S.A.","code":"PL-H1G","phone":"693-180-034","email":"bartlomiej.grzywinski@ing.pl","website":"http:\/\/ing.pl","short_name":"ING Bank","type":1,"country":"pl"},
-{"id":84,"name":"ESV S.A.","code":"PL-9QQ","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"ESV","type":1,"country":"pl"},
 {"id":87,"name":"\u201eIGNASZAK\u201d sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp.k.","code":"PL-NXA","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"IGNASZAK","type":1,"country":"pl"},
 {"id":88,"name":"Toyota Motors Manufacturing Poland Sp. z o.o.","code":"PL-Z1G","phone":"797701840","email":"mkoczur@takenaka.pl","short_name":"TMMP-W","type":1,"country":"pl"},
 {"id":90,"name":"PHU HADM Mieczys\u0142aw Gramatowski","code":"PL-Y5H","phone":"720820164","email":"serwis.elblag@hadm.pl","website":"http:\/\/www.hadm.pl","short_name":"HADM Skoda i Citroen","type":1,"country":"pl"},
@@ -261,7 +260,7 @@
 {"id":413,"name":"INTER SERWIS SP. Z O.O.","code":"PL-Y7N","phone":"+48483005015","email":"office@friolog.es","short_name":"INTER SERWIS","type":1,"country":"pl"},
 {"id":414,"name":"PRZEDSI\u0118BIORSTWO US\u0141UGOWO HANDLOWE MKT SERWIS MAZIARZ SP\u00d3\u0141KA JAWNA","code":"PL-P4W","phone":"+48175830550","email":"info@mktserwis.pl","website":"http:\/\/www.mktserwis.pl","short_name":"P.U.H. MKT SERWIS MAZIARZ SP. JAWNA","type":1,"country":"pl"},
 {"id":415,"name":"ALEXAS CAR SERVICE SP. Z O.O.","code":"PL-E8Y","phone":"+48632225000","email":"info@vw.alexas.pl","website":"http:\/\/www.alexas.pl","short_name":"ALEXAS CAR SERVICE","type":1,"country":"pl"},
-{"id":416,"name":"ANWIM S.A.","code":"PL-ANW","phone":"+48883361000","website":"http:\/\/www.moyastacja.pl","short_name":"ANWIM SA","type":3,"country":"pl"},
+{"id":416,"name":"ANWIM S.A.","code":"PL-ANW","phone":"+48883361000","website":"https:\/\/moya-energia.pl","short_name":"ANWIM SA","type":3,"country":"pl"},
 {"id":418,"name":"Nawrot Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-762","phone":"+48717188246","email":"sekretariat@nawrot.pl","short_name":"Nawrot Sp. z o.o.","type":3,"country":"pl"},
 {"id":419,"name":"EDRI Poland Sp. z o. o.","code":"PL-UFC","phone":"+48608754707","email":"poland@edri.com","short_name":"EDRI Poland","type":3,"country":"pl"},
 {"id":420,"name":"IONITY GmbH Sp. z o.o.","code":"PL-IOY","phone":"+4989414178585","email":"info@ionity.eu","website":"http:\/\/www.ionity.eu","type":1,"country":"pl"},
@@ -669,4 +668,4 @@
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
 {"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"},
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
-{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-25T14:20:03+02:00"}
+{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-25T15:35:03+02:00"}
