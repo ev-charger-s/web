@@ -631,7 +631,6 @@
 {"id":1970,"name":"Voyage sp. z o.o.","code":"PL-B83","phone":"+48536101606","email":"eauto.voyage@gmail.com","short_name":"Voyage","type":1,"country":"pl"},
 {"id":1972,"name":"Gmina Iwkowa","code":"PL-7ZS","phone":"+48792552880","email":"gmina@iwkowa.pl","website":"http:\/\/www.iwkowa.pl","short_name":"Gmina Iwkowa","type":1,"country":"pl"},
 {"id":1973,"name":"SIM PODKARPACIE SP. Z O.O.","code":"PL-PQA","phone":"+48883848848","email":"KRZYSZTOF.MAZUR@SIMPODKARPACIE.PL","website":"https:\/\/simpodkarpacie.pl\/","short_name":"SIM PODKARPACIE SP. Z O.O.","type":1,"country":"pl"},
-{"id":1974,"name":"Wsp\u00f3lnota Mieszkaniowa Olimpijska 10","code":"PL-YGR","phone":"+48601218522","email":"biuro@markutzarzadzanie.pl","short_name":"Olimpijska 10","type":3,"country":"pl"},
 {"id":1977,"name":"Lubelskie Centrum Konferencyjne w Lublinie","code":"PL-5UU","phone":"+48817180900","email":"lck@lck.lubelskie.pl","website":"http:\/\/www.lck.lubelskie.pl","short_name":"LCK","type":1,"country":"pl"},
 {"id":1978,"name":"Tropicoco sp. z o.o.","code":"PL-71R","phone":"+48943482997","email":"elocity@panorama-morska.pl","website":"http:\/\/www.panorama-morska.pl","short_name":"Tropicoco","type":1,"country":"pl"},
 {"id":1979,"name":"Magda Targosz","code":"PL-J9Z","phone":"+48601396095","email":"dankan.c@gmail.com","website":"https:\/\/zajazdzlotarybka.pl","short_name":"Zajazd Z\u0142ota Rybka Magda Targosz","type":1,"country":"pl"},
@@ -668,4 +667,4 @@
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
 {"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"},
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
-{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-26T08:20:03+02:00"}
+{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-26T09:30:02+02:00"}
