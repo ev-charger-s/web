@@ -596,7 +596,7 @@
 {"id":1921,"name":"Sp\u00f3\u0142dzielnia Mleczarska Mlekovita","code":"PL-TZT","phone":"+48862758203","email":"energetyka@mlekovita.com.pl","short_name":"SM Mlekovita","type":1,"country":"pl"},
 {"id":1922,"name":"Firma Us\u0142ugowo - Handlowa \"P. IWO\" Iwo Gnieciak","code":"PL-YBK","phone":"+48-774-270-840","email":"p.iwo@wp.pl","website":"https:\/\/hoteltenis.pl","short_name":"F U H P. IWO\" Iwo Gnieciak","type":1,"country":"pl"},
 {"id":1923,"name":"GMINA CZERWONAK","code":"PL-RPG","phone":"+48616544204","email":"kancelaria@czerwonak.pl","website":"http:\/\/www.czerwonak.pl","short_name":"GC","type":1,"country":"pl"},
-{"id":1925,"name":"CH Oliwa","code":"PL-8U9","phone":"+48585541023","email":"biuro@wkks.pl","website":"http:\/\/choliwa.pl","short_name":"CH Oliwa","type":1,"country":"pl"},
+{"id":1925,"name":"WKKS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-8U9","phone":"+48585541023","email":"biuro@wkks.pl","website":"http:\/\/choliwa.pl","short_name":"CH Oliwa","type":1,"country":"pl"},
 {"id":1926,"name":"GEOTRANS GLOBAL Sp. z o.o.","code":"PL-T2R","phone":"+48507302609","email":"biuro@wtyczka.eu","website":"http:\/\/www.wtyczka.eu","type":1,"country":"pl"},
 {"id":1927,"name":"DIRHAM SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-RRN","phone":"+48519502057","email":"sp052@muszkieterowie.pl","website":"http:\/\/www.intermarche.pl","short_name":"Intermarche Ostr\u00f3da","type":1,"country":"pl"},
 {"id":1928,"name":"LIVECO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-FYT","phone":"+48501186685","email":"jlukasik2@interia.pl","short_name":"LIVECO","type":1,"country":"pl"},
@@ -666,4 +666,4 @@
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
 {"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"},
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
-{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-27T04:15:03+02:00"}
+{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-27T15:10:03+02:00"}
