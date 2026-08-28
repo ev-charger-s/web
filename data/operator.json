@@ -221,7 +221,6 @@
 {"id":355,"name":"REINO IO GP 3 sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 PropCo 3 sp\u00f3\u0142ka komandytowa","code":"PL-C72","phone":"+48222739750","email":"office@reinocapital.pl","short_name":"REINO IO GP3","type":1,"country":"pl"},
 {"id":356,"name":"Pomorska Sp\u00f3\u0142dzielnia Mieszkaniowa w Bydgoszczy","code":"PL-NKU","phone":"+48525223010","email":"bok@psm.bydgoszcz.pl","website":"http:\/\/www.psm.bydgoszcz.pl","short_name":"PSM","type":1,"country":"pl"},
 {"id":357,"name":"Interparking Polska sp. z o.o.","code":"PL-59G","phone":"+48698936254","email":"kdrabek@interparking.cpom","website":"http:\/\/www.interparking.pl","short_name":"Interparking","type":1,"country":"pl"},
-{"id":358,"name":"Hazel Investments Sp. z o.o.","code":"PL-RMM","phone":"+48-223188888","email":"biuro@capitalpark.pl","website":"https:\/\/capitalpark.pl\/","type":1,"country":"pl"},
 {"id":359,"name":"Zak\u0142ad Komunalny Sp. z o.o.","code":"PL-WAE","phone":"+48774562569","email":"sekretariat@zk.opole.pl","website":"https:\/\/mzd.opole.pl\/","type":1,"country":"pl"},
 {"id":361,"name":"ZARZ\u0104D TRANSPORTU MIEJSKIEGO","code":"PL-664","phone":"+48225401817","email":"ztm@ztm.waw.pl","website":"http:\/\/ztm.waw.pl","short_name":"ZTM","type":1,"country":"pl"},
 {"id":363,"name":"Projekt Wadowicka Sp. z o.o.","code":"PL-YXY","phone":"+48222739750","email":"pm.wad3@reinopartners.com","type":1,"country":"pl"},
@@ -666,4 +665,4 @@
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
 {"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"},
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
-{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-28T09:10:03+02:00"}
+{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-28T21:35:03+02:00"}
