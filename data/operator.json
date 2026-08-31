@@ -55,7 +55,7 @@
 {"id":80,"name":"Zak\u0142ad Gospodarki Mieszkaniowej","code":"PL-6XY","phone":"227-555-231","email":"biuro@zgmgrodzisk.pl","website":"http:\/\/www.zgmgrodzisk.pl","short_name":"ZGM","type":1,"country":"pl"},
 {"id":81,"name":"Miasto Nowy S\u0105cz","code":"PL-AFG","phone":"+48184156550","email":"jkupczak@nowysacz.pl","type":1,"country":"pl"},
 {"id":83,"name":"ING Bank \u015al\u0105ski S.A.","code":"PL-H1G","phone":"693-180-034","email":"bartlomiej.grzywinski@ing.pl","website":"http:\/\/ing.pl","short_name":"ING Bank","type":1,"country":"pl"},
-{"id":87,"name":"\u201eIGNASZAK\u201d sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp.k.","code":"PL-NXA","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"IGNASZAK","type":1,"country":"pl"},
+{"id":87,"name":"IGNASZAK Prosta Sp\u00f3\u0142ka Akcyjna","code":"PL-NXA","phone":"+48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"IGNASZAK","type":1,"country":"pl"},
 {"id":88,"name":"Toyota Motors Manufacturing Poland Sp. z o.o.","code":"PL-Z1G","phone":"797701840","email":"mkoczur@takenaka.pl","short_name":"TMMP-W","type":1,"country":"pl"},
 {"id":90,"name":"PHU HADM Mieczys\u0142aw Gramatowski","code":"PL-Y5H","phone":"720820164","email":"serwis.elblag@hadm.pl","website":"http:\/\/www.hadm.pl","short_name":"HADM Skoda i Citroen","type":1,"country":"pl"},
 {"id":91,"name":"GreenGoo Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-P1U","phone":"800802801","email":"info@greengoo.eu","short_name":"GreenGoo Sp. z o.o.","type":1,"country":"pl"},
@@ -426,7 +426,7 @@
 {"id":1683,"name":"Auto Salon Margo - Szczotok SP J","code":"PL-G2F","phone":"+48324248110","email":"serwis@margo-rybnik.pl","website":"http:\/\/margo-rybnik.pl","short_name":"Auto Salon Margo","type":1,"country":"pl"},
 {"id":1684,"name":"Green Planet Energy.eu Sp. z o.o.","code":"PL-KM4","phone":"+48692306036","email":"biuro@greenplanetenergy.eu","website":"http:\/\/greenplanetenergy.eu","short_name":"GPE","type":1,"country":"pl"},
 {"id":1686,"name":"Fimot Filipkowscy Sp\u00f3\u0142ka Jawna","code":"PL-CFK","phone":"+48876104848","email":"elk.serwis@fimot.pl","website":"http:\/\/www.fimot.pl","short_name":"Fimot","type":1,"country":"pl"},
-{"id":1687,"name":"VOLTPOINT SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-2HT","phone":"+48721295001","email":"voltpoint@voltpoint.pl","short_name":"BeON","type":3,"country":"pl"},
+{"id":1687,"name":"VOLTPOINT SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-2HT","phone":"+48856544526","email":"voltpoint@voltpoint.pl","website":"http:\/\/www.voltpoint.pl","short_name":"BeON","type":3,"country":"pl"},
 {"id":1688,"name":"Modern Dream sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-EK8","phone":"+48502308504","email":"info@modern-dream.pl","website":"https:\/\/www.md-carport.pl\/","short_name":"Modern Dream","type":1,"country":"pl"},
 {"id":1689,"name":"Folwark Samochodowy Sp. Zo.o.","code":"PL-GYF","phone":"+48413693499","email":"recepcja@folwark-samochodowy.pl","website":"http:\/\/www.folwark-samochodowy.pl","short_name":"Folwark","type":1,"country":"pl"},
 {"id":1691,"name":"Drewniany Investments","code":"PL-MRN","phone":"+48506813890","email":"charger@drewnianyinvestments.pl","short_name":"Drewniany","type":1,"country":"pl"},
@@ -491,7 +491,6 @@
 {"id":1781,"name":"P.H. \"B-K\" Barbara Badora","code":"PL-NCK","phone":"+48516009988","email":"biuro@karczmaubasienki.pl","website":"http:\/\/karczmaubasienki.pl","short_name":"Karczma u Basie\u0144ki","type":1,"country":"pl"},
 {"id":1782,"name":"ZPUE S.A.","code":"PL-D4X","phone":"+48506005142","email":"serwis@zpue.pl","website":"https:\/\/zpue.pl","type":1,"country":"pl"},
 {"id":1783,"name":"Inwestycja Tarczyn Sp. z o.o.","code":"PL-BYZ","phone":"+48602135485","email":"inwestycja.tarczyn@op.pl","website":"http:\/\/www.xchargers.com.pl","type":1,"country":"pl"},
-{"id":1784,"name":"Mercedes-Benz High Power Charging Europe GmbH","code":"PL-MBX","phone":"+4980010000135","website":"https:\/\/www.mercedes-benz.de\/passengercars\/services\/charging\/mercedes-me-charge-card-stations-network\/charging-hub-authentication\/charging-hub-authentication-english-version.html","type":1,"country":"de"},
 {"id":1785,"name":"BASF Catalysts Polska Sp. z o.o.","code":"PL-EYD","phone":"+48717146162","website":"https:\/\/www.basf.com\/pl\/pl\/who-we-are\/Zaklad_Produkcji_Katalizatorow_BASF","type":1,"country":"pl"},
 {"id":1786,"name":"Gmina D\u0105browa","code":"PL-HZW","phone":"+48523153216","email":"ug-dabrowa@ug-dabrowa.pl","type":1,"country":"pl"},
 {"id":1787,"name":"\"CENTRUM\" SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-E38","phone":"+48-536-044-934","email":"m.maciaszek@aia.pl","type":1,"country":"pl"},
@@ -665,4 +664,4 @@
 {"id":2029,"name":"WSP\u00d3LNOTA MIESZKANIOWA UL. CENTRALNA 51 I 51B","code":"PL-WJ8","phone":"+48-573-679-561","email":"adm6@prosperito.pl","type":1,"country":"pl"},
 {"id":2030,"name":"Targi Kielce SA","code":"PL-951","phone":"+48-413651222","email":"biuro@targikielce.pl","short_name":"TK","type":1,"country":"pl"},
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
-{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-31T08:15:03+02:00"}
+{"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"}], "generated":"2026-08-31T16:30:03+02:00"}
