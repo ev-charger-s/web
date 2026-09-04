@@ -264,7 +264,7 @@
 {"id":419,"name":"EDRI Poland Sp. z o. o.","code":"PL-UFC","phone":"+48608754707","email":"poland@edri.com","short_name":"EDRI Poland","type":3,"country":"pl"},
 {"id":420,"name":"IONITY GmbH Sp. z o.o.","code":"PL-IOY","phone":"+4989414178585","email":"info@ionity.eu","website":"http:\/\/www.ionity.eu","type":1,"country":"pl"},
 {"id":421,"name":"Prorest Sp. z o.o.","code":"PL-HZP","phone":"+48-619-99-99","email":"recepcja@siedliskomorena.pl","website":"http:\/\/www.siedliskomorena.pl","type":1,"country":"pl"},
-{"id":422,"name":"\"AN-SON\" DAO THI HA","code":"PL-QGB","phone":"+48575008566","email":"dao.thiha@interia.eu","website":"https:\/\/www.an-son.pl\/","short_name":"An-Son","type":1,"country":"pl"},
+{"id":422,"name":"AN-SON SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-QGB","phone":"+48575008566","email":"dao.thiha@interia.eu","website":"https:\/\/www.an-son.pl\/","short_name":"An-Son","type":1,"country":"pl"},
 {"id":423,"name":"GRUPA PSB HANDEL S.A.","code":"PL-15H","phone":"+48572886552","email":"emap@tauron.pl","type":1,"country":"pl"},
 {"id":427,"name":"Nazaruk Service Sp. z o.o.","code":"PL-XEW","phone":"+48817486868","email":"salon@nazaruk.pl","website":"http:\/\/www.nazaruk.pl","short_name":"Nazaruk Service","type":1,"country":"pl"},
 {"id":428,"name":"Chargespot Prosta Sp\u00f3\u0142ka Akcyjna","code":"PL-U25","phone":"+48224855888","email":"info@chargespot.pl","website":"https:\/\/chargerspot.pl","short_name":"Chargerspot","type":3,"country":"pl"},
@@ -666,4 +666,4 @@
 {"id":2032,"name":"Przedsi\u0119biorstwo Us\u0142ugowe Hubert Niedzia\u0142ek","code":"PL-2U3","phone":"+48600687130","email":"hubertniedzialek@o2.pl","website":"http:\/\/janowskizakatek.pl","type":1,"country":"pl"},
 {"id":2035,"name":"Gmina Kroczyce","code":"PL-NHY","phone":"+48343152150","email":"kroczyce@kroczyce.pl","website":"http:\/\/kroczyce.pl","short_name":"Kroczyce","type":1,"country":"pl"},
 {"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"},
-{"id":2052,"name":"FocusCar Pawe\u0142 Niemczyk","code":"PL-8WX","phone":"+48600976569","email":"kontakt@autozamienne.pl","short_name":"FocusCar","type":1,"country":"pl"}], "generated":"2026-09-04T07:10:03+02:00"}
+{"id":2052,"name":"FocusCar Pawe\u0142 Niemczyk","code":"PL-8WX","phone":"+48600976569","email":"kontakt@autozamienne.pl","short_name":"FocusCar","type":1,"country":"pl"}], "generated":"2026-09-04T12:00:03+02:00"}
