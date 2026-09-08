@@ -249,7 +249,6 @@
 {"id":444,"name":"Gmina Rogo\u017ano","code":"PL-ZKW","phone":"+48-785-009-402","email":"um@rogozno.pl","website":"http:\/\/www.rogozno.pl","type":1,"country":"pl"},
 {"id":445,"name":"Gmina Malczyce","code":"PL-KCZ","phone":"+48-713-179-223","email":"sekretariat@malczyce.wroc.pl","website":"https:\/\/www.malczyce.wroc.pl\/project\/urzad\/","type":1,"country":"pl"},
 {"id":446,"name":"Zak\u0142ady Produkcyjne B-D S.A.","code":"PL-1GA","phone":"+48530315140","email":"sekretariat@b-d.com.pl","type":1,"country":"pl"},
-{"id":447,"name":"Restauracja Hotel \"August\" Dariusz Augustyn","code":"PL-SNG","phone":"+48146631083","email":"hotel@hotelaugust.pl","website":"http:\/\/www.hotelaugust.pl","short_name":"Hotel \"AUGUST\"","type":1,"country":"pl"},
 {"id":449,"name":"Hotel Bayjonn Sopot","code":"PL-XCF","phone":"+48-730-71-71-71","email":"recepcja@bayjonnhotel.pl","website":"http:\/\/www.bayjonnhotel.pl","short_name":"Anmar Sp z o.o.","type":1,"country":"pl"},
 {"id":451,"name":"Parking Wawel SL.","code":"PL-PNS","phone":"+48698936254","email":"kdrabek@interparking.com","website":"http:\/\/www.parkingwawel.pl","short_name":"Parking Wawel","type":1,"country":"pl"},
 {"id":452,"name":"Enefit Sp. z o.o.","code":"PL-T1A","phone":"+48222992727","email":"info@enefit.pl","website":"http:\/\/www.enefit.pl","short_name":"Enefit","type":3,"country":"pl"},
@@ -633,4 +632,4 @@
 {"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"},
 {"id":2051,"name":"Przedsi\u0119biorstwo Komunikacji Samochodowej w Grodzisku Maz. Sp. z o.o.","code":"PL-UAU","phone":"+42222990024","email":"poczta@pksgrodzisk.pl","website":"http:\/\/www.pksgrodzisk.pl","short_name":"PKS Grodzisk","type":1,"country":"pl"},
 {"id":2052,"name":"FocusCar Pawe\u0142 Niemczyk","code":"PL-8WX","phone":"+48600976569","email":"kontakt@autozamienne.pl","short_name":"FocusCar","type":1,"country":"pl"},
-{"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"}], "generated":"2026-09-08T08:35:03+02:00"}
+{"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"}], "generated":"2026-09-08T13:45:03+02:00"}
