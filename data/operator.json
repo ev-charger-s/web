@@ -21,7 +21,7 @@
 {"id":54,"name":"ZAK\u0141AD DOSKONALENIA ZAWODOWEGO","code":"PL-PDX","phone":"12 397-21-31","email":"p.tarkowski@krowodrzahotel.pl","short_name":"ZDZ KRAK\u00d3W","type":1,"country":"pl"},
 {"id":55,"name":"ENEA S.A.","code":"PL-GG8","phone":"+48727564125","website":"http:\/\/www.enea.pl","short_name":"ENEA","type":1,"country":"pl"},
 {"id":57,"name":"Stacja \u0141adowania Pojazd\u00f3w","code":"PL-UQF","phone":"690910280","email":"biuro@hymon.pl","short_name":"Stacja \u0141adowania Pojazd\u00f3w","type":1,"country":"pl"},
-{"id":62,"name":"Lidl sp. z o.o. sp. k.","code":"PL-Q55","phone":"800-012-071","website":"http:\/\/www.lidl.pl","type":1,"country":"pl"},
+{"id":62,"name":"Lidl sp. z o.o. sp. k.","code":"PL-Q55","phone":"+48800012071","website":"http:\/\/www.lidl.pl","type":1,"country":"pl"},
 {"id":63,"name":"Kaufland Polska Markety Sp. z o.o. Sp. j.","code":"PL-3T1","phone":"+48800300062","email":"e-auto@kaufland.pl","website":"https:\/\/sklep.kaufland.pl\/uslugi\/stacje-ladowania.html","short_name":"Kaufland Polska Markety","type":1,"country":"pl"},
 {"id":64,"name":"Arinea sp. z o.o","code":"PL-Z75","phone":"+48609321481","email":"biuro@arinea.pl","website":"http:\/\/arinea.pl","type":3,"country":"pl"},
 {"id":65,"name":"Urz\u0105d Gminy Nadarzyn","code":"PL-74W","phone":"+48227298185","email":"gmina@nadarzyn.pl","website":"http:\/\/www.nadarzyn.pl","type":1,"country":"pl"},
@@ -634,4 +634,4 @@
 {"id":2052,"name":"FocusCar Pawe\u0142 Niemczyk","code":"PL-8WX","phone":"+48600976569","email":"kontakt@autozamienne.pl","short_name":"FocusCar","type":1,"country":"pl"},
 {"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"},
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
-{"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"}], "generated":"2026-09-14T09:30:02+02:00"}
+{"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"}], "generated":"2026-09-14T16:25:02+02:00"}
