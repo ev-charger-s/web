@@ -114,7 +114,7 @@
 {"id":268,"name":"TSG Polska Sp. z o.o.","code":"PL-NJN","phone":"+48583432171","website":"https:\/\/www.tsg-solutions.com\/pl","type":3,"country":"pl"},
 {"id":270,"name":"Auto Miras ASS Sp. z o.o.","code":"PL-J3X","phone":"+48512512753","email":"biuro@eonic.pl","website":"http:\/\/www.eonic.pl","short_name":"Grupa Makurat","type":1,"country":"pl"},
 {"id":272,"name":"Zefir 10 sp. z o.o.","code":"PL-W61","phone":"+48-506-050-702","email":"kontakt@stacjasierpc.pl","website":"http:\/\/www.stacjasierpc.pl","short_name":"Stacja Sierpc","type":1,"country":"pl"},
-{"id":273,"name":"Urz\u0105d Miejski w Pu\u0142tuska","code":"PL-YKW","phone":"+48509027016","email":"agnieszka.siekierska@pultusk.pl","website":"https:\/\/pultusk.pl\/","short_name":"UMPu\u0142tusk","type":3,"country":"pl"},
+{"id":273,"name":"Urz\u0105d Miejski w Pu\u0142tusku","code":"PL-YKW","phone":"+48509027016","email":"agnieszka.siekierska@pultusk.pl","website":"https:\/\/pultusk.pl\/","short_name":"UMPu\u0142tusk","type":3,"country":"pl"},
 {"id":274,"name":"Scandic Polen Sp. z o.o.","code":"PL-BAG","phone":"+48717870000","website":"https:\/\/www.scandichotels.com","type":3,"country":"pl"},
 {"id":275,"name":"G&G Sp. z o.o.","code":"PL-PTQ","phone":"+48606609110","email":"sprzedaz@grupagg.pl","website":"https:\/\/ladowarki-samochodowe.pl","short_name":"G&G Sp. z o.o.","type":1,"country":"pl"},
 {"id":278,"name":"ShareP Poland P.S.A.","code":"PL-AMW","phone":"+48227774141","email":"support@sharep.io","website":"https:\/\/sharep.io\/pl\/","type":3,"country":"pl"},
@@ -604,4 +604,4 @@
 {"id":2052,"name":"FocusCar Pawe\u0142 Niemczyk","code":"PL-8WX","phone":"+48600976569","email":"kontakt@autozamienne.pl","short_name":"FocusCar","type":1,"country":"pl"},
 {"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"},
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
-{"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"}], "generated":"2026-09-17T15:45:03+02:00"}
+{"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"}], "generated":"2026-09-17T19:45:03+02:00"}
