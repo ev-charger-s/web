@@ -117,7 +117,7 @@
 {"id":273,"name":"Urz\u0105d Miejski w Pu\u0142tusku","code":"PL-YKW","phone":"+48509027016","email":"agnieszka.siekierska@pultusk.pl","website":"https:\/\/pultusk.pl\/","short_name":"UMPu\u0142tusk","type":3,"country":"pl"},
 {"id":274,"name":"Scandic Polen Sp. z o.o.","code":"PL-BAG","phone":"+48717870000","website":"https:\/\/www.scandichotels.com","type":3,"country":"pl"},
 {"id":275,"name":"G&G Sp. z o.o.","code":"PL-PTQ","phone":"+48606609110","email":"sprzedaz@grupagg.pl","website":"https:\/\/ladowarki-samochodowe.pl","short_name":"G&G Sp. z o.o.","type":1,"country":"pl"},
-{"id":278,"name":"ShareP Poland P.S.A.","code":"PL-AMW","phone":"+48227774141","email":"support@sharep.io","website":"https:\/\/sharep.io\/pl\/","type":3,"country":"pl"},
+{"id":278,"name":"STELLOS POLAND PROSTA SP\u00d3\u0141KA AKCYJNA","code":"PL-AMW","phone":"+48227774141","email":"support@sharep.io","website":"https:\/\/sharep.io\/pl\/","type":3,"country":"pl"},
 {"id":279,"name":"Circle K Polska Sp. z o.o.","code":"PL-CKE","phone":"+48222552255","email":"BOK@circlekeurope.com","website":"http:\/\/circlek.pl","short_name":"Circle K","type":3,"country":"pl"},
 {"id":280,"name":"Dynamica Sp. z o.o.","code":"PL-HX1","phone":"+48225120550","email":"serwis.warszawa@dynamica.pl","website":"http:\/\/www.dynamica.pl","type":1,"country":"pl"},
 {"id":283,"name":"Miasto Piast\u00f3w","code":"PL-F9B","phone":"+48227705201","email":"umpiastow@piastow.pl","short_name":"Miasto Piast\u00f3w","type":1,"country":"pl"},
@@ -606,4 +606,4 @@
 {"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"},
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
-{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-21T13:10:03+02:00"}
+{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-21T19:15:03+02:00"}
