@@ -53,7 +53,7 @@
 {"id":140,"name":"Mroczkowski Sp. z o.o.","code":"PL-JR3","phone":"+48612851123","email":"serwis@vw-mroczkowski.pl","type":1,"country":"pl"},
 {"id":144,"name":"ELBUD Be\u0142chat\u00f3w","code":"PL-X7M","phone":"+48123789614","email":"biuro@elbud.com.pl","website":"http:\/\/www.elbud.com.pl","short_name":"ELBUD","type":1,"country":"pl"},
 {"id":147,"name":"Ursa Maior sp. z o.o. SKA","code":"PL-JQE","phone":"134612510","email":"stacja@ursamaior.pl","website":"http:\/\/www.ursamaior.pl","type":1,"country":"pl"},
-{"id":150,"name":"Plichta Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 Sp\u00f3\u0142ka komandytowa","code":"PL-9W5","phone":"502-605-566","email":"kc@lastmilesolutions.com","website":"http:\/\/www.lastmilesolutions.com","short_name":"Plichta Sp. z o.o.","type":1,"country":"pl"},
+{"id":150,"name":"Plichta Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 Sp\u00f3\u0142ka komandytowa","code":"PL-9W5","phone":"+48502605566","email":"kc@lastmilesolutions.com","website":"http:\/\/www.lastmilesolutions.com","short_name":"Plichta Sp. z o.o.","type":1,"country":"pl"},
 {"id":153,"name":"Berdychowski Sp.J.","code":"PL-B7G","phone":"502291765","email":"serwis@berdychowski.com.pl","website":"https:\/\/berdychowski.dealer.volkswagen.pl","short_name":"Berdychowski Sp.J.","type":1,"country":"pl"},
 {"id":155,"name":"Gmina \u0141apy","code":"PL-GQG","phone":"857152251","email":"sekretariat@um.lapy.pl","website":"http:\/\/www.lapy.pl\/","short_name":"Gmina \u0141apy","type":1,"country":"pl"},
 {"id":158,"name":"Biacomex Sp\u00f3\u0142ka Akcyjna","code":"PL-G3X","phone":"48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"Biacomex S.A.","type":1,"country":"pl"},
@@ -606,4 +606,4 @@
 {"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"},
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
-{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-22T07:30:03+02:00"}
+{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-22T12:25:04+02:00"}
