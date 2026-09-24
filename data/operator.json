@@ -504,7 +504,6 @@
 {"id":1896,"name":"Solid Charge","code":"PL-SOL","phone":"+48511326258","email":"piotr.majcher@solidstudio.io","website":"https:\/\/solidcharge.pl","type":3,"country":"pl"},
 {"id":1897,"name":"BIBUS MENOS Sp. z.o.o.","code":"PL-QWX","phone":"+48586609570","email":"info@bibusmenos.pl","website":"https:\/\/menos.bibus.com\/pl-pl\/","short_name":"BIBUS MENOS","type":1,"country":"pl"},
 {"id":1898,"name":"Narwia\u0144ski Park Narodowy","code":"PL-14X","phone":"+48663103109","email":"npn@npn.pl","website":"http:\/\/www.npn.gov.pl","short_name":"NPN","type":1,"country":"pl"},
-{"id":1899,"name":"Poli Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialnosci\u0105","code":"PL-BTQ","phone":"+48576088889","email":"info@milachowo.com","short_name":"Poli SP. z o. o.","type":1,"country":"pl"},
 {"id":1900,"name":"SABAT Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-GKK","phone":"+48814583010","website":"http:\/\/sabat.lublin.pl","short_name":"SABAT Sp. z o.o.","type":1,"country":"pl"},
 {"id":1901,"name":"\"Managa\" Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-T2H","phone":"+48660421299","email":"managa@muszkieterowie.pl","website":"http:\/\/www.bricomarche.pl","short_name":"Managa - Bricomarche","type":1,"country":"pl"},
 {"id":1903,"name":"P&P EVOLUTION SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-EVO","phone":"+48725222211","email":"kontakt@dwapev.pl","short_name":"2PEV","type":1,"country":"pl"},
@@ -604,7 +603,8 @@
 {"id":2046,"name":"DOT PARK Sp. z o.o.","code":"PL-579","phone":"+48533918365","email":"julia.dajewska@golden-star-estate.com","type":1,"country":"pl"},
 {"id":2051,"name":"Przedsi\u0119biorstwo Komunikacji Samochodowej w Grodzisku Maz. Sp. z o.o.","code":"PL-UAU","phone":"+42222990024","email":"poczta@pksgrodzisk.pl","website":"http:\/\/www.pksgrodzisk.pl","short_name":"PKS Grodzisk","type":1,"country":"pl"},
 {"id":2052,"name":"FocusCar Pawe\u0142 Niemczyk","code":"PL-8WX","phone":"+48600976569","email":"kontakt@autozamienne.pl","short_name":"FocusCar","type":1,"country":"pl"},
+{"id":2054,"name":"Gmina i Miasto Rudnik nad Sanem","code":"PL-T31","phone":"+48158761002","email":"info@rudnik.pl","website":"https:\/\/rudnik.pl\/","type":1,"country":"pl"},
 {"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"},
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
-{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-24T08:50:03+02:00"}
+{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-24T14:20:03+02:00"}
