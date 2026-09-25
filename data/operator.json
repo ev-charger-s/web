@@ -67,7 +67,7 @@
 {"id":174,"name":"wczasowa8.pl Pawe\u0142 Tykwi\u0144ski","code":"PL-2AB","phone":"501764552","email":"biuro@wczasowa8.pl","website":"http:\/\/wczasowa8.pl","short_name":"wczasowa8.pl","type":1,"country":"pl"},
 {"id":175,"name":"Hotel Jantar","code":"PL-MRQ","phone":"0048914394231","email":"jantar@arka-mega.pl","website":"https:\/\/jantarszczecin.pl","short_name":"Hotel Jantar","type":1,"country":"pl"},
 {"id":177,"name":"AUTO GROUP LUZAR SP Z O.O.","code":"PL-115","phone":"122527400","email":"serwis@autoluzar.pl","website":"http:\/\/www.autoluzar.pl","short_name":"AGL","type":1,"country":"pl"},
-{"id":180,"name":"Autoryzowany Serwis Volkswagena i Skody Kami\u0144ski i Sp\u00f3\u0142ka","code":"PL-1GM","phone":"564934827","email":"serwis@kaminski-vw.pl","short_name":"Kami\u0144ski i Sp\u00f3\u0142ka","type":1,"country":"pl"},
+{"id":180,"name":"Autoryzowany Serwis Volkswagena i Skody Kami\u0144ski i Sp\u00f3\u0142ka","code":"PL-1GM","phone":"+48564934827","email":"serwis@kaminski-vw.pl","short_name":"Kami\u0144ski i Sp\u00f3\u0142ka","type":1,"country":"pl"},
 {"id":184,"name":"\u0141\u00f3d\u017a JTB sp. z o. o. sp. k.","code":"PL-PXG","phone":"426130700","email":"salon.lodz@bednarek.com.pl","website":"http:\/\/www.bednarek.com.pl","type":1,"country":"pl"},
 {"id":186,"name":"Grupa 3KF Sp. z o.o.","code":"PL-C8J","phone":"601261261","email":"kontakt@3kf.energy","website":"http:\/\/www.3kf.energy","short_name":"3KF","type":1,"country":"pl"},
 {"id":188,"name":"PPHU Eksport-Import ,,Martina'' Walczak Miros\u0142aw","code":"PL-JA8","phone":"+48185428428","email":"support@nexity.io","website":"http:\/\/www.nexity.io","short_name":"Martina","type":1,"country":"pl"},
@@ -100,7 +100,7 @@
 {"id":236,"name":"AUTORYZOWANY DEALER VOLKSWAGENA-STASZAK","code":"PL-FZ5","phone":"607077792","email":"anna.staszak@vwstaszak.pl","short_name":"VOLKSWAGEN STASZAK","type":1,"country":"pl"},
 {"id":237,"name":"EKOEN Sp. z o.o.","code":"PL-P2W","phone":"+48699585858","email":"kontakt@ekoen.pl","website":"https:\/\/ekoen.pl\/","short_name":"EKOEN","type":3,"country":"pl"},
 {"id":240,"name":"G&G Auto Rzesz\u00f3w Sp. z o.o.","code":"PL-GN6","phone":"+48178607000","email":"kontakt.vw@ggautorzeszow.pl","website":"https:\/\/ggautorzeszow.dealer.volkswagen.pl\/osobowe","short_name":"G&G Auto Rzesz\u00f3w","type":1,"country":"pl"},
-{"id":242,"name":"Gmina Cieszan\u00f3w","code":"PL-5RF","phone":"166311076","email":"cieszanow@vp.pl","website":"http:\/\/www.cieszanow.pl","type":1,"country":"pl"},
+{"id":242,"name":"Gmina Cieszan\u00f3w","code":"PL-5RF","phone":"+48166311076","email":"cieszanow@vp.pl","website":"http:\/\/www.cieszanow.pl","type":1,"country":"pl"},
 {"id":246,"name":"Volvo Car P\u0142ock","code":"PL-XUZ","phone":"242679090","email":"serwis@volvocarplock.dealervolvo.pl","website":"https:\/\/volvocarplock.volvocars-partner.pl\/","type":1,"country":"pl"},
 {"id":247,"name":"Drum Polska Hieronim Strapagiel","code":"PL-HSE","phone":"789218337","website":"https:\/\/autoportcalisia.pl\/","type":1,"country":"pl"},
 {"id":250,"name":"Dolno\u015bl\u0105ski Park Innowacji i Nauki SA","code":"PL-YES","phone":"+48717575244","email":"rafal.was@dpin.pl","short_name":"DPIiN","type":1,"country":"pl"},
@@ -598,6 +598,7 @@
 {"id":2034,"name":"Uniwersytecki Szpital Dzieci\u0119cy w Krakowie","code":"PL-YNG","phone":"+48538568071","email":"biuro.pelnomocnika@usdk.pl","website":"https:\/\/usd.krakow.pl\/kontakt\/","type":1,"country":"pl"},
 {"id":2035,"name":"Gmina Kroczyce","code":"PL-NHY","phone":"+48343152150","email":"kroczyce@kroczyce.pl","website":"http:\/\/kroczyce.pl","short_name":"Kroczyce","type":1,"country":"pl"},
 {"id":2036,"name":"LA MELISA sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-UT5","phone":"+48505100600","email":"biuro@lamelisa.pl","website":"http:\/\/www.lamelisa.pl","short_name":"LA MELISA","type":1,"country":"pl"},
+{"id":2037,"name":"Maciej Dobosz Firma Us\u0142ugowo-Handlowa","code":"PL-AT7","phone":"+48882370707","email":"adam.lukasik@dobosztrans.pl","short_name":"FUH Maciej Dobosz","type":1,"country":"pl"},
 {"id":2039,"name":"Miasto Lubo\u0144","code":"PL-2NK","phone":"+48517855704","email":"agnieszka.rudzka@bmklubon.pl","website":"http:\/\/www.lubon.pl","type":1,"country":"pl"},
 {"id":2040,"name":"CENTRUM ZANA HOLDING INVEST Sp. z o.o.","code":"PL-W7Q","phone":"+48814581190","email":"sekretariat@zana.pl","type":1,"country":"pl"},
 {"id":2046,"name":"DOT PARK Sp. z o.o.","code":"PL-579","phone":"+48533918365","email":"julia.dajewska@golden-star-estate.com","type":1,"country":"pl"},
@@ -607,4 +608,4 @@
 {"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"},
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
-{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-25T10:10:03+02:00"}
+{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-25T16:10:03+02:00"}
