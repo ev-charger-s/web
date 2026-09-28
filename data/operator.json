@@ -123,7 +123,6 @@
 {"id":285,"name":"In Balance grid, UAB","code":"LT*IBG","phone":"+37062247472","email":"support@inbalancegrid.com","website":"https:\/\/www.inbalancegrid.pl","short_name":"Inbalance","type":1,"country":"lt"},
 {"id":288,"name":"AUTO GROUP POLSKA Sp. z o.o.","code":"PL-QAW","phone":"+48655292100","email":"sekretartiat@cagleszno.pl","short_name":"AGP","type":1,"country":"pl"},
 {"id":290,"name":"GMINA PIASECZNO","code":"PL-U5E","phone":"+48-22-701-76-86","email":"it@piaseczno.eu","website":"http:\/\/www.piaseczno.eu","type":1,"country":"pl"},
-{"id":291,"name":"Citronex Trans Energy Sp. z o.o.","code":"PL-QA4","phone":"+48608625198","email":"paliwa@ctenergy.pl","website":"http:\/\/www.dplng.pl","short_name":"CTE","type":1,"country":"pl"},
 {"id":292,"name":"ITA TOOLS NIERUCHOMO\u015aCI sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp. k.","code":"PL-CAJ","phone":"+48663393353","email":"biuro@itatools.pl","short_name":"ITA","type":1,"country":"pl"},
 {"id":293,"name":"INTER CAR NOWAK SP. Z O.O.","code":"PL-8H7","phone":"+48122613742","email":"serwis@vwserwiskrakow.pl","website":"http:\/\/www.vwserwiskrakow.pl","short_name":"ICN","type":1,"country":"pl"},
 {"id":294,"name":"Lellek Sp.zo.o Oddzia\u0142 w Tarnowskich G\u00f3rach","code":"PL-6EB","phone":"+48321110500","website":"https:\/\/skoda.tarnowskiegory.lellek.pl\/","type":1,"country":"pl"},
@@ -300,7 +299,7 @@
 {"id":557,"name":"Zak\u0142ad Elektroinstalacyjny Piotr Piechel","code":"PL-R9N","phone":"+48655170535","email":"biuro@zepiechel.pl","website":"http:\/\/www.zepiechel.pl","short_name":"ZEPiechel","type":3,"country":"pl"},
 {"id":560,"name":"Przedsi\u0119biorstwo Energetyki Cieplnej Sp. z o.o.","code":"PL-JMH","phone":"+48158325840","email":"sekretariat@pecsandomierz.pl","short_name":"PEC Sandomierz","type":1,"country":"pl"},
 {"id":562,"name":"DOKIDA Sp. z o.o.","code":"PL-RKX","phone":"+48222907992","email":"support@elo.city","short_name":"DOKIDA","type":1,"country":"pl"},
-{"id":1598,"name":"AUTOPOL MICHALSKI MOTORS SP. JAWNA","code":"PL-14E","phone":"+48690375990","email":"info@ev365.pl","type":3,"country":"pl"},
+{"id":1598,"name":"MICHALSKI MOTORS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-14E","phone":"+48690375990","email":"info@ev365.pl","type":3,"country":"pl"},
 {"id":1600,"name":"DATPOL SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-46S","phone":"+48556212929","email":"kontakt@datpol.pl","website":"http:\/\/datpol.pl","short_name":"DATPOL Sp. z o.o.","type":1,"country":"pl"},
 {"id":1602,"name":"Firma Handlowa AMIPOL Sp. J. Polok & Polok","code":"PL-A61","phone":"+48606810095","email":"amipol@amipol.pl","short_name":"FH AMIPOL","type":1,"country":"pl"},
 {"id":1604,"name":"Mota-Engil Renewing Polska Sp. z o.o.","code":"PL-HK1","phone":"+48666093361","email":"udt@me-renewing.com","short_name":"RENEWING","type":3,"country":"pl"},
@@ -608,4 +607,5 @@
 {"id":2055,"name":"Siechnicka Inwestycyjna Sp\u00f3\u0142ka Komunalna","code":"PL-TYP","phone":"+48609996070","email":"biuro@sisk-siechnice.pl","short_name":"SISK Sp. z o.o.","type":1,"country":"pl"},
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
-{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"}], "generated":"2026-09-28T04:05:04+02:00"}
+{"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"},
+{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-09-28T11:00:03+02:00"}
