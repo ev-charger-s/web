@@ -148,7 +148,6 @@
 {"id":342,"name":"Silesia Ring Sp. z o.o. Spk. k.","code":"PL-1J2","phone":"+48691017555","email":"biuro@silesiaring.pl","website":"https:\/\/www.silesiaring.pl","short_name":"Silesia Ring","type":1,"country":"pl"},
 {"id":344,"name":"IntegracjaB2B","code":"PL-PRH","phone":"+48500090094","email":"michal.palma@ib2b.pl","website":"http:\/\/ib2b.pl","short_name":"IB2B","type":1,"country":"pl"},
 {"id":346,"name":"Grupa Inwestycyjna HOSSA S.A.","code":"PL-9F5","phone":"+48787871726","email":"info@hossabiz.pl","website":"http:\/\/www.","short_name":"Hossa SA","type":1,"country":"pl"},
-{"id":347,"name":"MARATINI SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-9M2","phone":"+48695950852","email":"mkrol@blue-assets.com","short_name":"Maratini","type":1,"country":"pl"},
 {"id":348,"name":"Gmina Szamocin","code":"PL-JRN","phone":"+48672848003","email":"elektryczny@gminaszamocin.pl","website":"http:\/\/www.gminaszamocin.pl","short_name":"Gmina Szamocin","type":3,"country":"pl"},
 {"id":350,"name":"AUTO-GAZDA BIELSKO-BIA\u0141A","code":"PL-BAJ","phone":"+48334448800","email":"kontakt@seat.auto-gazda.pl","website":"http:\/\/www.auto-gazda.pl","short_name":"SEAT AUTO-GAZDA","type":1,"country":"pl"},
 {"id":353,"name":"MMC Marcin Matyjaszczyk","code":"PL-MEE","phone":"+48222111818","email":"biuro@screencharge.pl","website":"http:\/\/www.screencharge.pl","short_name":"MEE","type":1,"country":"pl"},
@@ -608,4 +607,4 @@
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
 {"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"},
-{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-09-28T11:00:03+02:00"}
+{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-09-28T19:50:03+02:00"}
