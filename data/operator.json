@@ -164,7 +164,6 @@
 {"id":370,"name":"Centrum Sportowo Rekreacyjne Sp. z o.o.","code":"PL-AM8","phone":"+48782810502","email":"biuro@csr.zgorzelec.pl","website":"http:\/\/pgeturowarena.eu","short_name":"CSR Sp. z o.o.","type":1,"country":"pl"},
 {"id":371,"name":"INSTBUD sp. z o.o.","code":"PL-D65","phone":"+48123858555","website":"http:\/\/www.kuterport.pl","short_name":"Kuter Port","type":1,"country":"pl"},
 {"id":373,"name":"EleportPL","code":"PL-A1Y","phone":"+48223071349","email":"support@eleport.pl","website":"http:\/\/www.eleport.pl","short_name":"Eleport","type":3,"country":"pl"},
-{"id":374,"name":"AUTO BZ","code":"PL-RAT","phone":"+48723183611","email":"contact.center@zimny.com.pl","website":"http:\/\/www.zimny.com.pl","type":1,"country":"pl"},
 {"id":375,"name":"LELLEK Ko\u017ale Sp.zo.o.","code":"PL-394","phone":"+48774822222","website":"https:\/\/www.kozle.skoda.lellek.com.pl\/","type":1,"country":"pl"},
 {"id":376,"name":"Gmina \u0141och\u00f3w","code":"PL-F6B","phone":"+48-256-437-800","email":"kancelaria@gminalochow.pl","type":1,"country":"pl"},
 {"id":377,"name":"BIONANOPARK sp. z o.o.","code":"PL-YXJ","phone":"+48422807676","email":"biuro@bionanopark.pl","website":"http:\/\/bionanopark.pl","type":1,"country":"pl"},
@@ -608,4 +607,5 @@
 {"id":2056,"name":"Zesp\u00f3\u0142 Zak\u0142ad\u00f3w Opieki Zdrowotnej w Wadowicach","code":"PL-ANU","phone":"+48797999979","email":"bzajda@zzozwadowice.pl","website":"http:\/\/www.zzozwadowice.pl","short_name":"ZZOZ w Wadowicach","type":1,"country":"pl"},
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
 {"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"},
-{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-10-01T09:50:03+02:00"}
+{"id":2064,"name":"EV2GO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-AYC","phone":"+48412302000","email":"info@ev2go.pl","website":"http:\/\/www.ev2go.pl","short_name":"EV2GO","type":3,"country":"pl"},
+{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-10-01T17:00:03+02:00"}
