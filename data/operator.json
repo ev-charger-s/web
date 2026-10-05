@@ -14,6 +14,7 @@
 {"id":30,"name":"Z.U.P EMITER LIMANOWA","code":"PL-8BG","phone":"+48695233358","email":"pawel.slazyk@emiter.com","short_name":"EMITER ZEVS","type":1,"country":"pl"},
 {"id":34,"name":"MAGAR Sp. z o.o.","code":"PL-WAQ","phone":"+48666819246","email":"desk@garvest.com","short_name":"MAGAR-P4","type":1,"country":"pl"},
 {"id":35,"name":"POWER EV Sp. z o.o.","code":"PL-ECX","phone":"222330811","email":"info@dopower.eu","website":"http:\/\/www.dopower.pl","short_name":"POWER_EV","type":1,"country":"pl"},
+{"id":38,"name":"Techenergo Sp. z o.o.","code":"PL-TEO","phone":"+48690012314","email":"d.puchala@techenergo.pl","short_name":"TE","type":1,"country":"pl"},
 {"id":41,"name":"Energa Obr\u00f3t S. A.","code":"PL-KM8","phone":"+48555555537","email":"emobility@energa.pl","website":"https:\/\/emobility.pl\/","type":1,"country":"pl"},
 {"id":44,"name":"ORLEN S.A.","code":"PL-PKN","phone":"+48502167536","website":"https:\/\/opinie.orlen.pl\/","short_name":"ORLEN","type":3,"country":"pl"},
 {"id":47,"name":"Kolejowe Zak\u0142ady \u0141\u0105czno\u015bci sp. z o.o.","code":"PL-YWT","phone":"+48525183670","email":"biuro@kzl.com.pl","website":"https:\/\/www.kzl.com.pl","short_name":"KZ\u0141","type":1,"country":"pl"},
@@ -91,7 +92,7 @@
 {"id":222,"name":"BENEPOL SP. Z O.O.","code":"PL-DWB","phone":"+48668888052","website":"http:\/\/www.benepol.pl","short_name":"BENEPOL","type":1,"country":"pl"},
 {"id":223,"name":"PLUGBOX EUROPE SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-JKN","phone":"+48795359785","email":"info@plugbox.eu","website":"http:\/\/www.plugbox.eu","short_name":"PLUGBOX EUROPE Sp. z o.o.","type":1,"country":"pl"},
 {"id":225,"name":"Cyfrowe Sieci Multimedialne Sp. z o.o.","code":"PL-5BG","phone":"+48158135656","email":"biuro@csmm.pl","website":"http:\/\/www.vely.pl","short_name":"CSMM","type":1,"country":"pl"},
-{"id":228,"name":"G&G AUTO LUBLIN Sp. z o.o.","code":"PL-T29","phone":"81 469-77-00","email":"kontakt@ggautolublin.pl","short_name":"G&G AUTO LUBLIN Sp. z o.o.","type":1,"country":"pl"},
+{"id":228,"name":"G&G AUTO LUBLIN Sp. z o.o.","code":"PL-T29","phone":"+48814697700","email":"kontakt@ggautolublin.pl","short_name":"G&G AUTO LUBLIN Sp. z o.o.","type":1,"country":"pl"},
 {"id":231,"name":"Wtyczka Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105.","code":"PL-AXU","phone":"507-302-609","email":"biuro@wtyczka.eu","website":"http:\/\/wtyczka.eu","short_name":"Wtyczka Sp. z o.o.","type":1,"country":"pl"},
 {"id":232,"name":"STER Sp. z o.o.","code":"PL-7EG","phone":"+48483655528","email":"info@ster.pl","short_name":"Ster","type":1,"country":"pl"},
 {"id":233,"name":"Power Dot Poland Sp. z o.o.","code":"PL-WUA","phone":"+48221042777","email":"support@powerdot.pl","short_name":"Power Dot Poland","type":1,"country":"pl"},
@@ -608,4 +609,4 @@
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
 {"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"},
 {"id":2064,"name":"EV2GO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-AYC","phone":"+48412302000","email":"info@ev2go.pl","website":"http:\/\/www.ev2go.pl","short_name":"EV2GO","type":3,"country":"pl"},
-{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-10-05T09:45:03+02:00"}
+{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-10-05T18:25:03+02:00"}
