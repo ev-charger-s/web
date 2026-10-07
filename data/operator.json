@@ -447,7 +447,7 @@
 {"id":1821,"name":"ODEKA Andrzej Wojciechowski","code":"PL-B9A","phone":"+48663410645","email":"biuro@odeka.pl","short_name":"ODEKA","type":1,"country":"pl"},
 {"id":1823,"name":"TCL Operations Polska Sp. z o.o.","code":"PL-2G7","phone":"+48504114257","email":"office@tcl.com","short_name":"TCL Polska","type":1,"country":"pl"},
 {"id":1825,"name":"LPG Polonia Sp. zo.o. SKA","code":"PL-UMA","phone":"+48502533518","email":"LNG@LPGPOLONIA.PL","website":"http:\/\/WW.LPGPOLONIA.PL","type":1,"country":"pl"},
-{"id":1827,"name":"Nord Estate Sp. z o.o.","code":"PL-Y97","phone":"+48-796-436-274","email":"d.bielawski@nordestate.pl","short_name":"Nord Estate Sp. z o.o.","type":1,"country":"pl"},
+{"id":1827,"name":"NORDWAY SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-Y97","phone":"+48-796-436-274","email":"d.bielawski@nordestate.pl","short_name":"NORDWAY","type":1,"country":"pl"},
 {"id":1828,"name":"Coral W. Perkowski, J.Perkowski sp. k.","code":"PL-VOL","phone":"+48856544526","email":"voltowa@coral.com.pl","website":"http:\/\/voltowa.com","short_name":"CORAL","type":3,"country":"pl"},
 {"id":1829,"name":"Hotel Shuma sp\u00f3\u0142ka jawna Latos","code":"PL-N5W","phone":"+48531761517","email":"hotel@hotelshuma.pl","website":"http:\/\/www.hotelshuma.pl","type":1,"country":"pl"},
 {"id":1830,"name":"Gmina Miejska Krak\u00f3w- Zarz\u0105d Transportu Publicznego","code":"PL-PYU","phone":"+48126168669","email":"dyspozytornia@ztp.krakow.pl","website":"http:\/\/www.ztp.krakow.pl","short_name":"GMK","type":1,"country":"pl"},
@@ -609,4 +609,4 @@
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
 {"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"},
 {"id":2064,"name":"EV2GO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-AYC","phone":"+48412302000","email":"info@ev2go.pl","website":"http:\/\/www.ev2go.pl","short_name":"EV2GO","type":3,"country":"pl"},
-{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-10-07T10:00:03+02:00"}
+{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-10-07T17:50:03+02:00"}
