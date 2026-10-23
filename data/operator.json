@@ -490,7 +490,7 @@
 {"id":1885,"name":"Auto Idea Sp.z o.o.","code":"PL-PJJ","phone":"+48222907992","email":"support@elo.city","website":"http:\/\/elo.city","short_name":"Auto Idea","type":1,"country":"pl"},
 {"id":1886,"name":"Drawie\u0144ski Park Narodowy","code":"PL-J4W","phone":"+48-530-558-548","email":"dpn@dpn.pl","type":1,"country":"pl"},
 {"id":1887,"name":"Kampinoski Park Narodowy","code":"PL-8NY","phone":"+48-504-050-707","email":"transport@kampinoski-pn.gov.pl","type":1,"country":"pl"},
-{"id":1888,"name":"Przedsi\u0119biorstwo Produkcyjno Us\u0142ugowe METALPOL Wanda Peta","code":"PL-UW4","phone":"+48518919170","email":"rezerwacje@hoteljastarnia.pl","website":"http:\/\/www.hoteljastarnia.pl","short_name":"PPU METALPOL, Hotel Jastarnia","type":1,"country":"pl"},
+{"id":1888,"name":"Przedsi\u0119biorstwo Produkcyjno-Us\u0142ugowe METALPOL Wanda Peta","code":"PL-UW4","phone":"+48518919170","email":"rezerwacje@hoteljastarnia.pl","website":"http:\/\/www.hoteljastarnia.pl","short_name":"PPU METALPOL, Hotel Jastarnia","type":1,"country":"pl"},
 {"id":1889,"name":"Zoeller Tech Sp\u00f3\u0142ka z o.o.","code":"PL-J3Z","phone":"+48587748900","email":"contact@zoeller.pl","short_name":"Zoeller","type":1,"country":"pl"},
 {"id":1890,"name":"AGA Sp. Z O.O.","code":"PL-TKX","phone":"+48881932236","email":"stacjabaltica@wp.pl","type":1,"country":"pl"},
 {"id":1892,"name":"DOMBEZKOSZT\u00d3W","code":"PL-9B1","phone":"+48795572808","email":"biuro@dombezkosztow.com","short_name":"DBK","type":1,"country":"pl"},
@@ -608,4 +608,5 @@
 {"id":2058,"name":"SCORPION GROUP SP. Z O. O.","code":"PL-U32","phone":"+48438228922","email":"recepcja@polboru.pl","website":"http:\/\/www.polboru.pl","type":1,"country":"pl"},
 {"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"},
 {"id":2064,"name":"EV2GO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-AYC","phone":"+48412302000","email":"info@ev2go.pl","website":"http:\/\/www.ev2go.pl","short_name":"EV2GO","type":3,"country":"pl"},
-{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"}], "generated":"2026-10-23T08:35:03+02:00"}
+{"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
+{"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"}], "generated":"2026-10-23T14:10:03+02:00"}
