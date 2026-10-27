@@ -49,7 +49,7 @@
 {"id":124,"name":"Bohemia Motors Sp. z o.o.","code":"PL-R52","phone":"+48507316743","website":"http:\/\/www.volkswagengdansk.pl","short_name":"Bohemia Motors","type":1,"country":"pl"},
 {"id":125,"name":"EPO WAREHOUSE SP. Z O.O.","code":"PL-QWK","phone":"+48532747809","email":"info@epolng.pl","website":"http:\/\/www.epolng.pl","short_name":"EPO LNG","type":1,"country":"pl"},
 {"id":127,"name":"AUTO LELLEK GROUP Sp. zo. o Sp. k.","code":"PL-KT3","phone":"77-400-70-00","email":"info@lellek.com.pl","website":"https:\/\/portal.lellek.pl\/","type":1,"country":"pl"},
-{"id":135,"name":"uesa Polska Sp z o.o.","code":"PL-ZM3","phone":"004868372-50-00","email":"centrala@uesa.pl","short_name":"uesa Polska","type":1,"country":"pl"},
+{"id":135,"name":"uesa Polska Sp z o.o.","code":"PL-ZM3","phone":"+48683725000","email":"centrala@uesa.pl","short_name":"uesa Polska","type":1,"country":"pl"},
 {"id":138,"name":"ELKOMPLEX Andrzej Jarz\u0105bkowski","code":"PL-MMA","phone":"+48587178600","email":"hotel@hotelplatan.gda.pl","website":"https:\/\/hotelplatan.gda.pl\/stacja-ladowania-samochodow-elektrycznych\/","short_name":"Hotel Platan***","type":1,"country":"pl"},
 {"id":140,"name":"Mroczkowski Sp. z o.o.","code":"PL-JR3","phone":"+48612851123","email":"serwis@vw-mroczkowski.pl","type":1,"country":"pl"},
 {"id":144,"name":"ELBUD Be\u0142chat\u00f3w","code":"PL-X7M","phone":"+48123789614","email":"biuro@elbud.com.pl","website":"http:\/\/www.elbud.com.pl","short_name":"ELBUD","type":1,"country":"pl"},
@@ -294,7 +294,7 @@
 {"id":552,"name":"EL-MEDIA SP. Z O.O.","code":"PL-W9F","phone":"+48-507-240-242","email":"info@gridpoint.pl","website":"http:\/\/www.gridpoint.pl","type":3,"country":"pl"},
 {"id":555,"name":"EQUAY CHARGING NETWORK Marek Kwiczala Jaros\u0142aw Zientara Sp\u00f3\u0142ka Cywilna","code":"PL-EQU","phone":"+48512512753","email":"helpdesk@equay.pl","website":"http:\/\/www.equay.pl","short_name":"EQUAY CHARGING NETWORK","type":3,"country":"pl"},
 {"id":556,"name":"FAMOT Pleszew Sp. z o.o.","code":"PL-CMX","phone":"+48222907992","email":"support@elo.city","website":"https:\/\/elo.city\/","short_name":"FAMOT Pleszew","type":1,"country":"pl"},
-{"id":557,"name":"Zak\u0142ad Elektroinstalacyjny Piotr Piechel","code":"PL-R9N","phone":"+48655170535","email":"biuro@zepiechel.pl","website":"http:\/\/www.zepiechel.pl","short_name":"ZEPiechel","type":3,"country":"pl"},
+{"id":557,"name":"ZAK\u0141AD ELEKTROINSTALACYJNY PIECHEL PIOTR SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-R9N","phone":"+48655170535","email":"biuro@zepiechel.pl","website":"http:\/\/www.zepiechel.pl","short_name":"ZEPiechel","type":3,"country":"pl"},
 {"id":560,"name":"Przedsi\u0119biorstwo Energetyki Cieplnej Sp. z o.o.","code":"PL-JMH","phone":"+48158325840","email":"sekretariat@pecsandomierz.pl","short_name":"PEC Sandomierz","type":1,"country":"pl"},
 {"id":562,"name":"DOKIDA Sp. z o.o.","code":"PL-RKX","phone":"+48222907992","email":"support@elo.city","short_name":"DOKIDA","type":1,"country":"pl"},
 {"id":1598,"name":"MICHALSKI MOTORS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-14E","phone":"+48690375990","email":"info@ev365.pl","type":3,"country":"pl"},
@@ -609,4 +609,5 @@
 {"id":2059,"name":"FIRMA POKE SP. ZO.O.","code":"PL-9Z8","phone":"+48606261475","email":"lukasz@poke.com.pl","type":1,"country":"pl"},
 {"id":2064,"name":"EV2GO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-AYC","phone":"+48412302000","email":"info@ev2go.pl","website":"http:\/\/www.ev2go.pl","short_name":"EV2GO","type":3,"country":"pl"},
 {"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
-{"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"}], "generated":"2026-10-27T06:45:04+01:00"}
+{"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
+{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-10-27T12:05:03+01:00"}
