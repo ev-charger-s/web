@@ -264,7 +264,7 @@
 {"id":516,"name":"KOMPLEKS GASTRONOMICZNO HOTELARSKI G\u00d3RSKI SP. Z O O","code":"PL-BEW","phone":"+48-44-6487200","email":"recepcja@hotel-gorski.pl","website":"http:\/\/www.hotel-gorski.pl","short_name":"KOMPLEKS GASTRONOMICZNO HOTELARSKI G\u00d3RSKI SP. Z O O","type":1,"country":"pl"},
 {"id":517,"name":"K\u0105pielisko Przylasek Rusiecki","code":"PL-UWN","phone":"+48-516-796-828","email":"kontakt.przylasekrusiecki@gmail.com","short_name":"Prrzylasek","type":1,"country":"pl"},
 {"id":518,"name":"BIRD Energy Sp. z o.o.","code":"PL-CEE","phone":"+48227360190","email":"hello@birdenergy.pl","website":"https:\/\/birdenergy.pl","short_name":"BIRD Energy","type":1,"country":"pl"},
-{"id":519,"name":"Folwark Center Dawid Pacyna","code":"PL-A2F","phone":"+48178571892","email":"center@folwark.rzeszow.pl","website":"http:\/\/www.folwark.rzeszow.pl","short_name":"Folwark Center","type":1,"country":"pl"},
+{"id":519,"name":"Consulting Services Dawid Pacyna","code":"PL-A2F","phone":"+48178571892","email":"center@folwark.rzeszow.pl","website":"http:\/\/www.folwark.rzeszow.pl","type":1,"country":"pl"},
 {"id":520,"name":"Szczepkowscy Sp. J.","code":"PL-BNZ","phone":"+48611010417","email":"sezony@sezony.pl","website":"http:\/\/sezony.pl","type":1,"country":"pl"},
 {"id":521,"name":"PAK-PCE Stacje H2","code":"PL-C9U","phone":"+48222136236","email":"kontakt@stacjeneso.pl","website":"https:\/\/stacjeneso.pl\/","short_name":"NESO","type":1,"country":"pl"},
 {"id":522,"name":"AEG-BP Bo\u017cena P\u0119giel","code":"PL-QAU","phone":"+48602571890","email":"aegbpfirma@gmail.com","short_name":"AEG-BP","type":1,"country":"pl"},
@@ -414,7 +414,6 @@
 {"id":1772,"name":"Dworek Komorno","code":"PL-TJU","phone":"+48774033919","email":"dworek@dworekkomorno.eu","website":"http:\/\/www.dworekkomorno.eu","type":1,"country":"pl"},
 {"id":1774,"name":"\"PODGRODZIE\" KACZMAREK I WSP\u00d3LNICY SP\u00d3\u0141KA JAWNA","code":"PL-TQT","phone":"+48603373283","email":"hotel@podgrodzie.com.pl","website":"http:\/\/podgrodzie.com.pl","short_name":"PODGRODZIE","type":1,"country":"pl"},
 {"id":1776,"name":"THALE sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp\u00f3\u0142ka komandytowa","code":"PL-QGC","phone":"+48-895-211-975","email":"administracja@niczuk.pl","website":"http:\/\/www.niczuk.pl","short_name":"THALE sp. z o.o. sp.k.","type":1,"country":"pl"},
-{"id":1778,"name":"BELMA ACCESSORIES SYSTEMS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-G8P","phone":"+48523636300","email":"bas@bas.pol.pl","type":1,"country":"pl"},
 {"id":1779,"name":"Fabryka Pod\u0142\u00f3g Marcin Zi\u0119ba","code":"PL-7QA","phone":"+48781883267","email":"electro-way@onet.pl","short_name":"Fabryka Pod\u0142\u00f3g","type":1,"country":"pl"},
 {"id":1781,"name":"P.H. \"B-K\" Barbara Badora","code":"PL-NCK","phone":"+48516009988","email":"biuro@karczmaubasienki.pl","website":"http:\/\/karczmaubasienki.pl","short_name":"Karczma u Basie\u0144ki","type":1,"country":"pl"},
 {"id":1782,"name":"ZPUE S.A.","code":"PL-D4X","phone":"+48506005142","email":"serwis@zpue.pl","website":"https:\/\/zpue.pl","type":1,"country":"pl"},
@@ -611,4 +610,4 @@
 {"id":2064,"name":"EV2GO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-AYC","phone":"+48412302000","email":"info@ev2go.pl","website":"http:\/\/www.ev2go.pl","short_name":"EV2GO","type":3,"country":"pl"},
 {"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
 {"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
-{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-10-28T07:20:03+01:00"}
+{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-10-28T14:35:03+01:00"}
