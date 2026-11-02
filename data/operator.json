@@ -375,7 +375,7 @@
 {"id":1709,"name":"EVB SP.ZO.O.","code":"PL-AP1","phone":"+48696673646","email":"office@evbgroup.pl","short_name":"EVB","type":1,"country":"pl"},
 {"id":1710,"name":"O\u015brodek Je\u017adziecki Lando s.c.","code":"PL-FRS","phone":"+48605084999","email":"lando@lando.org.pl","website":"http:\/\/lando.org.pl","short_name":"Lando Resort","type":1,"country":"pl"},
 {"id":1712,"name":"Grosar sp. z o.o.","code":"PL-JGS","phone":"+48602788423","email":"progalski@grosar.pl","website":"https:\/\/grosar.pl\/","short_name":"Grosar","type":1,"country":"pl"},
-{"id":1713,"name":"Nowa Holandia D. Lange M. Cebula sp. J","code":"PL-Q2R","phone":"+48552338990","email":"biuro@nowaholandia.pl","website":"http:\/\/nowaholandia.pl","short_name":"Nowa Holandia","type":1,"country":"pl"},
+{"id":1713,"name":"Nowa Holandia Sp. z o.o.","code":"PL-Q2R","phone":"+48552338990","email":"biuro@nowaholandia.pl","website":"http:\/\/nowaholandia.pl","short_name":"Nowa Holandia","type":1,"country":"pl"},
 {"id":1714,"name":"MRYC SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-6TE","phone":"+48177421789","email":"kasparbar@wp.pl","website":"http:\/\/Kasparbar.pl","short_name":"Mryc Sp. z o.o.","type":3,"country":"pl"},
 {"id":1715,"name":"TRANSPORT TOWAROWY MECHANICZNY ZRADA STEFAN","code":"PL-F3S","phone":"+48-693-294-511","email":"lng.zrada@poczta.onet.pl","type":1,"country":"pl"},
 {"id":1716,"name":"AIRES Adgar BCIV sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 sp\u00f3\u0142ka komandytowa","code":"PL-S22","phone":"+48661608881","email":"ev-support@adgar.pl","website":"https:\/\/www.greems.io\/","short_name":"AIRES Sp. z o.o sp.k","type":3,"country":"pl"},
@@ -609,5 +609,6 @@
 {"id":2062,"name":"GreenFlux Assets B.V.","code":"NL-GFX","phone":"+31681681888","email":"roaming@greenflux.com","type":1,"country":"nl"},
 {"id":2064,"name":"EV2GO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-AYC","phone":"+48412302000","email":"info@ev2go.pl","website":"http:\/\/www.ev2go.pl","short_name":"EV2GO","type":3,"country":"pl"},
 {"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
+{"id":2073,"name":"JASZPOL SP Z O.O.","code":"PL-36S","phone":"+48426121222","email":"kontakt@jaszpol.pl","website":"http:\/\/www.jaszpol.pl","short_name":"JASZPOL","type":1,"country":"pl"},
 {"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
-{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-02T07:55:03+01:00"}
+{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-02T18:25:03+01:00"}
