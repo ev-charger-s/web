@@ -364,7 +364,6 @@
 {"id":1695,"name":"GUARDIAN CLINIC WR\u00d3BEL, KARACZUN, PYDA SP\u00d3\u0141KA KOMANDYTOWA","code":"PL-KBQ","phone":"+48632238611","email":"sz.rajski@guardianclinic.pl","short_name":"GUARDIAN CLINIC","type":1,"country":"pl"},
 {"id":1696,"name":"Hotel Chopin Maryla Pliszka","code":"PL-TGB","phone":"+48602762448","email":"jpliszka@post.pl","type":1,"country":"pl"},
 {"id":1698,"name":"Testowy operator (TJ)","code":"PL-5JA","phone":"+48691100100","email":"tomaszmmj+testowyop@gmail.com","type":1,"country":"pl"},
-{"id":1699,"name":"FABRYKA MEBLI BODZIO BOGDAN SZEWCZYK SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-P2P","phone":"+48713158666","email":"bogdan@bodzio.pl","short_name":"FABRYKA MEBLI BODZIO","type":1,"country":"pl"},
 {"id":1700,"name":"MW Property II Sp. z o.o.","code":"PL-EZ5","phone":"+48-25-7422060","email":"minskmazowiecki@bosch-service.pl","website":"http:\/\/minskmazowiecki.bosch-service.pl","type":3,"country":"pl"},
 {"id":1701,"name":"EV VOLTA Sp. z o.o.","code":"PL-EVV","phone":"+48696103344","email":"biuro@ev-volta.com","website":"https:\/\/www.ev-volta.com","short_name":"EV VOLTA","type":1,"country":"pl"},
 {"id":1702,"name":"mLeasing sp. z o.o.","code":"PL-MLE","phone":"+48223600600","email":"info@mleasing.pl","website":"http:\/\/mauto.pl\/elektryfikacja-floty","short_name":"mLeasing","type":3,"country":"pl"},
@@ -611,4 +610,4 @@
 {"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
 {"id":2073,"name":"JASZPOL SP Z O.O.","code":"PL-36S","phone":"+48426121222","email":"kontakt@jaszpol.pl","website":"http:\/\/www.jaszpol.pl","short_name":"JASZPOL","type":1,"country":"pl"},
 {"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
-{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-03T08:15:03+01:00"}
+{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-03T16:30:03+01:00"}
