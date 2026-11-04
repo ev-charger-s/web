@@ -525,7 +525,6 @@
 {"id":1928,"name":"LIVECO SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-FYT","phone":"+48501186685","email":"jlukasik2@interia.pl","short_name":"LIVECO","type":1,"country":"pl"},
 {"id":1929,"name":"\"O\u0142awian Hotel\" Teresa i Piotr Maraj Sp\u00f3\u0142ka Jawba","code":"PL-NRK","phone":"+48795403176","email":"recepcja@olawianhotel.pl","website":"http:\/\/www.olawianhotel.pl","type":1,"country":"pl"},
 {"id":1930,"name":"Intermarche Grajewo - Gina sp. z o.o.","code":"PL-7AM","phone":"+48888404406","email":"sp052@muszkieterowie.pl","website":"http:\/\/www.intermarche.pl","short_name":"Intermarche Grajewo","type":1,"country":"pl"},
-{"id":1931,"name":"IBERDROLA RENEWABLES POLSKA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-XMW","phone":"+48-885-574-806","email":"kborowiec@iberdrola.es","website":"https:\/\/www.iberdrola.com\/home","short_name":"IRP","type":1,"country":"pl"},
 {"id":1932,"name":"Gmina Ci\u0119\u017ckowice","code":"PL-PUN","phone":"+48146285800","email":"ug@ciezkowice.pl","website":"http:\/\/ciezkowice.pl","short_name":"Gmina Ci\u0119\u017ckowice","type":1,"country":"pl"},
 {"id":1933,"name":"TATRA STYLE 1 SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-NUN","phone":"+48884330121","email":"rezerwacja@aparthoteldiamond.pl","website":"http:\/\/www.aparthoteldiamond.pl","short_name":"TATRA STYLE","type":1,"country":"pl"},
 {"id":1935,"name":"Rybnicka Sp\u00f3\u0142dzielnia Mieszkaniowa","code":"PL-73Q","phone":"+48324327300","email":"rsm_rybnik@pro.onet.pl","website":"http:\/\/www.rsm.pl","short_name":"RSM","type":1,"country":"pl"},
@@ -610,4 +609,4 @@
 {"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
 {"id":2073,"name":"JASZPOL SP Z O.O.","code":"PL-36S","phone":"+48426121222","email":"kontakt@jaszpol.pl","website":"http:\/\/www.jaszpol.pl","short_name":"JASZPOL","type":1,"country":"pl"},
 {"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
-{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-04T09:10:03+01:00"}
+{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-04T17:35:03+01:00"}
