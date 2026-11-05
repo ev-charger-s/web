@@ -311,7 +311,7 @@
 {"id":1683,"name":"Auto Salon Margo - Szczotok SP J","code":"PL-G2F","phone":"+48324248110","email":"serwis@margo-rybnik.pl","website":"http:\/\/margo-rybnik.pl","short_name":"Auto Salon Margo","type":1,"country":"pl"},
 {"id":1687,"name":"VOLTPOINT SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-2HT","phone":"+48856544526","email":"voltpoint@voltpoint.pl","website":"http:\/\/www.voltpoint.pl","short_name":"BeON","type":3,"country":"pl"},
 {"id":1688,"name":"Modern Dream sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-EK8","phone":"+48502308504","email":"info@modern-dream.pl","website":"https:\/\/www.md-carport.pl\/","short_name":"Modern Dream","type":1,"country":"pl"},
-{"id":1691,"name":"Drewniany Investments","code":"PL-MRN","phone":"+48506813890","email":"charger@drewnianyinvestments.pl","short_name":"Drewniany","type":1,"country":"pl"},
+{"id":1691,"name":"Drewniany Investments Adam Drewniany","code":"PL-MRN","phone":"+48506813890","email":"charger@drewnianyinvestments.pl","short_name":"Drewniany","type":1,"country":"pl"},
 {"id":1693,"name":"Poli Sp. z o.o.","code":"PL-ZHG","phone":"+48523527910","email":"poli@poli.com.pl","short_name":"Poli Sp. z o.o.","type":1,"country":"pl"},
 {"id":1694,"name":"PART SP. Z O.O.","code":"PL-UU1","phone":"+48500400516","email":"sp446@moyastacja.pl","short_name":"PART","type":1,"country":"pl"},
 {"id":1695,"name":"GUARDIAN CLINIC WR\u00d3BEL, KARACZUN, PYDA SP\u00d3\u0141KA KOMANDYTOWA","code":"PL-KBQ","phone":"+48632238611","email":"sz.rajski@guardianclinic.pl","short_name":"GUARDIAN CLINIC","type":1,"country":"pl"},
@@ -532,4 +532,4 @@
 {"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
 {"id":2073,"name":"JASZPOL SP Z O.O.","code":"PL-36S","phone":"+48426121222","email":"kontakt@jaszpol.pl","website":"http:\/\/www.jaszpol.pl","short_name":"JASZPOL","type":1,"country":"pl"},
 {"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
-{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-05T12:40:03+01:00"}
+{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-05T20:05:03+01:00"}
