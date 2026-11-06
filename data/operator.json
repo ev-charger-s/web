@@ -278,7 +278,6 @@
 {"id":1629,"name":"ROCK LOGISTIC SP. Z O.O.","code":"PL-WZS","phone":"+48601987777","email":"n.chorowicz@gpiasecki.pl","type":1,"country":"pl"},
 {"id":1632,"name":"Bednarek Sp. z o. o.","code":"PL-S59","phone":"+48799611260","website":"https:\/\/volvocarbednarek.pl","short_name":"Volvo Bednarek","type":1,"country":"pl"},
 {"id":1634,"name":"FHU Maria G\u0105sior-Wo\u017ana","code":"PL-U9Y","phone":"+48691600222","email":"biuro@starykamionek.pl","type":1,"country":"pl"},
-{"id":1635,"name":"Gmina Nowiny","code":"PL-SM2","phone":"+48-041-347-50-00","email":"sekretariat@nowiny.com.pl","type":1,"country":"pl"},
 {"id":1637,"name":"Autorud Stalowa Wola sp z o.o.","code":"PL-CPN","phone":"+48158445333","email":"sekretariat@autorudstw.pl","website":"https:\/\/autorud-stalowawola.dealer.volkswagen.pl\/osobowe","short_name":"Autorud StW","type":1,"country":"pl"},
 {"id":1640,"name":"ChargeWise Dystrybucja Sp. z o.o.","code":"PL-CHW","phone":"+48571288397","email":"support@chargewise.pl","website":"http:\/\/www.chargewise.pl","short_name":"ChargeWise","type":3,"country":"pl"},
 {"id":1641,"name":"PPUH PERFOPOL Sp. z o.o.","code":"PL-132","phone":"+48602671462","email":"piotr.chaja@perfopol.pl","website":"http:\/\/www.perfopol.pl","short_name":"PERFOPOL","type":1,"country":"pl"},
@@ -532,4 +531,4 @@
 {"id":2065,"name":"BlueBerryOil Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 S.K.A.","code":"PL-7RJ","phone":"+48516878034","email":"biuro@blueberryoil.com","website":"http:\/\/www.blueberryoil.com","short_name":"BlueBerryOil Spzoo SKA","type":1,"country":"pl"},
 {"id":2073,"name":"JASZPOL SP Z O.O.","code":"PL-36S","phone":"+48426121222","email":"kontakt@jaszpol.pl","website":"http:\/\/www.jaszpol.pl","short_name":"JASZPOL","type":1,"country":"pl"},
 {"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
-{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-06T08:25:03+01:00"}
+{"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"}], "generated":"2026-11-06T16:25:03+01:00"}
