@@ -10,7 +10,7 @@
 {"id":21,"name":"Gmina Miasto Ostr\u00f3w Wielkopolski","code":"PL-X2P","phone":"62 58-22-207","email":"mspizewska@umostrow.pl","type":1,"country":"pl"},
 {"id":23,"name":"Przedsi\u0119biorstwo Gospodarki Komunalnej w \u015aremie Sp. z o.o.","code":"PL-W5W","phone":"+48612828241","email":"mateuszewo@pgk.srem.pl","website":"http:\/\/www.pgk.srem.pl\/","short_name":"PGK w \u015aremie Sp. z o.o.","type":1,"country":"pl"},
 {"id":27,"name":"Elocity Sp. z o.o.","code":"PL-JMG","phone":"+48222907992","email":"kontakt@elo.city","website":"http:\/\/elo.city","short_name":"Elocity","type":1,"country":"pl"},
-{"id":28,"name":"LOTOS PALIWA Sp\u00f3\u0142ka z.o.o","code":"PL-KQE","phone":"801345678","email":"biuro@lotospaliwa.pl","short_name":"LOTOS","type":1,"country":"pl"},
+{"id":28,"name":"MOL POLSKA SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-KQE","phone":"+48801345678","email":"biuro@molpolska.pl","website":"https:\/\/molpolska.pl\/pl\/","short_name":"MOL","type":1,"country":"pl"},
 {"id":30,"name":"Z.U.P EMITER LIMANOWA","code":"PL-8BG","phone":"+48695233358","email":"pawel.slazyk@emiter.com","short_name":"EMITER ZEVS","type":1,"country":"pl"},
 {"id":35,"name":"POWER EV Sp. z o.o.","code":"PL-ECX","phone":"222330811","email":"info@dopower.eu","website":"http:\/\/www.dopower.pl","short_name":"POWER_EV","type":1,"country":"pl"},
 {"id":38,"name":"Techenergo Sp. z o.o.","code":"PL-TEO","phone":"+48690012314","email":"d.puchala@techenergo.pl","short_name":"TE","type":1,"country":"pl"},
@@ -164,7 +164,6 @@
 {"id":391,"name":"Wsp\u00f3lnota Mieszkaniowa Unique Tower przy ul. Grzybowskiej 49 w Warszawie","code":"PL-U3S","phone":"+48882761854","email":"biuro@safeproperty.pl","website":"http:\/\/safeproperty.pl","short_name":"WM Unique Tower","type":1,"country":"pl"},
 {"id":392,"name":"Auto B\u0105czek Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105 Sp\u00f3\u0142ka Komandytowa","code":"PL-XBG","phone":"+48146274566","website":"http:\/\/www.autobaczek.pl","short_name":"Auto B\u0105czek","type":3,"country":"pl"},
 {"id":395,"name":"Pure City Infrastructure Sp. z o.o.","code":"PL-7US","phone":"+48723910273","email":"bogdan@purecity.pl","website":"https:\/\/purecity.pl\/","short_name":"PureCity","type":1,"country":"pl"},
-{"id":399,"name":"Zielona Energia Sp\u00f3\u0142ka z ograniczon\u0105 odpowiedzialno\u015bci\u0105","code":"PL-XGY","phone":"+48510177778","email":"biuro@zielonae.pl","website":"http:\/\/www.zielonae.pl","short_name":"Zielona Energia Sp. z o.o.","type":1,"country":"pl"},
 {"id":400,"name":"DARTOM SP. Z O.O.","code":"PL-SZ9","phone":"+48785740950","website":"http:\/\/www.purelng.pl","short_name":"Pure LNG","type":1,"country":"pl"},
 {"id":401,"name":"Budimex Mobility Sp\u00f3\u0142ka Akcyjna","code":"PL-SSS","phone":"+48573433777","website":"https:\/\/budimexmobility.pl\/","short_name":"Budimex PPP S.A.","type":3,"country":"pl"},
 {"id":406,"name":"TARGOR TRUCK Sp. z o. o.","code":"PL-RPU","phone":"+48515276866","email":"s.chrostowski@targor-truck.pl","website":"http:\/\/www.targor-truck.pl","short_name":"TARGOR TRUCK Sp. z o. o.","type":1,"country":"pl"},
@@ -507,4 +506,4 @@
 {"id":2074,"name":"Auto-Centrum M. Z. Kierat Sp.j.","code":"PL-Y32","phone":"+48322180404","email":"recepcja@fcakierat.pl","website":"https:\/\/www.grupa-kierat.pl\/","type":1,"country":"pl"},
 {"id":2076,"name":"J-S Sp. z o.o.","code":"PL-E8J","phone":"+48516012700","email":"miroslaw.skowierzak.js@slask.lewiatan.pl","short_name":"JS","type":1,"country":"pl"},
 {"id":2080,"name":"Heban sp. z o.o. sp. komandytowa","code":"PL-161","phone":"+48500112794","email":"p.molik@heban.net","website":"http:\/\/www.heban.net","short_name":"Heban sp. z o.o. sp. k.","type":1,"country":"pl"},
-{"id":2083,"name":"Gmina Me\u0142giew","code":"PL-4UZ","phone":"+48-814-605-701","email":"sekretariat@melgiew.pl","website":"https:\/\/melgiew.pl\/","type":1,"country":"pl"}], "generated":"2026-11-17T05:45:03+01:00"}
+{"id":2083,"name":"Gmina Me\u0142giew","code":"PL-4UZ","phone":"+48-814-605-701","email":"sekretariat@melgiew.pl","website":"https:\/\/melgiew.pl\/","type":1,"country":"pl"}], "generated":"2026-11-17T14:55:03+01:00"}
