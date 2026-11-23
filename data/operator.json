@@ -276,7 +276,6 @@
 {"id":1663,"name":"NEXET Sp. z o.o.","code":"PL-UPZ","phone":"+48175061515","website":"http:\/\/naladowani.eu","type":3,"country":"pl"},
 {"id":1667,"name":"ASTER STREAMS SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-3P8","phone":"+48509253090","email":"marcin.swider@aster-streams.pl","website":"http:\/\/aster-streams.pl","short_name":"Aster Streams","type":1,"country":"pl"},
 {"id":1668,"name":"Hazel sp\u00f3\u0142ka z o.o.","code":"PL-FQ7","phone":"+48531402135","email":"hazel.adrian.wojcik@gmail.com","website":"http:\/\/www.hazel-ev.com","short_name":"Hazel","type":1,"country":"pl"},
-{"id":1669,"name":"MOGILSKA OFFICE 4 SP. Z O.O.","code":"PL-QK4","phone":"+48-601-351-365","email":"malgorzata.nowinska@savills.pl","website":"http:\/\/www.mogilsks-office.com","short_name":"MOGILSKA OFFICE","type":1,"country":"pl"},
 {"id":1670,"name":"ZEG SP\u00d3\u0141KA Z OGRANICZON\u0104 ODPOWIEDZIALNO\u015aCI\u0104","code":"PL-GEW","phone":"+48-509-681-579","email":"info@zeggryfice.pl","website":"http:\/\/www.zeggryfice.pl","short_name":"ZEG","type":1,"country":"pl"},
 {"id":1671,"name":"Przedsi\u0119biorstwo Oczyszczania Miasta EKO Sp. z o.o.","code":"PL-EWK","phone":"+48627642296","email":"biuro@eko.kalisz.pl","website":"http:\/\/www.eko.kalisz.pl","type":1,"country":"pl"},
 {"id":1672,"name":"Krzysztof Kulik Przedsi\u0119biorstwo Budowlane Handlowo Us\u0142ugowe \u201eROB\u201d","code":"PL-8NX","phone":"+48533169594","email":"ev@grupalemon.pl","website":"http:\/\/ev.grupalemon.pl","short_name":"Krzysztof Kulik P.B.H.U. \u201eROB\u201d","type":3,"country":"pl"},
@@ -510,4 +509,4 @@
 {"id":2083,"name":"Gmina Me\u0142giew","code":"PL-4UZ","phone":"+48-814-605-701","email":"sekretariat@melgiew.pl","website":"https:\/\/melgiew.pl\/","type":1,"country":"pl"},
 {"id":2086,"name":"Kerpantile Investments Sp. Z O O","code":"PL-XZK","phone":"+48573211626","email":"oldtown@nolistudios.com","website":"http:\/\/www.nolistudios.pl","short_name":"Noli Gdansk Old Town","type":3,"country":"pl"},
 {"id":2087,"name":"INVERDENO INVESTMENTS Sp. Z O. O.","code":"PL-4ZS","phone":"+48798886854","email":"wrzeszcz@nolistudios.com","website":"http:\/\/www.nolistudios.pl","short_name":"Noli Gdansk Wrzeszcz","type":3,"country":"pl"},
-{"id":2090,"name":"GreenFlux Assets B.V.","code":"PL-GFX","phone":"+31681681888","email":"roaming@greenflux.com","website":"https:\/\/www.greenflux.com\/","type":1,"country":"nl"}], "generated":"2026-11-23T04:25:03+01:00"}
+{"id":2090,"name":"GreenFlux Assets B.V.","code":"PL-GFX","phone":"+31681681888","email":"roaming@greenflux.com","website":"https:\/\/www.greenflux.com\/","type":1,"country":"nl"}], "generated":"2026-11-23T14:45:03+01:00"}
