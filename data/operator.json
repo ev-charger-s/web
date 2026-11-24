@@ -395,7 +395,7 @@
 {"id":1887,"name":"Kampinoski Park Narodowy","code":"PL-8NY","phone":"+48-504-050-707","email":"transport@kampinoski-pn.gov.pl","type":1,"country":"pl"},
 {"id":1888,"name":"Przedsi\u0119biorstwo Produkcyjno-Us\u0142ugowe METALPOL Wanda Peta","code":"PL-UW4","phone":"+48518919170","email":"rezerwacje@hoteljastarnia.pl","website":"http:\/\/www.hoteljastarnia.pl","short_name":"PPU METALPOL, Hotel Jastarnia","type":1,"country":"pl"},
 {"id":1890,"name":"AGA Sp. Z O.O.","code":"PL-TKX","phone":"+48881932236","email":"stacjabaltica@wp.pl","type":1,"country":"pl"},
-{"id":1892,"name":"DOMBEZKOSZT\u00d3W","code":"PL-9B1","phone":"+48795572808","email":"biuro@dombezkosztow.com","short_name":"DBK","type":1,"country":"pl"},
+{"id":1892,"name":"DOM BEZ KOSZT\u00d3W Sp. z o.o.","code":"PL-9B1","phone":"+48795572808","email":"biuro@dombezkosztow.com","short_name":"DBK","type":1,"country":"pl"},
 {"id":1894,"name":"Cafe The End s.c.","code":"PL-RX3","phone":"+48501336369","email":"kaminskitomasz@poczta.onet.pl","short_name":"Cafe The End","type":1,"country":"pl"},
 {"id":1895,"name":"Przedsi\u0119biorstwo Wielobran\u017cowe Tomasz Janiszewski","code":"PL-7GM","phone":"+48730161616","email":"biuro@ambersuite.pl","website":"http:\/\/ambersuite.pl","short_name":"Hotel Amber Suite","type":1,"country":"pl"},
 {"id":1896,"name":"Solid Charge","code":"PL-SOL","phone":"+48511326258","email":"piotr.majcher@solidstudio.io","website":"https:\/\/solidcharge.pl","type":3,"country":"pl"},
@@ -509,4 +509,5 @@
 {"id":2083,"name":"Gmina Me\u0142giew","code":"PL-4UZ","phone":"+48-814-605-701","email":"sekretariat@melgiew.pl","website":"https:\/\/melgiew.pl\/","type":1,"country":"pl"},
 {"id":2086,"name":"Kerpantile Investments Sp. Z O O","code":"PL-XZK","phone":"+48573211626","email":"oldtown@nolistudios.com","website":"http:\/\/www.nolistudios.pl","short_name":"Noli Gdansk Old Town","type":3,"country":"pl"},
 {"id":2087,"name":"INVERDENO INVESTMENTS Sp. Z O. O.","code":"PL-4ZS","phone":"+48798886854","email":"wrzeszcz@nolistudios.com","website":"http:\/\/www.nolistudios.pl","short_name":"Noli Gdansk Wrzeszcz","type":3,"country":"pl"},
-{"id":2090,"name":"GreenFlux Assets B.V.","code":"PL-GFX","phone":"+31681681888","email":"roaming@greenflux.com","website":"https:\/\/www.greenflux.com\/","type":1,"country":"nl"}], "generated":"2026-11-24T12:40:03+01:00"}
+{"id":2090,"name":"GreenFlux Assets B.V.","code":"PL-GFX","phone":"+31681681888","email":"roaming@greenflux.com","website":"https:\/\/www.greenflux.com\/","type":1,"country":"nl"},
+{"id":2092,"name":"GMINA KOLONOWSKIE","code":"PL-NE6","phone":"+48-774-611-140","email":"umig@kolonowskie.pl","website":"http:\/\/www.kolonowskie.pl","short_name":"GK","type":1,"country":"pl"}], "generated":"2026-11-24T22:35:03+01:00"}
